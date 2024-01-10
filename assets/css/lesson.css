@@ -27,6 +27,12 @@
     flex-direction: column;
     margin: 0px 0px 10px 20px;
  }
+ .det1{
+  width: 80px;
+  margin-right: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+ }
  .autherdetails p{
     margin: 0px 0px 0px 0px;
     line-height: 1.2;
@@ -260,8 +266,15 @@
     .autherdetails{
         display: flex;
         flex-direction: column;
-        margin: 0px 0px 10px 10px;
+        margin: 10px 0px 10px 0px;
      }
+     .autherdetail{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: flex-start;
+      margin: 0px 0px 20px 0px;
+   }
     .return{
         display: flex;
         justify-content: center;
@@ -364,7 +377,7 @@
      .autherdetails{
         display: flex;
         flex-direction: column;
-        margin: 0px 0px 10px 10px;
+        margin: 10px 0px 10px 0px;
      }
     .lessontopicimage{
         height: 110px;
