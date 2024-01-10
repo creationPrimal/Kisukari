@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Kisukari - Ask Us</title>
+  <title>Kisukari - Profile</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -42,19 +42,19 @@
   <header id="header" class="fixed-top d-flex align-items-center " class="headernav">
     <div class="container d-flex align-items-center" >
         <button class="return" onclick="back()"><i class="fa-solid fa-arrow-right fa-flip-horizontal"></i></button>
-      <h1 class="logo me-auto"><a href="index.html">Kisukari</a></h1>
+      <h1 class="logo me-auto">Profile</h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
         <ul>
           <li><a href="index.html">Home</a></li>
-          <li><a href="index.html#main" >Library</a></li>
+          <li><a href="#main">Library</a></li>
           <li><a href="q&a.html">Q&A</a></li>
-          <li><a href="chat.html" class="active">Ask Us</a></li>
+          <li><a href="chat.html">Ask Us</a></li>
           <li><a href="contact.html">Contact Us</a></li>
           <li><a href="login.html">Log In</a></li>
-          <li><a href="profile.html">Profile</a></li>
+          <li><a href="profile.html" class="active">Profile</a></li>
           <li><a href="signup.html" class="getstarted">Register</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -74,85 +74,65 @@
 
           <div class="col-lg-8 entries" style="width: 100%;">
 
-            <article class="entry entry-single lessontopics" >
+            <article class="entry entry-single lessontopics">
 
-                <h2 class="entry-title" style="margin-bottom: 30px;">
-                    Asq Us <i class="fa-solid fa-comments" style="color: #217dbb ;"></i>
-                  </h2>
-                 <!--text-->
-              <div class="chatdiv">
-                <div class="sendertext">
-                    <p >Hello There,</p>
-                    <span>Jan 12, 2024 <i class="fa-solid fa-check-double" style="color: green;"></i></span>
+                 <!--authers details-->
+                 <div class="autherdetail">
+                    <div class="autherimage">
+                        <img src="assets/img/images/Portrait of a smiling beautiful woman standing alone on a yellow background.jpg" alt="">
+                    </div>
+                    <div class="autherdetails">
+                        <h2 class="lessontitle">Veronica Joseph <a href="settings.html"><button><i class="fa-solid fa-pencil"></i></button></a></h2>
+                        <p class="mb-1 pt-0">Email: <b>Veronicajoseph@gmail.com</b></p>
+                        <p class="mb-1">Mobile: <b>+255 742 012 222</b></p>
+                        <p class="mb-1">Age: <b>43 Years</b></p>
+                        <p class="mb-1">Gender: <b>Male</b></p>
+                        <p class="mb-1">Nationality: <b>Tanzanian</b></p>
+                        <p class="mb-1">Adress: <b>P.o.Box 2341</b></p>
+                    </div>
                 </div>
-                <div class="repliedtext">
-                    <p class="text">Hello. How Can I help You Today?</p>
+               
+              <div class="entry-content lessoncontent">
+                <h5 class="lessontitle">Settings</h5>
+                <p class="mb-0 pt-0 asq" style="cursor: pointer;">Change Password</p>
+                <p class="mb-1"><b>Delete Account</b></p>
+
+              </div>
+              <div class="entry-content lessoncontent">
+                <h5 class="lessontitle  pt-0 mt-4">Help</h5>
+                <a href="contact.html"><b><p class="mb-0 pt-0">Contact Us</p></b></a>
+                <a href=""><p class="mb-1"><b>Log Out</b></p></a>
+                <p class="mb-0 pb-0 mt-4" style="font-size: 10px;">Kisukari. App Version 0.0.1 All Rights Reserved 2024</p>
+
+              </div>
+              <!-- FORM -->
+              <div class="asqformdiv">
+                <div class="asqclosediv"></div>
+                <div class="reply-form">
+                    <span class="closetag"><b>&#x2715;</b></span>
+                    <h4>Reset Your Password</h4>
+                    <form action="">
+                    <div class="row">
+                        <div class="col-md-6 form-group">
+                        <label for="currentpassword">Current Password</label>
+                        <input name="currentpassword" type="password" class="form-control" placeholder="" required>
+                        </div>
+                        <div class="col-md-6 form-group">
+                        <label for="newpassword">New Password</label>
+                        <input name="newpassword" type="password" class="form-control" placeholder="" required>
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Reset</button>
+    
+                    </form>
+    
                 </div>
               </div>
-              <!--end text-->
-                 <!--text-->
-              <div class="chatdiv">
-                <div class="sendertext">
-                    <p >I have A question. How long does it take for an egg to boil? Steps too</p>
-                    <span>Jan 12, 2024 <i class="fa-solid fa-check-double" style="color: green;"></i></span>
-                </div>
-                <div class="repliedtext">
-                    <p class="text">Yes, First take out an egg, Sufuria, Water, <br>
-                         Then Put the water in sufuria and light up fire or stove and put an egg <br>
-                          in the boiling waterfor almost 10 Minutes then Take it off. ENJOY</p>
-                </div>
-              </div>
-              <!--end text-->
-                 <!--text-->
-                 <div class="chatdiv">
-                    <div class="sendertext">
-                        <p >Had severe headaches recently, What should I do?</p>
-                        <span>Jan 12, 2024 <i class="fa-solid fa-check-double" style="color: green;"></i></span>
-                    </div>
-                    <div class="repliedtext">
-                        <p class="text">Have enough rest and if the problem persists please see a <br>
-                             near by doctor for medical examination and advice.</p>
-                    </div>
-                  </div>
-                  <!--end text-->
-                   <!--text-->
-                 <div class="chatdiv">
-                    <div class="sendertext">
-                        <p >I'm allergic to avocados, if I eat eight I'm sick.</p>
-                        <span>Jan 12, 2024 <i class="fa-solid fa-check-double" style="color: green;"></i></span>
-                    </div>
-                    <div class="repliedtext">
-                        <p class="text">
-                           Don't eat them then. Be Safe
-                        </p>
-                    </div>
-                  </div>
-                  <!--end text-->
-                    <!--text-->
-                 <div class="chatdiv">
-                    <div class="sendertext">
-                        <p >Is It True That Taking A Daily Dose Of Chocolate Can Keep The Doctor Away?</p>
-                        <span>Jan 12, 2024 <i class="fa-solid fa-check-double" style="color: green;"></i></span>
-                    </div>
-                    <div class="repliedtext">
-                        <p class="text">
-                           Don't consume too much chocolate, It's not healthy. Be Safe
-                        </p>
-                    </div>
-                  </div>
-                  <!--end text-->
 
-                  
             </article><!-- End topic head -->
-            
-            <form action="">
-                <div class="asqinput">
-                    <input type="text" placeholder="Type Your Question Here..">
-                    <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
-                </div>
-            </form>
 
-          </div><!-- End blog entries list -->
+
+          </div>
 
           <div class="col-lg-4">
 
@@ -165,18 +145,22 @@
     </section><!-- End Blog Single Section -->
 
 
+
+
+
     <!-- Mobile navigations -->
     <div class="mobilenav">
-        <a href="index.html"><button ><i class="fa-solid fa-book-bookmark"></i><p>Library</p></button></a>
+        <a href="index.html"><button><i class="fa-solid fa-book-bookmark"></i><p>Library</p></button></a>
         <a href="q&a.html"><button><i class="fa-solid fa-person-circle-question"></i><p>Q&A</p></button></a>
-        <a href="chat.html"><button class="mobilenavselected"><i class="fa-solid fa-comments"></i><p>Ask Us</p></button></a>
+        <a href="chat.html"><button><i class="fa-solid fa-comments"></i><p>Ask Us</p></button></a>
         <a href="profile.html"><button><div class="profileimagenav"><div class="profimage"><img src="assets/img/images/Portrait of a smiling beautiful woman standing alone on a yellow background.jpg" alt=""></div><i class="fa-solid fa-user"></i></div><p>Profile</p></button></a>
       </div>
+
 
   </main><!-- End #main -->
 
 
- 
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>

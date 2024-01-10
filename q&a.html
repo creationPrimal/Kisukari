@@ -49,12 +49,11 @@
         <ul>
           <li><a href="index.html">Home</a></li>
           <li><a href="#main">Library</a></li>
-          <li><a href="" class="active">Q&A</a></li>
-          <li><a href="">Ask Us</a></li>
-          <li><a href="blog.html">Blog</a></li>
-
+          <li><a href="q&a.html" class="active">Q&A</a></li>
+          <li><a href="chat.html">Ask Us</a></li>
           <li><a href="contact.html">Contact Us</a></li>
           <li><a href="login.html">Log In</a></li>
+          <li><a href="profile.html">Profile</a></li>
           <li><a href="signup.html" class="getstarted">Register</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
@@ -429,12 +428,12 @@
                     <input name="name" type="text" class="form-control" placeholder="Your Name*" required>
                     </div>
                     <div class="col-md-6 form-group">
-                    <input name="email" type="text" class="form-control" placeholder="Your Email*" required>
+                    <input name="email" type="email" class="form-control" placeholder="Your Email*" required>
                     </div>
                 </div>
                 <div class="row">
                     <div class="col form-group">
-                    <input name="website" type="number" class="form-control" placeholder="Your Phone Number">
+                    <input name="website" type="number" class="form-control" placeholder="Your Phone Number" required>
                     </div>
                 </div>
                 <div class="row">
@@ -464,7 +463,7 @@
         <a href="index.html"><button><i class="fa-solid fa-book-bookmark"></i><p>Library</p></button></a>
         <a href="q&a.html"><button class="mobilenavselected"><i class="fa-solid fa-person-circle-question"></i><p>Q&A</p></button></a>
         <a href="chat.html"><button><i class="fa-solid fa-comments"></i><p>Ask Us</p></button></a>
-        <a href=""><button><i class="fa-solid fa-gear"></i><p>Settings</p></button></a>
+        <a href="profile.html"><button><div class="profileimagenav"><div class="profimage"><img src="assets/img/images/Portrait of a smiling beautiful woman standing alone on a yellow background.jpg" alt=""></div><i class="fa-solid fa-user"></i></div><p>Profile</p></button></a>
       </div>
 
 
@@ -534,7 +533,7 @@
     </div>
   </footer><!-- End Footer -->
   <div>
-    <button class="asqquestion Btn" >
+    <button class="asqquestion Btn asq" >
         <i class="fa-regular fa-pen-to-square" style="color: #ffffff;"></i>
         <span class="tooltip">Ask Anything</span>
     </button>

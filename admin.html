@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Kisukari - Admin</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="" rel="icon">
+  <link href="" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/library.css" rel="stylesheet">
+  <link href="assets/css/lesson.css" rel="stylesheet">
+  <link href="assets/css/admin.css" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="admindevicealert">
+        <div class="alert">
+            <i class="fa-solid fa-circle-exclamation"></i>
+            Your device is not supported! Please use a computer to access the admin panel.
+            <button onclick="back()">Go Back</button>
+        </div>
+    </div>
+  <div class="adminbody">
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center " class="headernav">
+    <div class=" d-flex align-items-center" style="padding: 0px 40px 0px 40px; justify-content: space-between; width: 100%;">
+      <div class="d-flex " style="flex-direction: row;">
+        <button class="return" onclick="back()"><i class="fa-solid fa-arrow-right fa-flip-horizontal"></i></button>
+        <h1 class="logo me-auto">Admin</h1>
+      </div>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#main">Library</a></li>
+          <li><a href="q&a.html">Q&A</a></li>
+          <li><a href="chat.html">Ask Us</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+          <li><a href="" class="getstarted">Dashboard</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+        <div class="">
+  
+          <div class="d-flex justify-content-between align-items-center" style="margin: 0px 40px 0px 40px;">
+            <h2 >Users Management Panel</h2>
+              <!-- search form-->
+            <div class="search-form">
+              <form action="">
+                <input type="text" placeholder="Search..">
+                <button type="submit"><i class="bi bi-search"></i></button>
+              </form>
+            </div>
+            <!-- End search formn-->
+          </div>
+  
+        </div>
+      </section><!-- End Breadcrumbs -->
+
+    <div class="admincontent">
+        <div class="leftbuttons">
+            <div class="buttondiv">
+                <div class="buttondivicon"><i class="fa-solid fa-user"></i></div>
+                <a href="admin.html"><button class="buttonselected"><b>Users</b></button></a>
+            </div>
+           <div class="buttondiv">
+                <div class="buttondivicon"><i class="fa-brands fa-rocketchat"></i></div>
+                <a href="adminchats.html"><button><b>Chats <span>20</span></b></button></a>
+            </div>
+            <div class="buttondiv">
+                <div class="buttondivicon"><i class="fa-solid fa-person-circle-question"></i></div>
+                <a href="adminquestions.html"><button><b>Questions <span>20</span></b></button></a>
+            </div>
+           <div class="buttondiv">
+                <div class="buttondivicon"><i class="fa-solid fa-message"></i></div>
+                <a href="adminmessages.html"><button><b>Messages <span>20</span></b></button></a>
+           </div>
+           <div class="buttondiv">
+                <div class="buttondivicon"><i class="fa-regular fa-pen-to-square"></i></div>
+                <button class="asq"><b>Compose</b></button>
+           </div>
+        </div>
+        <div class="rightdetailsuserpage">
+            <div class="admincenter">
+                <div class="userslist">
+                    <div class="headerdata">
+                        <div class="userprofileimage"></div>
+                        <div class="name"><p><b>Name:</b></p></div>
+                        <div class="email"><p><b>Email:</b></p></div>
+                        <div class="phone"><p><b>Phone:</b></p></div>
+                        <div class="age"><p><b>Age:</b></p></div>
+                        <div class="sms"><p><b></b></p></div>
+                        <div class="emailto"><p><b style="color: black;">100 </b> Users</p></div>
+                    </div>
+                    <!-- user data -->
+                    <div class="userdata">
+                        <div class="userprofileimage">
+                            <img  src="assets/img/images/Portrait of a smiling beautiful woman standing alone on a yellow background.jpg" alt="">
+                        </div>
+                        <div class="name"><p><b>Joseph Justine</b></p></div>
+                        <div class="email"><p><b>Josephjustine@gmail.com</b></p></div>
+                        <div class="phone"><p><b>+255 742 012 231</b></p></div>
+                        <div class="age"><p><b>42</b></p></div>
+                        <div class="sms" style="cursor: pointer;"><p><b>sms <i class="fa-solid fa-paper-plane"></i></b></p></div>
+                        <div class="emailto" style="cursor: pointer;"><p><b>Email <i class="fa-solid fa-paper-plane"></i></b></p></div>
+                    </div>
+                    <!-- user data -->
+                    <div class="userdata">
+                        <div class="userprofileimage">
+                            <img  src="assets/img/images/A Personalized Approach to Losing Weight While Living With Type 2 Diab.jpg" alt="">
+                        </div>
+                        <div class="name"><p><b>Peter Macaroni</b></p></div>
+                        <div class="email"><p><b>Petermacaroni@gmail.com</b></p></div>
+                        <div class="phone"><p><b>+255 746 235 001</b></p></div>
+                        <div class="age"><p><b>18</b></p></div>
+                        <div class="sms" style="cursor: pointer;"><p><b>sms <i class="fa-solid fa-paper-plane"></i></b></p></div>
+                        <div class="emailto" style="cursor: pointer;"><p><b>Email <i class="fa-solid fa-paper-plane"></i></b></p></div>
+                    </div>
+                    <!-- user data -->
+                    <div class="userdata">
+                        <div class="userprofileimage">
+                            <img  src="assets/img/images/Does Sugar Go Bad.jpg" alt="">
+                        </div>
+                        <div class="name"><p><b>Aisha Msemo</b></p></div>
+                        <div class="email"><p><b>Aishamsemo@gmail.com</b></p></div>
+                        <div class="phone"><p><b>+255 783 231 456</b></p></div>
+                        <div class="age"><p><b>72</b></p></div>
+                        <div class="sms" style="cursor: pointer;"><p><b>sms <i class="fa-solid fa-paper-plane"></i></b></p></div>
+                        <div class="emailto" style="cursor: pointer;"><p><b>Email <i class="fa-solid fa-paper-plane"></i></b></p></div>
+                    </div>
+                    <!-- user data -->
+                    <div class="userdata">
+                        <div class="userprofileimage">
+                            <img  src="assets/img/images/Email Campaign for  Urologist Email List - Opt for the Urologist Contact Lists.jpg" alt="">
+                        </div>
+                        <div class="name"><p><b>Michael Emmanuel</b></p></div>
+                        <div class="email"><p><b>Michaelemmanuel@gmail.com</b></p></div>
+                        <div class="phone"><p><b>+255 742 111 342</b></p></div>
+                        <div class="age"><p><b>65</b></p></div>
+                        <div class="sms" style="cursor: pointer;"><p><b>sms <i class="fa-solid fa-paper-plane"></i></b></p></div>
+                        <div class="emailto" style="cursor: pointer;"><p><b>Email <i class="fa-solid fa-paper-plane"></i></b></p></div>
+                    </div>
+                    <!-- user data -->
+                    <div class="userdata">
+                        <div class="userprofileimage">
+                            <img  src="assets/img/images/Free Photo _ Diet concept with female scientist and healthy food.jpg" alt="">
+                        </div>
+                        <div class="name"><p><b>Iddrisa Moses</b></p></div>
+                        <div class="email"><p><b>Iddrisamoses@yahoo.com</b></p></div>
+                        <div class="phone"><p><b>+255 747 012 444</b></p></div>
+                        <div class="age"><p><b>33</b></p></div>
+                        <div class="sms" style="cursor: pointer;"><p><b>sms <i class="fa-solid fa-paper-plane"></i></b></p></div>
+                        <div class="emailto" style="cursor: pointer;"><p><b>Email <i class="fa-solid fa-paper-plane"></i></b></p></div>
+                    </div>
+                    <!-- user data -->
+                    <div class="userdata">
+                        <div class="userprofileimage">
+                            <img  src="assets/img/images/Nitrile powder-free examination gloves!.jpg" alt="">
+                        </div>
+                        <div class="name"><p><b>Mussa Issa</b></p></div>
+                        <div class="email"><p><b>Mussaissa@gmail.com</b></p></div>
+                        <div class="phone"><p><b>+255 762 652 998</b></p></div>
+                        <div class="age"><p><b>19</b></p></div>
+                        <div class="sms" style="cursor: pointer;"><p><b>sms <i class="fa-solid fa-paper-plane"></i></b></p></div>
+                        <div class="emailto" style="cursor: pointer;"><p><b>Email <i class="fa-solid fa-paper-plane"></i></b></p></div>
+                    </div>
+                    <!-- user data -->
+                    <div class="userdata">
+                        <div class="userprofileimage">
+                            <img  src="assets/img/images/Infusion Therapy.jpg" alt="">
+                        </div>
+                        <div class="name"><p><b>Veronica Spaghetti</b></p></div>
+                        <div class="email"><p><b>Veronicaspaghetti@gmail.com</b></p></div>
+                        <div class="phone"><p><b>+255 782 112 00</b></p></div>
+                        <div class="age"><p><b>22</b></p></div>
+                        <div class="sms" style="cursor: pointer;"><p><b>sms <i class="fa-solid fa-paper-plane"></i></b></p></div>
+                        <div class="emailto" style="cursor: pointer;"><p><b>Email <i class="fa-solid fa-paper-plane"></i></b></p></div>
+                    </div>
+                    <!-- user data -->
+                    <div class="userdata">
+                        <div class="userprofileimage">
+                            <img  src="assets/img/images/Physical Symptoms of Anxiety.jpg" alt="">
+                        </div>
+                        <div class="name"><p><b>Joseph Justine</b></p></div>
+                        <div class="email"><p><b>Josephjustine@gmail.com</b></p></div>
+                        <div class="phone"><p><b>+255 742 012 231</b></p></div>
+                        <div class="age"><p><b>42</b></p></div>
+                        <div class="sms" style="cursor: pointer;"><p><b>sms <i class="fa-solid fa-paper-plane"></i></b></p></div>
+                        <div class="emailto" style="cursor: pointer;"><p><b>Email <i class="fa-solid fa-paper-plane"></i></b></p></div>
+                    </div>
+                    <!-- user data -->
+                    <div class="userdata">
+                        <div class="userprofileimage">
+                            <img  src="assets/img/images/Premium Photo _ Blister of pills capsiles and stethoscope isolated on blue background.jpg" alt="">
+                        </div>
+                        <div class="name"><p><b>Joseph Justine</b></p></div>
+                        <div class="email"><p><b>Josephjustine@gmail.com</b></p></div>
+                        <div class="phone"><p><b>+255 742 012 231</b></p></div>
+                        <div class="age"><p><b>42</b></p></div>
+                        <div class="sms" style="cursor: pointer;"><p><b>sms <i class="fa-solid fa-paper-plane"></i></b></p></div>
+                        <div class="emailto" style="cursor: pointer;"><p><b>Email <i class="fa-solid fa-paper-plane"></i></b></p></div>
+                    </div>
+                    <!-- user data -->
+                    <div class="userdata">
+                        <div class="userprofileimage">
+                            <img  src="assets/img/images/Promoting the best visual artists.jpg" alt="">
+                        </div>
+                        <div class="name"><p><b>Peter Macaroni</b></p></div>
+                        <div class="email"><p><b>Petermacaroni@gmail.com</b></p></div>
+                        <div class="phone"><p><b>+255 746 235 001</b></p></div>
+                        <div class="age"><p><b>18</b></p></div>
+                        <div class="sms" style="cursor: pointer;"><p><b>sms <i class="fa-solid fa-paper-plane"></i></b></p></div>
+                        <div class="emailto" style="cursor: pointer;"><p><b>Email <i class="fa-solid fa-paper-plane"></i></b></p></div>
+                    </div>
+                    <!-- user data -->
+                    <div class="userdata">
+                        <div class="userprofileimage">
+                            <img  src="assets/img/images/Saturatiemeter Kopen_ _ SpO2 Meten.jpg" alt="">
+                        </div>
+                        <div class="name"><p><b>Aisha Msemo</b></p></div>
+                        <div class="email"><p><b>Aishamsemo@gmail.com</b></p></div>
+                        <div class="phone"><p><b>+255 783 231 456</b></p></div>
+                        <div class="age"><p><b>72</b></p></div>
+                        <div class="sms" style="cursor: pointer;"><p><b>sms <i class="fa-solid fa-paper-plane"></i></b></p></div>
+                        <div class="emailto" style="cursor: pointer;"><p><b>Email <i class="fa-solid fa-paper-plane"></i></b></p></div>
+                    </div>
+                    <!-- user data -->
+                    <div class="userdata">
+                        <div class="userprofileimage">
+                            <img  src="assets/img/images/Skin.jpg" alt="">
+                        </div>
+                        <div class="name"><p><b>Michael Emmanuel</b></p></div>
+                        <div class="email"><p><b>Michaelemmanuel@gmail.com</b></p></div>
+                        <div class="phone"><p><b>+255 742 111 342</b></p></div>
+                        <div class="age"><p><b>65</b></p></div>
+                        <div class="sms" style="cursor: pointer;"><p><b>sms <i class="fa-solid fa-paper-plane"></i></b></p></div>
+                        <div class="emailto" style="cursor: pointer;"><p><b>Email <i class="fa-solid fa-paper-plane"></i></b></p></div>
+                    </div>
+                    <!-- user data -->
+                    <div class="userdata">
+                        <div class="userprofileimage">
+                            <img  src="assets/img/images/Sugar Role in Macarons.jpg" alt="">
+                        </div>
+                        <div class="name"><p><b>Iddrisa Moses</b></p></div>
+                        <div class="email"><p><b>Iddrisamoses@yahoo.com</b></p></div>
+                        <div class="phone"><p><b>+255 747 012 444</b></p></div>
+                        <div class="age"><p><b>33</b></p></div>
+                        <div class="sms" style="cursor: pointer;"><p><b>sms <i class="fa-solid fa-paper-plane"></i></b></p></div>
+                        <div class="emailto" style="cursor: pointer;"><p><b>Email <i class="fa-solid fa-paper-plane"></i></b></p></div>
+                    </div>
+                    <!-- user data -->
+                    <div class="userdata">
+                        <div class="userprofileimage">
+                            <img  src="assets/img/images/The Difference Between Types of Sugar _ My Baking Addiction.jpg" alt="">
+                        </div>
+                        <div class="name"><p><b>Mussa Issa</b></p></div>
+                        <div class="email"><p><b>Mussaissa@gmail.com</b></p></div>
+                        <div class="phone"><p><b>+255 762 652 998</b></p></div>
+                        <div class="age"><p><b>19</b></p></div>
+                        <div class="sms" style="cursor: pointer;"><p><b>sms <i class="fa-solid fa-paper-plane"></i></b></p></div>
+                        <div class="emailto" style="cursor: pointer;"><p><b>Email <i class="fa-solid fa-paper-plane"></i></b></p></div>
+                    </div>
+                    <!-- user data -->
+                    <div class="userdata">
+                        <div class="userprofileimage">
+                            <img  src="assets/img/images/Wallpaper Reminder.jpg" alt="">
+                        </div>
+                        <div class="name"><p><b>Veronica Spaghetti</b></p></div>
+                        <div class="email"><p><b>Veronicaspaghetti@gmail.com</b></p></div>
+                        <div class="phone"><p><b>+255 782 112 00</b></p></div>
+                        <div class="age"><p><b>22</b></p></div>
+                        <div class="sms" style="cursor: pointer;"><p><b>sms <i class="fa-solid fa-paper-plane"></i></b></p></div>
+                        <div class="emailto" style="cursor: pointer;"><p><b>Email <i class="fa-solid fa-paper-plane"></i></b></p></div>
+                    </div>
+                    <!-- user data -->
+                    <div class="userdata">
+                        <div class="userprofileimage">
+                            <img  src="assets/img/images/Skin.jpg" alt="">
+                        </div>
+                        <div class="name"><p><b>Michael Emmanuel</b></p></div>
+                        <div class="email"><p><b>Michaelemmanuel@gmail.com</b></p></div>
+                        <div class="phone"><p><b>+255 742 111 342</b></p></div>
+                        <div class="age"><p><b>65</b></p></div>
+                        <div class="sms" style="cursor: pointer;"><p><b>sms <i class="fa-solid fa-paper-plane"></i></b></p></div>
+                        <div class="emailto" style="cursor: pointer;"><p><b>Email <i class="fa-solid fa-paper-plane"></i></b></p></div>
+                    </div>
+                    <!-- user data -->
+                    <div class="userdata">
+                        <div class="userprofileimage">
+                            <img  src="assets/img/images/Sugar Role in Macarons.jpg" alt="">
+                        </div>
+                        <div class="name"><p><b>Iddrisa Moses</b></p></div>
+                        <div class="email"><p><b>Iddrisamoses@yahoo.com</b></p></div>
+                        <div class="phone"><p><b>+255 747 012 444</b></p></div>
+                        <div class="age"><p><b>33</b></p></div>
+                        <div class="sms" style="cursor: pointer;"><p><b>sms <i class="fa-solid fa-paper-plane"></i></b></p></div>
+                        <div class="emailto" style="cursor: pointer;"><p><b>Email <i class="fa-solid fa-paper-plane"></i></b></p></div>
+                    </div>
+                    <!-- user data -->
+                    <div class="userdata">
+                        <div class="userprofileimage">
+                            <img  src="assets/img/images/The Difference Between Types of Sugar _ My Baking Addiction.jpg" alt="">
+                        </div>
+                        <div class="name"><p><b>Mussa Issa</b></p></div>
+                        <div class="email"><p><b>Mussaissa@gmail.com</b></p></div>
+                        <div class="phone"><p><b>+255 762 652 998</b></p></div>
+                        <div class="age"><p><b>19</b></p></div>
+                        <div class="sms" style="cursor: pointer;"><p><b>sms <i class="fa-solid fa-paper-plane"></i></b></p></div>
+                        <div class="emailto" style="cursor: pointer;"><p><b>Email <i class="fa-solid fa-paper-plane"></i></b></p></div>
+                    </div>
+                    <!-- user data -->
+                    <div class="userdata">
+                        <div class="userprofileimage">
+                            <img  src="assets/img/images/Wallpaper Reminder.jpg" alt="">
+                        </div>
+                        <div class="name"><p><b>Veronica Spaghetti</b></p></div>
+                        <div class="email"><p><b>Veronicaspaghetti@gmail.com</b></p></div>
+                        <div class="phone"><p><b>+255 782 112 00</b></p></div>
+                        <div class="age"><p><b>22</b></p></div>
+                        <div class="sms" style="cursor: pointer;"><p><b>sms <i class="fa-solid fa-paper-plane"></i></b></p></div>
+                        <div class="emailto" style="cursor: pointer;"><p><b>Email <i class="fa-solid fa-paper-plane"></i></b></p></div>
+                    </div>
+                </div>
+            </div>
+            
+        <div class="asqformdiv">
+            <div class="asqclosediv"></div>
+            <div class="reply-form">
+                <span class="closetag"><b>&#x2715;</b></span>
+                <h4>Compose Text</h4>
+                <p>Input Either Phone Number Or Email, Or Both</p>
+                <form action="">
+                <div class="row">
+                    <div class="col-md-6 form-group">
+                    <input name="name" type="number" class="form-control" placeholder="User Number">
+                    </div>
+                    <div class="col-md-6 form-group">
+                    <input name="email" type="email" class="form-control" placeholder="User Email">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col form-group">
+                    <textarea name="comment" class="form-control" cols="10" rows="4" placeholder="Context*" required></textarea>
+                    </div>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+
+                </form>
+
+            </div>
+          </div>
+        </div>
+    </div>
+
+
+
+
+    
+
+
+  </main><!-- End #main -->
+
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  
+
+  </div>
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
