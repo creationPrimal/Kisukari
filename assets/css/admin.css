@@ -1,0 +1,279 @@
+
+
+.admincontent{
+    display: flex;
+    flex-direction: row;
+    margin-top: 0px;
+    height: 100%;
+    width: 100%;
+}
+.leftbuttons{
+    display: flex;
+    flex-direction: column;
+    width: 15%;
+    min-width: 200px;
+    height: auto;
+    padding: 20px 10px 20px 10px ;
+    margin-left: 20px;
+}
+.buttondiv{
+    display: flex;
+    flex-direction: row;
+}
+.buttondivicon{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    width: 50px;
+    font-size: 20px;
+}
+.leftbuttons button{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+    border: none;
+    background-color: rgba(0, 183, 255, 0);
+    border-radius: 4px;
+    height: 35px;
+    width: 100%;
+}
+.buttonselected{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+    border: none;
+    background-color: rgb(204, 51, 51) !important;
+    color: white;
+    border-radius: 4px;
+    height: 35px;
+    width: 100%;
+}
+.leftbuttons button:hover{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    margin-bottom: 10px;
+    border: none;
+    background-color: rgb(204, 51, 51);
+    color: white;
+    border-radius: 4px;
+    height: 35px;
+    width: 100%;
+}
+.rightdetails{
+    margin-left: 10px;
+    padding: 20px 20px 20px 0px;
+    width: 85%;
+}
+.rightdetailsuserpage{
+    margin-left: 10px;
+    padding: 20px 20px 20px 0px;
+    width: 85%;
+}
+.admincenter{
+    display: flex;
+    flex-direction: column;
+    background-color: rgba(128, 128, 128, 0.122);
+    border-radius: 10px;
+    width: 100%;
+    height: 100vh;
+    overflow-y: scroll;
+}
+.buttondiv span{
+    font-size: 14px;
+}
+.buttondiv a{
+    width: 100% !important;
+}
+.userslist{
+    display: flex;
+    flex-direction: column;
+    width: 1040px;
+    padding: 10px;
+}
+.headerdata{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 35px;
+    margin-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: rgba(255, 255, 255, 0);
+    border-radius: 5px;
+}
+.userdata{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 35px;
+    margin-bottom: 3px;
+    padding-left: 5px;
+    padding-right: 5px;
+    border: 1px solid rgba(0, 0, 0, 0);
+    background-color: white;
+    border-radius: 5px;
+}
+.userdata:nth-child(even){
+    background-color: #f9f9f9b9;
+}
+.userdata:hover{
+    background-color: black;
+    color: white;
+}
+.userdata p{
+    margin: 0px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+.headerdata p{
+    margin: 0px;
+    white-space: nowrap;
+}
+.userprofileimage{
+    width: 25px;
+    height: 25px;
+    max-width: 25px;
+    max-height: 25px;
+    border-radius: 50%;
+    margin-right: 10px;
+    overflow: hidden;
+    z-index: 1;
+}
+.userprofileimage img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.name{
+    width: 230px;
+    overflow: hidden;
+}
+.email{
+    width: 300px;
+    overflow: hidden;
+}
+.phone{
+    width: 150px;
+    overflow: hidden;
+}
+.age{
+    width: 50px;
+    overflow: hidden;
+}
+.sms{
+    width: 80px;
+    overflow: hidden;
+    color: rgb(0, 175, 0);
+}
+.emailto{
+    width: 80px;
+    overflow: hidden;
+    color: blue;
+}
+.admindevicealert{
+    display: none;
+}
+.adminchat{
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    margin: 10px;
+    padding: 10px;
+    background-color: rgb(255, 255, 255);
+}
+.sent{
+    margin: 0px;
+    padding: 10px;
+    width: auto;
+    border-radius: 10px;
+    background-color: rgba(189, 255, 252, 0.473);
+}
+.adminresponcediv textarea{
+    width: 100%;
+    outline: none;
+    border-radius: 6px;
+    border-color: rgba(0, 0, 255, 0.356);
+}
+.adminresponcediv button{
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgb(0, 207, 0);
+}
+.adminresponcediv button:hover{
+    border: none;
+    border-radius: 5px;
+    color: white;
+    background-color: rgba(0, 0, 255, 0.356);
+}
+.adminchat span{
+    color: rgba(0, 0, 255, 0.842);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 764px) {
+    .adminbody{
+        display: none;
+    }
+    .admindevicealert{
+        display: flex;
+        position: fixed;
+        justify-content: center;
+        align-items: center;
+        top: 0px;
+        left: 0px;
+        right: 0px;
+        bottom: 0px;
+        z-index: 999;
+        background-color: rgba(0, 0, 0, 0.767);
+    }
+    .alert{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        height: 300px;
+        width: 300px;
+        text-align: center;
+        background-color: white;
+    }
+    .alert i{
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    .alert button{
+        margin-top: 20px;
+        border: none;
+        border-radius: 3px;
+        font-size: 14px;
+        background-color: rgb(124, 207, 255);
+    }
+}
+
+
+
+
+

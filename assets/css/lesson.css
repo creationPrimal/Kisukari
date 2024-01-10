@@ -199,6 +199,21 @@
 .form-group i{
     margin-left: 10px;
 }
+.lessontitle button{
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+  margin-left: 20px;
+  padding: 0px;
+  height: auto;
+}
+.lessontitle i{
+  font-size: 20px;
+}
+.lessontitle i:hover{
+  color: #d9232d;
+}
 
 
 
@@ -297,16 +312,18 @@
       }
       .sendertext p{
         background-color: #e2f1f8;
-        padding: 10px 20px 10px 20px;
+        padding: 10px 20px 10px 10px;
         max-width: 90%;
+        font-size: 15px;
         align-self: flex-end;
         border-radius: 10px;
     
     }
     .repliedtext p{
         background-color: #f0f0f0;
-        padding: 10px 20px 10px 20px;
+        padding: 10px 20px 10px 6px;
         max-width: 90%;
+        font-size: 15px;
         align-self: flex-start;
         border-radius: 10px;
     }
@@ -328,6 +345,9 @@
         background-color: blue;
         color: white;
         border-radius: 0px 5px 5px 0px;
+    }
+    .lessontitle i{
+      font-size: 16px;
     }
  }
 
