@@ -1085,14 +1085,14 @@
   color: var(--text-color-light);
   background-color: var(--bg-color-light) ;
 }
-.navbar a, .breadcrumbs, .librarytopictitle p, .entry-title, .lessondetails p, .comment h5, .info p, .changecode, .lessontitle i {
+.navbar a, .breadcrumbs, .entry-title, .lessondetails p,  .changecode, .lessontitle i, .navbar {
   color: var(--text-color-light) !important;
   background-color: var(--bg-color-light) ;
 }
 .lessondetailsdiv p, .lessondetailsdiv h4{
   color: var(--text-color-light) !important;
 }
-#header .logo a{
+#header .logo a, .navbar-mobile ul{
   color: var(--text-color-light);
   background-color: var(--bg-color-light) ;
 }

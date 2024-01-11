@@ -267,7 +267,7 @@ h6 {
   right: 0;
   left: 0;
   bottom: 0;
-  background: rgba(63, 73, 83, 0.9);
+  background: rgba(63, 73, 83, 0.9) !important;
   transition: 0.3s;
   z-index: 999;
 }
@@ -286,7 +286,7 @@ h6 {
   bottom: 15px;
   left: 15px;
   padding: 10px 0;
-  background-color: #fff;
+  background-color: #fff ;
   overflow-y: auto;
   transition: 0.3s;
 }
