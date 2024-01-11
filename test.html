@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Multiple Owl Carousels</title>
+    <style>
+.container {
+  padding: 20px;
+  background-color: #ff0000;
+}
+
+.text:empty {
+  display: none; /* Hide the empty paragraphs */
+}
+    </style>
+
+
+  </head>
+  <body>
+    <div class="container">
+      <p class="text">Some text here</p>
+      <p class="text"></p>
+    </div>
+
+
+
+
+
+
+    <script>
+    document.addEventListener('DOMContentLoaded', function() {
+  const emptyParagraphs = document.querySelectorAll('.text:empty');
+  emptyParagraphs.forEach(paragraph => {
+    paragraph.parentElement.style.backgroundColor = 'transparent';
+    // Adjust other styling as needed
+  });
+});
+    </script>
+  </body>
+</html>
