@@ -150,7 +150,7 @@ h6 {
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: #d9232d;
+  color: #d9232d !important;
 }
 
 .navbar .getstarted,
@@ -160,12 +160,12 @@ h6 {
   margin-left: 30px;
   border-radius: 4px;
   font-weight: 400;
-  color: #fff;
+  color: #fff !important;
 }
 
 .navbar .getstarted:hover,
 .navbar .getstarted:focus:hover {
-  color: #fff;
+  color: #fff !important;
   background: #e1444d;
 }
 
@@ -867,7 +867,6 @@ section {
 --------------------------------------------------------------*/
 .contact .info {
   width: 100%;
-  background: #fff;
 }
 
 .contact .info i {
@@ -913,7 +912,6 @@ section {
 
 .contact .php-email-form {
   width: 100%;
-  background: #fff;
 }
 
 .contact .php-email-form .form-group {
@@ -963,6 +961,7 @@ section {
 
 .contact .php-email-form input,
 .contact .php-email-form textarea {
+  background-color: transparent;
   border-radius: 0;
   box-shadow: none;
   font-size: 14px;

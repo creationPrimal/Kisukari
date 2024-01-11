@@ -1059,3 +1059,70 @@
 
 
 
+
+
+
+
+
+
+
+
+
+  /*dark mode*/
+  /* implementing dark mode*/
+:root {
+  --text-color-light: black;
+  --text-color-grey: #556270;
+  --text-color-productbackground: rgba(0, 0, 0, 0);
+  --bg-color-light: white;
+  --bg-color-filter: rgba(128, 128, 128, 0.226);
+  --bg-color-filterbutton: rgba(128, 128, 128, 0.226);
+  --bg-color-filterbuttonborder: rgba(0, 0, 0, 0.349);
+  --text-color-dark: white;
+  --bg-color-dark: #333;
+}
+#header{
+  color: var(--text-color-light);
+  background-color: var(--bg-color-light) ;
+}
+.navbar a, .breadcrumbs, .librarytopictitle p, .entry-title, .lessondetails p, .comment h5, .info p, .changecode, .lessontitle i {
+  color: var(--text-color-light) !important;
+  background-color: var(--bg-color-light) ;
+}
+.lessondetailsdiv p, .lessondetailsdiv h4{
+  color: var(--text-color-light) !important;
+}
+#header .logo a{
+  color: var(--text-color-light);
+  background-color: var(--bg-color-light) ;
+}
+.search-form input, .php-email-form input{
+  color: var(--text-color-light) !important;
+  background-color: var(--bg-color-light) ;
+}
+
+body {
+  color: var(--text-color-light);
+  background-color: var(--bg-color-light) ;
+  transition: color 0.3s, background-color 0.3s;
+}
+
+
+
+
+
+
+.dark-mode {
+  --text-color-light: white;
+  --text-color-grey: white;
+  --text-color-orange: white;
+  --text-color-productbackground: rgba(0, 0, 0, 0.76);
+  --bg-color-filter: rgba(128, 125, 125, 0.801);
+  --bg-color-filterbutton: rgba(128, 125, 125, 0.801);
+  --bg-color-filterbuttonborder: rgba(228, 228, 228, 0.5);
+  --bg-color-light: #333;
+  --text-color-dark: black;
+  --bg-color-dark: white;
+}
+
+
