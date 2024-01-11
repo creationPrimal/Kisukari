@@ -35,7 +35,7 @@ const firstsplide = new Splide( '#first-splide', {
       },
       480: {
         perPage: 2,
-        padding: { left: 0, right: 20 },
+        padding: { left: 0, right: 5 },
       },
       450: {
       perPage: 2,
@@ -105,9 +105,9 @@ const secondsplide = new Splide( '#second-splide', {
         perPage: 2,
         padding: { left: 0, right: 40 },
       },
-      480: {
+       480: {
         perPage: 2,
-        padding: { left: 0, right: 20 },
+        padding: { left: 0, right: 5 },
       },
       450: {
       perPage: 2,
@@ -177,9 +177,9 @@ const thirdsplide = new Splide( '#third-splide', {
         perPage: 2,
         padding: { left: 0, right: 40 },
       },
-      480: {
+       480: {
         perPage: 2,
-        padding: { left: 0, right: 20 },
+        padding: { left: 0, right: 5 },
       },
       450: {
       perPage: 2,
@@ -249,9 +249,9 @@ const fourthsplide = new Splide( '#fourth-splide', {
         perPage: 2,
         padding: { left: 0, right: 40 },
       },
-      480: {
+       480: {
         perPage: 2,
-        padding: { left: 0, right: 20 },
+        padding: { left: 0, right: 5 },
       },
       450: {
       perPage: 2,
@@ -286,6 +286,5 @@ const fourthsplide = new Splide( '#fourth-splide', {
     },
     } );
     fourthsplide.mount()
-
 
 

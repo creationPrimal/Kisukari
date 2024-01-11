@@ -102,7 +102,7 @@
 
 //showing form to asq questions
 
-const asq = document.querySelector('.asqquestion');
+const asq = document.querySelector('.asq');
 const asqformdiv = document.querySelector('.asqformdiv');
 const closetag = document.querySelector('.closetag');
 const asqclosediv = document.querySelector('.asqclosediv');
@@ -165,6 +165,7 @@ document.addEventListener('DOMContentLoaded', function() {
     // Adjust other styling as needed
   });
 });
+
 
 
 //password visibility
