@@ -104,8 +104,8 @@
 
 const asq = document.querySelector('.asq');
 const asqformdiv = document.querySelector('.asqformdiv');
-const closetag = document.querySelector('.closetag');
-const asqclosediv = document.querySelector('.asqclosediv');
+const closetag = document.querySelector('.questionclose');
+const asqclosediv = document.querySelector('.questiondivclose');
 
 asq.addEventListener("click", ()=>{
   asqformdiv.style.display = 'flex'
@@ -192,9 +192,78 @@ function hidepassword() {
   }
 };
 
+//loading more comments
+document.addEventListener('DOMContentLoaded', function() {
+  const commentSections = document.querySelectorAll('.commentlist');
 
+  commentSections.forEach(commentSection => {
+    const items = commentSection.querySelectorAll('.commentitem');
+    const loadMoreBtn = commentSection.querySelector('.commentviewmore');
+    const itemsPerPage = 6; // Number of items to show per click
+    let visibleItems = itemsPerPage;
 
+    function showItems() {
+      for (let i = 0; i < visibleItems; i++) {
+        if (items[i]) {
+          items[i].style.display = 'flex';
+        }
+      }
 
+      if (visibleItems >= items.length) {
+        loadMoreBtn.style.display = 'none';
+      }
+    }
+
+    showItems();
+
+    loadMoreBtn.addEventListener('click', function() {
+      visibleItems += itemsPerPage;
+      showItems();
+    });
+  });
+});
+
+//opening comments section
+
+const viewcommentsButtons = document.querySelectorAll('.viewcomments');
+
+// Loop through each button
+viewcommentsButtons.forEach(viewcommentsButton => {
+    // Find the corresponding elements within the same comment section
+    const commentlist = viewcommentsButton.closest('.comment').querySelector('.commentlist');
+
+    // Add event listeners for each button
+    viewcommentsButton.addEventListener("click", () => {
+        if (commentlist.style.display === 'flex') {
+            commentlist.style.display = 'none';
+        } else {
+            commentlist.style.display = 'flex';
+        }
+    });
+});
+
+//adding comment
+const addcommentButtons = document.querySelectorAll('.addcomment');
+
+// Loop through each button
+addcommentButtons.forEach(addcommentButton => {
+    // Find the corresponding elements within the same comment section
+    const commentformdiv = addcommentButton.closest('.comment').querySelector('.commentformdiv');
+    const commentclose = commentformdiv.querySelector('.commentclose');
+    const commentclosediv = commentformdiv.querySelector('.commentclosediv');
+
+    // Add event listeners for each button
+    addcommentButton.addEventListener("click", () => {
+        commentformdiv.style.display = 'flex';
+    });
+
+    commentclose.addEventListener("click", () => {
+        commentformdiv.style.display = 'none';
+    });
+    commentclosediv.addEventListener("click", ()=>{
+      commentformdiv.style.display = 'none'
+    })
+});
 
 
 
