@@ -10,10 +10,36 @@
     overflow: hidden;
     background-color: grey;
  }
+ .autherimage i{
+  position: absolute;
+  margin-top: 80px;
+  margin-left: 95px;
+  font-size: 30px;
+ }
  .autherimage img{
     height: 100%;
     width: 100%;
     object-fit: cover;
+ }
+ .authorprofileimage{
+  height: 200px;
+  width: 200px;
+  min-width: 200px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-top: 30px;
+  background-color: grey;
+}
+.authorprofileimage img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.authorprofileimage i{
+  position: absolute;
+  margin-top: 145px;
+  margin-left: 160px;
+  font-size: 40px;
  }
  .autherdetail{
     display: flex;
@@ -22,11 +48,41 @@
     align-items: flex-start;
     margin: 0px 0px 20px 0px;
  }
+ .authorprofiledetail{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    margin: 0px 0px 20px 0px;
+ }
+ .authorprofiledetails{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
  .autherdetails{
     display: flex;
     flex-direction: column;
     margin: 0px 0px 10px 20px;
  }
+ .userdetails{
+  display: flex;
+  flex-direction: column;
+  margin: 0px 0px 10px 0px;
+}
+.userdetail{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 6px;
+  justify-content: space-between;
+}
+.userdetails p{
+  margin: 0px 0px 0px 0px;
+  line-height: 1.2;
+  font-size: 15px;
+}
  .det1{
   width: 80px;
   margin-right: 10px;
@@ -303,7 +359,35 @@ input:checked + .slider:before {
   box-shadow: inset 15px -4px 0px 15px gold;
 }
 
+.autherdetails a{
+  color: black ;
+}
+.autherdetails a:hover{
+  color: blue ;
+}
 
+
+/*authors profile*/
+.authorquote{
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+}
+.quoteicon{
+  height: 50px;
+  width: 50px;
+  overflow: hidden;
+}
+.quoteicon img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.listdetails h4{
+  font-family: 'Roboto', sans-serif;
+
+}
 
 
 
@@ -339,6 +423,16 @@ input:checked + .slider:before {
         line-height: 1.2;
         font-size: 13px;
      }
+     .quoteicon{
+      height: 30px;
+      width: 30px;
+      overflow: hidden;
+    }
+     .userdetails p{
+      margin: 0px 0px 0px 0px;
+      line-height: 1.2;
+      font-size: 13px;
+    }
      .lessontitle{
         font-weight: bold;
         margin-top: 0px;
@@ -455,6 +549,12 @@ input:checked + .slider:before {
         margin-right: 0px;
         overflow: hidden;
         background-color: grey;
+     }
+     .autherimage i{
+      position: absolute;
+      margin-top: 60px;
+      margin-left: 70px;
+      font-size: 25px;
      }
      .autherdetails{
         display: flex;
