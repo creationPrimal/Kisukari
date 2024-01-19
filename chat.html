@@ -84,10 +84,12 @@
                 <div class="sendertext">
                   <span class="" style="cursor: pointer;"><b>&#x2715;</b></span>
                     <p >Hello There,</p>
+                    <img class="sendersimage" src="assets/img/images/Modern dietologist african woman rec.jpg" alt="">
                     <span>Jan 12, 2024 <i class="fa-solid fa-check-double" style="color: green;"></i></span>
                 </div>
                 <div class="repliedtext">
                     <p class="text">Hello. How Can I help You Today?</p>
+                    <img class="replyimage" src="" alt="">
                 </div>
               </div>
               <!--end text-->
@@ -102,6 +104,7 @@
                     <p class="text">Yes, First take out an egg, Sufuria, Water, <br>
                          Then Put the water in sufuria and light up fire or stove and put an egg <br>
                           in the boiling waterfor almost 10 Minutes then Take it off. ENJOY</p>
+                      <img class="replyimage" src="assets/img/images/Portrait of a smiling beautiful woman standing alone on a yellow background.jpg" alt="">
                 </div>
               </div>
               <!--end text-->
@@ -152,7 +155,14 @@
             
             <form action="">
                 <div class="asqinput">
-                    <input type="text" placeholder="Type Your Question Here..">
+                    <input type="text" placeholder="Type Your Question Here.." name="question">
+                    <div class="imageinputpreview">
+                      <img class="image-preview" id="imagePreview" alt="Image Preview" />
+                    </div>
+                    <label class="custom-file-input">
+                      <span class="button-text"><i class="fa-regular fa-image"></i></span>
+                      <input type="file" class="file-input" onchange="displayImagePreview()" name="image"/>
+                    </label>
                     <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
                 </div>
             </form>
