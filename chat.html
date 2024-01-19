@@ -84,12 +84,12 @@
                 <div class="sendertext">
                   <span class="" style="cursor: pointer;"><b>&#x2715;</b></span>
                     <p >Hello There,</p>
-                    <img class="sendersimage" src="assets/img/images/Modern dietologist african woman rec.jpg" alt="">
+                    <img class="sendersimage imageToClick" src="assets/img/images/Modern dietologist african woman rec.jpg" alt="">
                     <span>Jan 12, 2024 <i class="fa-solid fa-check-double" style="color: green;"></i></span>
                 </div>
                 <div class="repliedtext">
                     <p class="text">Hello. How Can I help You Today?</p>
-                    <img class="replyimage" src="" alt="">
+                    <img class="replyimage imageToClick"  src="" alt="">
                 </div>
               </div>
               <!--end text-->
@@ -104,7 +104,7 @@
                     <p class="text">Yes, First take out an egg, Sufuria, Water, <br>
                          Then Put the water in sufuria and light up fire or stove and put an egg <br>
                           in the boiling waterfor almost 10 Minutes then Take it off. ENJOY</p>
-                      <img class="replyimage" src="assets/img/images/Portrait of a smiling beautiful woman standing alone on a yellow background.jpg" alt="">
+                      <img class="replyimage imageToClick" src="assets/img/images/Portrait of a smiling beautiful woman standing alone on a yellow background.jpg" alt="">
                 </div>
               </div>
               <!--end text-->
@@ -166,6 +166,9 @@
                     <button type="submit"><i class="fa-solid fa-paper-plane"></i></button>
                 </div>
             </form>
+            <div class="imagemodal" id="imageModal">
+              <img src="" alt="Modal Image" id="modalImage">
+            </div>
 
           </div><!-- End blog entries list -->
 
@@ -190,7 +193,10 @@
 
   </main><!-- End #main -->
 
-  
+  <!--loader-->
+  <div class="loadingdiv" id="loadingdiv">
+    <div class="loader">Kisukari.</div>
+  </div>
  
 
   <!-- Vendor JS Files -->
@@ -203,6 +209,8 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/more.js"></script>
+  <script src="assets/js/loader.js"></script>
 
 </body>
 
