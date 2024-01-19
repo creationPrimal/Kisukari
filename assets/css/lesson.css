@@ -75,8 +75,13 @@
   flex-direction: row;
   flex-wrap: wrap;
   width: 100%;
-  margin-bottom: 6px;
+  margin-bottom: 0px;
+  padding: 10px 3px 10px 2px;
   justify-content: space-between;
+}
+.userdetail:nth-child(odd){
+  background-color: rgba(178, 231, 255, 0.253);
+
 }
 .userdetails p{
   margin: 0px 0px 0px 0px;
