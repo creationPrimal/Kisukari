@@ -620,6 +620,125 @@
 .form-group em{
   color: red;
 }
+.notification{
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  height: 40px;
+  width: 45px;
+  margin-right: 7px;
+  margin-left: 10px;
+  background-color: transparent;
+}
+.fa-bell{
+  font-size: 20px;
+}
+.notificationcounter{
+  position: absolute;
+  margin-left: 23px;
+  height: 20px;
+  width: auto;
+  font-size: 12px;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: 2;
+  color: red;
+  background-color: transparent;
+  border-radius: 50%;
+}
+.notificationdiv{
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.8);
+  justify-content: flex-end;
+  align-items: flex-start;
+  z-index: 10;
+}
+.closenotify{
+  height: 100%;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0);
+}
+.notificationsection{
+  display: flex;
+  flex-direction: column;
+  width: 350px;
+  min-width: 350px;
+  height: 100%;
+  overflow-y: scroll;
+  margin-top: 70px;
+  padding: 15px 5px 65px 5px;
+  background-color: white;
+}
+.notificationsection a{
+  color: black;
+}
+.notificationbox{
+  display: flex;
+  flex-direction: row;
+  background-color: rgba(128, 128, 128, 0.089);
+  border-radius: 0px;
+  padding-right: 4px;
+  margin-bottom: 15px;
+  border: 1px solid rgba(0, 0, 0, 0.021);
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+.notificationbox:nth-child(even){
+  background-color: rgba(255, 247, 222, 0.767);
+}
+.notificationbox:nth-child(odd){
+  background-color: rgba(227, 255, 255, 0.377);
+}
+.sideline{
+  height: auto;
+  width: 8px;
+  min-width: 8px;
+  margin-right: 5px;
+  background-color: rgb(255, 187, 0);
+}
+.notificationbox:nth-child(odd) .sideline {
+  background-color: rgb(162, 224, 245);
+}
+.notificationhead p{
+  line-height: 18px;
+  margin-bottom: 3px;
+  margin-top: 4px;
+
+}
+.notifydetails{
+  font-size: 14px;
+  line-height: 18px;
+  margin-top: 0px;
+  margin-bottom: 5px;
+}
+.notificationhead b{
+  font-size: 15px;
+  line-height: 10px;
+}
+.notificationhead em{
+  font-size: 12px;
+}
+.notificationsection::-webkit-scrollbar {
+  width: 2px; /* Set the width of the scrollbar track */
+}
+
+.notificationsection::-webkit-scrollbar-thumb {
+  background-color: gold; /* Set the color of the scrollbar thumb */
+  border-radius: 5px; /* Optional: add rounded corners to the thumb */
+}
+
+.notificationsection::-webkit-scrollbar-track {
+  background-color: #f0f0f0; /* Set the color of the scrollbar track */
+}
+
 
 
 
@@ -643,6 +762,26 @@
 
 
 @media (max-width: 764px) {
+  .homelogo{
+    font-size: 22px !important;
+  }
+  .mobilehomeheader{
+    background: white;
+    transition: all 0.5s;
+    z-index: 997;
+    padding: 10px 0 !important;
+  }
+  .notificationsection{
+    display: flex;
+    flex-direction: column;
+    width: 350px;
+    min-width: 350px;
+    height: 100%;
+    overflow-y: scroll;
+    margin-top: 60px;
+    padding: 15px 5px 100px 5px;
+    background-color: white;
+  }
     .container h4{
         font-family:'Roboto', sans-serif;
         margin-bottom: 15px;
@@ -670,6 +809,19 @@
   
 }
 @media (max-width: 575px) {
+  .notifydetails{
+    font-size: 13px;
+    line-height: 18px;
+    margin-top: 0px;
+    margin-bottom: 5px;
+  }
+
+  .notificationhead b{
+    font-size: 13px;
+  }
+  .notificationhead em{
+    font-size: 11px;
+  }
     .container h4{
         font-family:'Roboto', sans-serif;
         margin-bottom: 15px;
@@ -791,6 +943,16 @@
       }
 }
 @media (max-width: 450px) {
+  .notificationsection{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    min-width: 300px;
+    height: 100%;
+    overflow-y: scroll;
+    padding: 15px 5px 100px 5px;
+    background-color: white;
+  }
     .topic{
         display: flex;
         flex-direction: column;
@@ -1128,6 +1290,20 @@
         }
 
         @media (max-width:340px) and (min-width:0px) {
+          .notificationsection{
+            display: flex;
+            flex-direction: column;
+            width: 80%;
+            height: 100%;
+            overflow-y: scroll;
+            padding: 15px 5px 100px 5px;
+            background-color: white;
+          }
+          .closenotify{
+            height: 100%;
+            width: 20%;
+            background-color: rgba(255, 255, 255, 0);
+          }
           .librarydiv{
             display: flex;
             flex-direction: row;
