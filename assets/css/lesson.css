@@ -100,19 +100,37 @@
     padding-top: 0px;
 }
  .lessontopicimage{
+  position: relative;
     height: 200px;
     width: 180px;
     min-width: 180px;
     overflow: hidden;
     border-radius: 4px;
     margin-right: 15px;
-    background-color: grey;
+    background-color: rgb(255, 0, 0);
  }
  .lessontopicimage img{
     height: 100%;
     width: 100%;
     min-width: 100%;
     object-fit: cover;
+ }
+ .lockscreen{
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  backdrop-filter: blur(3px);
+  z-index: 1;
+ }
+ .lockscreen i{
+  font-size: 20px;
+  align-self: flex-end;
+  color: black;
+  margin: 10px 10px 0px 0px;
  }
  .return{
     display: flex;
@@ -185,13 +203,14 @@
     flex-direction: column;
     margin-bottom: 0px;
 }
+
 .repliedtext{
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;
 }
 .sendertext p{
-    background-color: #e2f1f8;
+    background-color: #fff89a;
     padding: 10px 20px 10px 20px;
     max-width: 90%;
     color: black;
@@ -200,14 +219,30 @@
     border-radius: 10px;
 
 }
+.sendersimage{
+  width: 50%;
+  height: auto;
+  margin-top: 2px;
+  border-radius: 10px;
+  align-self: flex-end;
+  object-fit: cover;
+}
 .repliedtext p{
-    background-color: #f0f0f0;
+    background-color: #bbecfa;
     padding: 10px 20px 10px 20px;
     max-width: 90%;
     color: black;
     align-self: flex-start;
     margin-bottom: 0px;
     border-radius: 10px;
+}
+.replyimage {
+  width: 50%;
+  height: auto;
+  margin-top: 2px;
+  border-radius: 10px;
+  align-self: flex-start;
+  object-fit: cover;
 }
 .sendertext span{
     align-self: flex-end;
@@ -217,6 +252,12 @@
     margin: 0px 3px 3px 0px;
     border-radius: 10px;
 
+}
+.asqformdivelements{
+  display: flex;
+  flex-direction: column;
+  height: auto;
+  background-color: green;
 }
 .asqinput{
     display: flex;
@@ -233,9 +274,78 @@
     height: 50px;
     outline: none;
     padding: 0px 10px 0px 10px;
-    border: 1px solid rgb(0, 140, 255);
+    border-top: 1px solid rgb(0, 140, 255);
+    border-left: 1px solid rgb(0, 140, 255);
+    border-bottom: 1px solid rgb(0, 140, 255);
+    border-right: 0px solid rgb(0, 140, 255);
     border-radius: 5px 0px 0px 5px;
     box-shadow: 0 2px 26px rgba(0, 0, 0, 0.212);
+}
+/* Style for the button */
+.custom-file-input {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: 50px;
+  max-height: 50px;
+  max-width: 50px;
+  background-color: rgb(255, 255, 255);
+  border-top: 1px solid rgb(0, 140, 255);
+    border-left: 0px solid rgb(0, 140, 255);
+    border-bottom: 1px solid rgb(0, 140, 255);
+    border-right: 1px solid rgb(0, 140, 255);
+  overflow: hidden;
+  cursor: pointer;
+}
+
+/* Style for the hidden file input */
+.file-input {
+  position: absolute;
+  align-self: center;
+  background-color: rgba(255, 192, 203, 0);
+  display: flex;
+  font-size: 100px;
+  right: 0;
+  top: 0;
+  opacity: 0;
+  cursor: pointer;
+}
+
+/* Additional styles for button appearance */
+.custom-file-input .button-text {
+  text-align: center;
+  padding: 0px;
+  margin: 0px;
+  color: black;
+  font-size: 25px;
+  border-radius: 0px;
+  display: inline-block;
+}
+
+/* Add your icon style */
+.custom-file-input .icon {
+  /* Add your icon styles here */
+  margin-right: 5px;
+}
+/* Style for the image preview */
+.imageinputpreview{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+  width: auto;
+  background-color: white;
+  border-top: 1px solid rgb(0, 140, 255);
+  border-bottom: 1px solid rgb(0, 140, 255);
+}
+.image-preview {
+  height: 30px;
+  width: auto;
+  max-height: 30px;
+  border-radius: 2px;
+  display: none;
 }
 .asqinput button{
     height: 50px;
@@ -418,6 +528,12 @@ input:checked + .slider:before {
 
 
  @media (max-width: 764px) {
+  .lockscreen i{
+    font-size: 15px;
+    align-self: flex-end;
+    color: black;
+    margin: 10px 10px 0px 0px;
+   }
     .autherdetails p{
         margin: 0px 0px 0px 0px;
         line-height: 1.2;
@@ -500,7 +616,7 @@ input:checked + .slider:before {
         overflow: hidden;
       }
       .sendertext p{
-        background-color: #e2f1f8;
+        background-color: #fff89a;
         padding: 10px 20px 10px 10px;
         max-width: 90%;
         font-size: 15px;
@@ -509,7 +625,7 @@ input:checked + .slider:before {
     
     }
     .repliedtext p{
-        background-color: #f0f0f0;
+      background-color: #bbecfa;
         padding: 10px 20px 10px 6px;
         max-width: 90%;
         font-size: 15px;
@@ -517,11 +633,14 @@ input:checked + .slider:before {
         border-radius: 10px;
     }
     .asqinput input{
-        width: 85%;
+        width: 75%;
         height: 40px;
         outline: none;
         padding: 0px 10px 0px 10px;
-        border: 1px solid rgb(0, 140, 255);
+        border-top: 1px solid rgb(0, 140, 255);
+        border-left: 1px solid rgb(0, 140, 255);
+        border-bottom: 1px solid rgb(0, 140, 255);
+        border-right: 0px solid rgb(0, 140, 255);
         border-radius: 5px 0px 0px 5px;
         box-shadow: 0 2px 26px rgba(0, 0, 0, 0.212);
     }
@@ -534,6 +653,39 @@ input:checked + .slider:before {
         background-color: blue;
         color: white;
         border-radius: 0px 5px 5px 0px;
+    }
+    .custom-file-input {
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      width: 40px;
+      max-height: 40px;
+      max-width: 40px;
+      background-color: rgb(255, 255, 255);
+      border-top: 1px solid rgb(0, 140, 255);
+        border-left: 0px solid rgb(0, 140, 255);
+        border-bottom: 1px solid rgb(0, 140, 255);
+        border-right: 1px solid rgb(0, 140, 255);
+      overflow: hidden;
+      cursor: pointer;
+    }
+    .imageinputpreview{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 40px;
+      width: auto;
+      border-top: 1px solid rgb(0, 140, 255);
+      border-bottom: 1px solid rgb(0, 140, 255);
+    }
+    .image-preview {
+      height: 30px;
+      width: auto;
+      max-height: 30px;
+      border-radius: 2px;
+      display: none;
     }
     .lessontitle i{
       font-size: 16px;
@@ -616,7 +768,23 @@ input:checked + .slider:before {
         left: 0px;
         right: 0px;
     }
+    
    
+ }
+
+ @media (max-width: 520px) {
+  .asqinput input{
+    width: 75%;
+    height: 40px;
+    outline: none;
+    padding: 0px 10px 0px 10px;
+    border-top: 1px solid rgb(0, 140, 255);
+    border-left: 1px solid rgb(0, 140, 255);
+    border-bottom: 1px solid rgb(0, 140, 255);
+    border-right: 0px solid rgb(0, 140, 255);
+    border-radius: 5px 0px 0px 5px;
+    box-shadow: 0 2px 26px rgba(0, 0, 0, 0.212);
+}
  }
 
  @media (max-width: 450px) {
