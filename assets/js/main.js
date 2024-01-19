@@ -265,7 +265,26 @@ addcommentButtons.forEach(addcommentButton => {
     })
 });
 
+// Function to display the chosen file name
+ // Function to display the image preview
+ function displayImagePreview() {
+  var fileInput = document.querySelector('.file-input');
+  var imagePreviewElement = document.getElementById('imagePreview');
 
+  // Check if an image file is selected
+  if (fileInput.files.length > 0 && fileInput.files[0].type.startsWith('image/')) {
+    // Display the image preview
+    var reader = new FileReader();
+    reader.onload = function (e) {
+      imagePreviewElement.src = e.target.result;
+      imagePreviewElement.style.display = 'block';
+    };
+    reader.readAsDataURL(fileInput.files[0]);
+  } else {
+    // No image file selected, hide the image preview
+    imagePreviewElement.style.display = 'none';
+  }
+}
 
 
 
