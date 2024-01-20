@@ -50,14 +50,29 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="library.html" class="active">Library</a></li>
-          <li><a href="q&a.html">Q&A</a></li>
-          <li><a href="chat.html">Ask Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="login.html">Log In</a></li>
-          <li><a href="profile.html">Profile</a></li>
-          <li><a href="signup.html" class="getstarted">Register</a></li>
+          <li><a href="index.html" class="translate" data-en="Home" data-sw="Nyumbani">Nyumbani</a></li>
+          <li><a href="library.html" class="active translate" data-en="Library" data-sw="Maktaba">Maktaba</a></li>
+          <li><a href="q&a.html" class="translate" data-en="Q&A" data-sw="Maswali">Maswali</a></li>
+          <li><a href="chat.html" class=" translate" data-en="Asq Us" data-sw="Tuulize">Tuulize</a></li>
+          <li class="dropdown"><a href="#"><span class="translate" data-en="More" data-sw="Zaidi">Zaidi</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="termsandconditions.html" class="translate" data-en="About Us" data-sw="Kutuhusu">Kutuhusu</a></li>
+              <li><a href="termsandconditions.html" class="translate" data-en="Privacy Policies" data-sw="Sera za Faragha">Sera za Faragha</a></li>
+              <li><a href="termsandconditions.html" class="translate" data-en="Terms and Conditions" data-sw="Sheria na Masharti">Sheria na Masharti</a></li>
+              <li><a href="contact.html" class="translate" data-en="Contact Us" data-sw="Wasiliana nasi">Wasiliana nasi</a></li>
+              <li class="dropdown" style="display: none;"><a href="#"><span class="translate" data-en="Language" data-sw="Lugha">Lugha</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><button class="sw defaultlang" id="swahiliBtn" onclick="updateContent('sw')">Swahili <div class="languageflag"><img src="assets/icons/tz-flag.png" alt=""></div></button></li>
+                  <li><button class="en" id="englishBtn" onclick="updateContent('en')">English <div class="languageflag"><img src="assets/icons/americas flag.png" alt=""></div></button></li>
+                </ul>
+              </li>
+
+              
+            </ul>
+          </li>
+          <li><a href="login.html" class="translate" data-en="Log In" data-sw="Ingia">Ingia</a></li>
+          <li><a href="profile.html" class="translate" data-en="Profile" data-sw="Wasifu">Wasifu</a></li>
+          <li><a href="signup.html" class="getstarted translate"  data-en="Register" data-sw="Jisajili">Jisajili</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -224,7 +239,7 @@
 
   <!--loader-->
   <div class="loadingdiv" id="loadingdiv">
-    <div class="loader">Kisukari.</div>
+    <div class="loader">Kisukari.com</div>
   </div>
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
@@ -240,6 +255,7 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/loader.js"></script>
+  <script src="assets/js/language.js"></script>
 
 </body>
 

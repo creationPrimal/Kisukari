@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Kisukari - Profile</title>
+  <title class="translate" data-en="Kisukari - Profile" data-sw="Kisukari - Wasifu">Kisukari - Wasifu</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -42,20 +42,35 @@
   <header id="header" class="fixed-top d-flex align-items-center " class="headernav">
     <div class="container d-flex align-items-center" >
         <button class="return" onclick="back()"><i class="fa-solid fa-arrow-right fa-flip-horizontal"></i></button>
-      <h1 class="logo me-auto">Profile</h1>
+      <h1 class="logo me-auto translate"  data-en="Profile" data-sw="Wasifu">Wasifu</h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="library.html">Library</a></li>
-          <li><a href="q&a.html">Q&A</a></li>
-          <li><a href="chat.html">Ask Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="login.html">Log In</a></li>
-          <li><a href="profile.html" class="active">Profile</a></li>
-          <li><a href="signup.html" class="getstarted">Register</a></li>
+          <li><a href="index.html" class="translate" data-en="Home" data-sw="Nyumbani">Nyumbani</a></li>
+          <li><a href="library.html" class="translate" data-en="Library" data-sw="Maktaba">Maktaba</a></li>
+          <li><a href="q&a.html" class="translate" data-en="Q&A" data-sw="Maswali">Maswali</a></li>
+          <li><a href="chat.html" class="translate" data-en="Asq Us" data-sw="Tuulize">Tuulize</a></li>
+          <li class="dropdown"><a href="#"><span class="translate" data-en="More" data-sw="Zaidi">Zaidi</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="termsandconditions.html" class="translate" data-en="About Us" data-sw="Kutuhusu">Kutuhusu</a></li>
+              <li><a href="termsandconditions.html" class="translate" data-en="Privacy Policies" data-sw="Sera za Faragha">Sera za Faragha</a></li>
+              <li><a href="termsandconditions.html" class="translate" data-en="Terms and Conditions" data-sw="Sheria na Masharti">Sheria na Masharti</a></li>
+              <li><a href="contact.html" class="translate" data-en="Contact Us" data-sw="Wasiliana nasi">Wasiliana nasi</a></li>
+              <li class="dropdown" style="display: none;"><a href="#"><span class="translate" data-en="Language" data-sw="Lugha">Lugha</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><button class="sw defaultlang" id="swahiliBtn" onclick="updateContent('sw')">Swahili <div class="languageflag"><img src="assets/icons/tz-flag.png" alt=""></div></button></li>
+                  <li><button class="en" id="englishBtn" onclick="updateContent('en')">English <div class="languageflag"><img src="assets/icons/americas flag.png" alt=""></div></button></li>
+                </ul>
+              </li>
+
+              
+            </ul>
+          </li>
+          <li><a href="login.html" class="translate" data-en="Log In" data-sw="Ingia">Ingia</a></li>
+          <li><a href="profile.html" class="active translate" data-en="Profile" data-sw="Wasifu">Wasifu</a></li>
+          <li><a href="signup.html" class="getstarted translate"  data-en="Register" data-sw="Jisajili">Jisajili</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -85,14 +100,14 @@
                         <h2 class="lessontitle">Veronica Joseph <a href="settings.html"><button><i class="fa-solid fa-pencil"></i></button></a></h2>
                         <div style="display: flex; flex-direction: row;">
                             <div class="det1">
-                                <p class="mb-1 pt-0">Barua Pepe:</p>
-                                <p class="mb-1">Namba:</p>
-                                <p class="mb-1">Jinsia: </p>
+                                <p class="mb-1 pt-0 translate"  data-en="Email:" data-sw="Barua Pepe:">Barua Pepe:</p>
+                                <p class="mb-1 translate"  data-en="Mobile:" data-sw="Namba:">Namba:</p>
+                                <p class="mb-1 translate"  data-en="Gender" data-sw="Jinsia:">Jinsia: </p>
                             </div>
                             <div class="det2 ">
                                 <p class="mb-1 pt-0"> <b>Veronicajoseph@gmail.com</b></p>
                                 <p class="mb-1"><b>0742012222</b></p>
-                                <p class="mb-1"><b>Ke</b></p>
+                                <p class="mb-1"><b >Ke</b></p>
                             </div>
                         </div>
                     </div>
@@ -100,39 +115,39 @@
                 <div class="userdetails">
                   <div style="display: flex; flex-direction: column;">
                     <div class="userdetail">
-                      <p>Makazi: </p>
+                      <p class="translate" data-en="Location:" data-sw="Makazi:">Makazi: </p>
                       <p><b>Dar es Salaam</b></p>
                   </div>
                       <div class="userdetail">
-                          <p>Tarehe Ya Kuzaliwa: </p>
+                          <p class="translate" data-en="Date of Birth:" data-sw="Tarehe Ya Kuzaliwa:">Tarehe Ya Kuzaliwa: </p>
                           <p><b>12/02/1987</b></p>
                       </div>
                       <div class="userdetail">
-                        <p>Address: </p>
+                        <p class="translate" data-en="Address:" data-sw="Anuani:">Address: </p>
                         <p><b>P.o.Box 2341</b></p>
                       </div>
                       <div class="userdetail">
-                        <p>Unakisukari: </p>
-                        <p><b>Ndio</b></p>
+                        <p class="translate" data-en="Do You Have Diabetes?:" data-sw="Unakisukari?:">Unakisukari?: </p>
+                        <p><b >Ndio</b></p>
                       </div>
                       <div class="userdetail">
-                        <p>Tarehe Ya Kugundulika kua na kisukari: </p>
+                        <p class="translate" data-en="Date Diabetic Diagnosed:" data-sw="Tarehe Ya Kugundulika kua na kisukari:">Tarehe Ya Kugundulika kua na kisukari: </p>
                         <p><b>12/02/1987</b></p>
                       </div>
                       <div class="userdetail">
-                        <p>Aina ya Kisukari: </p>
-                        <p><b>Aina ya Kwanza</b></p>
+                        <p class="translate" data-en="Type of Diabetes:" data-sw="Aina ya kisukari:">Aina ya Kisukari: </p>
+                        <p><b >Aina ya Kwanza</b></p>
                       </div>
                       <div class="userdetail">
-                        <p>Unatumia Dawa gani za Kisukari: </p>
+                        <p class="translate" data-en="Type of Medicine You are Using:" data-sw="Unatumia Dawa gani za Kisukari:">Unatumia Dawa gani za Kisukari: </p>
                         <p><b>Vidonge</b></p>
                       </div>
                       <div class="userdetail">
-                        <p>Unaugonjwa Mwingine: </p>
+                        <p class="translate" data-en="Any Other Disease?:" data-sw="Unaugonjwa Mwingine:">Unaugonjwa Mwingine: </p>
                         <p><b>TB</b></p>
                       </div>
                       <div class="userdetail">
-                        <p>Kliniki ya Kisukari: </p>
+                        <p class="translate" data-en="Diabetes clinic:" data-sw="Kliniki ya Kisukari:">Kliniki ya Kisukari: </p>
                         <p><b>Muhimbili</b></p>
                       </div>
                   </div>
@@ -140,17 +155,19 @@
              
                
               <div class="entry-content lessoncontent ">
-                <h5 class="lessontitle">Settings</h5>
+                <h5 class="lessontitle translate"  data-en="Settings" data-sw="Matengenezo">Matengenezo</h5>
                 <div class="settingsdiv">
-                  <button class="changecode mb-0 pt-0 asq" style="cursor: pointer;"><p><b>Change Password</b></p></button>
-                  <button class="changecode" ><p class="mb-1"><b>Delete Account</b></p></button>
+                  <button class="changecode mb-0 pt-0 asq" style="cursor: pointer;"><p><b class="translate" data-en="Change Password" data-sw="Badili Nenosiri">Badili Nenosiri</b></p></button>
+                  <button class="changecode" ><p class="mb-1"><b class="translate" data-en="Delete Account" data-sw="Futa Akaunti">Futa Akaunti</b></p></button>
                 </div>
 
               </div>
               <div class="entry-content lessoncontent">
-                <h5 class="lessontitle   pt-0 mt-4">Help</h5>
-                <a href="contact.html"><b><p class="mb-0 pt-0">Contact Us</p></b></a>
-                <a href=""><p class="mb-1"><b>Log Out</b></p></a>
+                <h5 class="lessontitle   pt-0 mt-4 translate" data-en="Help" data-sw="Msaada">Msaada</h5>
+                <a href="contact.html"><b><p class="mb-0 pt-0 translate" style="color: black;"  data-en="Contact Us" data-sw="Wasiliana nasi">Wasiliana nasi</p></b></a>
+                <a href="termsandconditions.html"><b><p class="mb-0 pt-0 translate" style="color: black;" data-en="Privacy Policies" data-sw="Sera za Faragha">Sera za Faragha</p></b></a>
+                <a href="termsandconditions.html"><b><p class="mb-0 pt-0 translate" style="color: black;" data-en="Terms and Conditions" data-sw="Sheria na masharti">Sheria na masharti</p></b></a>
+                <a href=""><p class="mb-1"><b class="translate" data-en="Log Out" data-sw="Ondoka">Ondoka</b></p></a>
                 <p class="mb-0 pb-0 mt-4" style="font-size: 10px;">Kisukari. App Version 0.0.1 All Rights Reserved 2024</p>
 
               </div>
@@ -159,19 +176,19 @@
                 <div class="asqclosediv questiondivclose"></div>
                 <div class="reply-form">
                     <span class="closetag questionclose"><b>&#x2715;</b></span>
-                    <h4>Reset Your Password</h4>
+                    <h4 class="translate" data-en="Change Your Password" data-sw="Badili Nenosiri">Badili Nenosiri</h4>
                     <form action="">
                     <div class="row">
                         <div class="col-md-6 form-group">
-                        <label for="currentpassword">Current Password</label>
+                        <label for="currentpassword" class="translate" data-en="Current Password" data-sw="Nenosiri ya sasa">Nenosiri ya sasa</label>
                         <input name="currentpassword" type="password" class="form-control" placeholder="" required>
                         </div>
                         <div class="col-md-6 form-group">
-                        <label for="newpassword">New Password</label>
+                        <label for="newpassword" class="translate" data-en="New Password" data-sw="Nenosiri Mpya">Nenosiri Mpya</label>
                         <input name="newpassword" type="password" class="form-control" placeholder="" required>
                         </div>
                     </div>
-                    <button type="submit" class="btn btn-primary">Reset</button>
+                    <button type="submit" class="btn btn-primary"><span class="translate" data-en="Change" data-sw="Badili">Badili</span></button>
     
                     </form>
     
@@ -221,6 +238,7 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/language.js"></script>
 
 </body>
 

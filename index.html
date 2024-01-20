@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Kisukari - Home</title>
+  <title class="translate" data-en="Kisukari - Home" data-sw="Kisukari - Nyumbani">Kisukari - Home</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -51,14 +51,30 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html" class="active">Home</a></li>
-          <li><a href="library.html">Library</a></li>
-          <li><a href="q&a.html">Q&A</a></li>
-          <li><a href="chat.html">Ask Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="login.html">Log In</a></li>
-          <li><a href="profile.html">Profile</a></li>
-          <li><a href="signup.html" class="getstarted">Register</a></li>
+          <li><a href="index.html" class="active translate" data-en="Home" data-sw="Nyumbani">Nyumbani</a></li>
+          <li><a href="library.html" class="translate" data-en="Library" data-sw="Maktaba">Maktaba</a></li>
+          <li><a href="q&a.html" class="translate" data-en="Q&A" data-sw="Maswali">Maswali</a></li>
+          <li><a href="chat.html" class="translate" data-en="Ask Us" data-sw="Tuulize">Tuulize</a></li>
+          <li class="dropdown"><a href="#"><span class="translate" data-en="More" data-sw="Zaidi">Zaidi</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="termsandconditions.html" class="translate" data-en="About Us" data-sw="Kutuhusu">Kutuhusu</a></li>
+              <li><a href="termsandconditions.html" class="translate" data-en="Privacy Policies" data-sw="Sera za Faragha">Sera za Faragha</a></li>
+              <li><a href="termsandconditions.html" class="translate" data-en="Terms and Conditions" data-sw="Sheria na Masharti">Sheria na Masharti</a></li>
+              <li><a href="contact.html" class="translate" data-en="Contact Us" data-sw="Wasiliana nasi">Wasiliana nasi</a></li>
+              <li class="dropdown"><a href="#"><span class="translate" data-en="Language" data-sw="Lugha">Lugha</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><button class="sw defaultlang" id="swahiliBtn" onclick="updateContent('sw')">Swahili <div class="languageflag"><img src="assets/icons/tz-flag.png" alt=""></div></button></li>
+                  <li><button class="en" id="englishBtn" onclick="updateContent('en')">English <div class="languageflag"><img src="assets/icons/americas flag.png" alt=""></div></button></li>
+                </ul>
+              </li>
+
+              
+            </ul>
+          </li>
+          
+          <li><a href="login.html" class="translate" data-en="Log in" data-sw="Ingia">Ingia</a></li>
+          <li><a href="profile.html">Wasifu</a></li>
+          <li><a href="signup.html" class="getstarted translate" data-en="Register" data-sw="Jisajili">Jisajili</a></li>
         </ul>
         <button class="notification notifybtn">
           <div class="notificationcounter">
@@ -72,10 +88,11 @@
     </div>
   </header><!-- End Header -->
 
+  <!--notification-->
     <div class="notificationdiv">
       <div class="closenotify"></div>
       <div class="notificationsection">
-        <h5>Notifications</h5>
+        <h5 class="translate" data-en="Notifications" data-sw="Taarifa">Taarifa</h5>
         <div class="notificationbox">
           <div class="sideline"></div>
           <div>
@@ -84,7 +101,7 @@
             </div></a>
             <a href=""><p class="notifydetails">Read Now the article and gain more new knowledge
                on how
-               to overcome sugar and maintain stable health as an individual
+               to overcome sugar
             </p></a>
           </div>
         </div>
@@ -194,6 +211,22 @@
       </div>
 
     </div>
+
+    <!--welcoming note-->
+    
+    <form action="" >
+    <div class="welcomenote container">
+      <h4><span id="contentContainer"></span> <b>Rachel Green</b></h4>
+      
+      <div class="searchdiv">
+        <input type="search" name="" id="" placeholder="Search for articles..">
+        <button type="submit"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+    </div>
+  </form>
+  
+
+
 
   <!--
   <section id="hero" >
@@ -565,12 +598,12 @@
 
   <!--loader-->
   <div class="loadingdiv" id="loadingdiv">
-    <div class="loader">Kisukari.</div>
+    <div class="loader">Kisukari.com</div>
   </div>
 
 
-  <!-- ======= Footer ======= -->
-  <footer id="footer" style="padding-bottom: 60px;">
+   <!-- ======= Footer ======= -->
+   <footer id="footer" style="padding-bottom: 60px;">
     <div class="footer-top">
       <div class="container">
         <div class="row">
@@ -581,8 +614,8 @@
               <p>
                 Azikiwe Street, Posta <br>
                 Dar es Salaam, Tanzania<br><br>
-                <strong>Phone:</strong> <a href="tel:+255 758 287 828"><span class="phonenumber">+255 758 287 828</span></a> <br>
-                <strong>Email:</strong> <a href="emailto: info@example.com "><span class="phonenumber">info@example.com</span></a> <br>
+                <strong class="translate" data-en="Phone:" data-sw="Simu:">Simu:</strong> <a href="tel:+255 758 287 828"><span class="phonenumber">+255 758 287 828</span></a> <br>
+                <strong class="translate" data-en="Email:" data-sw="Barua Pepe:">Barua Pepe:</strong> <a href="emailto: info@example.com "><span class="phonenumber">info@example.com</span></a> <br>
               </p>
               <div class="social-links mt-3">
                 <a href="#" class="twitter"><i class="bi bi-twitter-x"></i></a>
@@ -594,29 +627,29 @@
           </div>
 
           <div class="col-lg-2 col-md-6 footer-links">
-            <h4>Useful Links</h4>
+            <h4 class="translate" data-en="Useful Links" data-sw="Link Muhimu">Link Muhimu</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Home</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">About us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#main">Library</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="#">Settings</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="#" class="translate" data-en="Home" data-sw="Nyumbani">Nyumbani</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="termsandconditions.html" class="translate" data-en="About Us" data-sw="Kutuhusu">Kutuhusu</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="termsandconditions.html" class="translate" data-en="Privacy Policies" data-sw="Sera za Faragha">Sera za Faragha</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="termsandconditions.html" class="translate" data-en="Terms and Conditions" data-sw="Sheria na Masharti">Terms and Conditions</a></li>
             </ul>
           </div>
 
           <div class="col-lg-3 col-md-6 footer-links">
-            <h4>More</h4>
+            <h4 class="translate" data-en="More" data-sw="Zaidi">Zaidi</h4>
             <ul>
-              <li><i class="bx bx-chevron-right"></i> <a href="q&a.html">Questions & Ans</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="chat.html">Ask Us</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="signup.html">Register</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="login.html">Log In</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="q&a.html"  class="translate" data-en="Questions & Ans" data-sw="Maswali">Maswali</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="chat.html" class="translate" data-en="Ask Us" data-sw="Tuulize">Ask Us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="signup.html" class="translate" data-en="Register" data-sw="Jisajili">Jisajili</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="login.html" class="translate" data-en="Log In" data-sw="Ingia">Ingia</a></li>
             </ul>
           </div>
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
-            <h4>Our Newsletter</h4>
+            <h4 class="translate" data-en="Our Newsletter" data-sw="Jarida letu">Jarida letu</h4>
             <p>Please input your Email so that you may receive useful newsletter and updates on health</p>
-            <form action="" method="">
+            <form action="" method="post">
               <input type="email" name="email" placeholder="example@gmail.com" style="outline: none;"><input type="submit" value="Subscribe">
             </form>
 
@@ -649,6 +682,7 @@
   <script src="assets/js/main.js"></script>
   <script src="assets/js/sliders.js"></script>
   <script src="assets/js/home.js"></script>
+  <script src="assets/js/language.js"></script>
   <script>
   
   </script>

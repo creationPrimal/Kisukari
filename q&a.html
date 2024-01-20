@@ -5,7 +5,7 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title>Questions & Answers - Kisukari</title>
+  <title class="translate" data-en="Questions & Answers" data-sw="Maswali & Majibu">Maswali & Majibu</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
@@ -47,14 +47,29 @@
 
       <nav id="navbar" class="navbar">
         <ul>
-          <li><a href="index.html">Home</a></li>
-          <li><a href="library.html">Library</a></li>
-          <li><a href="q&a.html" class="active">Q&A</a></li>
-          <li><a href="chat.html">Ask Us</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-          <li><a href="login.html">Log In</a></li>
-          <li><a href="profile.html">Profile</a></li>
-          <li><a href="signup.html" class="getstarted">Register</a></li>
+          <li><a href="index.html" class="translate" data-en="Home" data-sw="Nyumbani">Nyumbani</a></li>
+          <li><a href="library.html" class="translate" data-en="Library" data-sw="Maktaba">Maktaba</a></li>
+          <li><a href="q&a.html" class="active translate" data-en="Q&A" data-sw="Maswali">Maswali</a></li>
+          <li><a href="chat.html" class="translate" data-en="Asq Us" data-sw="Tuulize">Tuulize</a></li>
+          <li class="dropdown"><a href="#"><span class="translate" data-en="More" data-sw="Zaidi">Zaidi</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="termsandconditions.html" class="translate" data-en="About Us" data-sw="Kutuhusu">Kutuhusu</a></li>
+              <li><a href="termsandconditions.html" class="translate" data-en="Privacy Policies" data-sw="Sera za Faragha">Sera za Faragha</a></li>
+              <li><a href="termsandconditions.html" class="translate" data-en="Terms and Conditions" data-sw="Sheria na Masharti">Sheria na Masharti</a></li>
+              <li><a href="contact.html" class="translate" data-en="Contact Us" data-sw="Wasiliana nasi">Wasiliana nasi</a></li>
+              <li class="dropdown" style="display: none;"><a href="#"><span class="translate" data-en="Language" data-sw="Lugha">Lugha</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><button class="sw defaultlang" id="swahiliBtn" onclick="updateContent('sw')">Swahili <div class="languageflag"><img src="assets/icons/tz-flag.png" alt=""></div></button></li>
+                  <li><button class="en" id="englishBtn" onclick="updateContent('en')">English <div class="languageflag"><img src="assets/icons/americas flag.png" alt=""></div></button></li>
+                </ul>
+              </li>
+
+              
+            </ul>
+          </li>
+          <li><a href="login.html" class="translate" data-en="Log In" data-sw="Ingia">Ingia</a></li>
+          <li><a href="profile.html" class="translate" data-en="Profile" data-sw="Wasifu">Wasifu</a></li>
+          <li><a href="signup.html" class="getstarted translate"  data-en="Register" data-sw="Jisajili">Jisajili</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -69,18 +84,18 @@
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2 >Maswali na Majibu</h2>
+          <h2 class="translate" data-en="Questions & Answers" data-sw="Maswali & Majibu">Maswali & Majibu</h2>
             <!-- search form-->
           <div class="search-form">
             <form action="">
-              <input type="text" placeholder="Search..">
+              <input type="text" placeholder="...">
               <button type="submit"><i class="bi bi-search"></i></button>
             </form>
           </div>
           <!-- End search formn-->
           <ol>
-            <li><a href="index.html">Nyumbani</a></li>
-            <li>Maswali</li>
+            <li><a href="index.html" class="translate" data-en="Home" data-sw="Nyumbani">Nyumbani</a></li>
+            <li class="translate" data-en="Q&A" data-sw="Maswali">Maswali</li>
           </ol>
         </div>
 
@@ -131,7 +146,7 @@
                   <div class="commentsbuttons">
                       <button><i class="fa-solid fa-heart"></i> 201</button>
                       <button class="viewcomments"><i class="fa-solid fa-comment"></i> 12</button>
-                      <button class="addcomment"><i class="fa-regular fa-pen-to-square"></i> Add Comment</button>
+                      <button class="addcomment"><i class="fa-regular fa-pen-to-square"></i> <span class="translate" data-en="Add Comment" data-sw="Weka Maoni Yako">Weka Maoni Yako</span></button>
                   </div>
                    <!--comments-->
                   <div class="commentlist">
@@ -284,7 +299,7 @@
                     </div>
 
                     <div class="commentviewmore">
-                      <button id="viewmore">View More <i class="fa-solid fa-arrow-down-wide-short" style="color: red;"></i></button>
+                      <button id="viewmore"><span class="translate" data-en="View More" data-sw="Ona Zaidi">Ona Zaidi</span> <i class="fa-solid fa-arrow-down-wide-short" style="color: red;"></i></button>
                     </div>
                   </div>
 
@@ -293,15 +308,15 @@
                     <div class="asqclosediv commentclosediv"></div>
                     <div class="reply-form">
                         <span class="closetag commentclose"><b>&#x2715;</b></span>
-                        <h4>Add Your Comment</h4>
-                        <p>Your email & Number will not be published. Required fields are marked * </p>
+                        <h4 class="translate" data-en="Add Your Comment" data-sw="Weka Maoni Yako">Weka Maoni Yako</h4>
+                        <p class="translate" data-en="Your email & Number will not be published. Required fields are marked *" data-sw="Barua pepe na Nambari yako hazitachapishwa. Sehemu zinazohitajika zimetiwa alama *">Your email & Number will not be published. Required fields are marked * </p>
                         <form action="">
                         <div class="row">
                             <div class="col form-group">
-                            <textarea name="comment" class="form-control" cols="10" rows="4" placeholder="Your Comment*" required></textarea>
+                            <textarea name="comment" class="form-control" cols="10" rows="4" placeholder="..." required></textarea>
                             </div>
                         </div>
-                        <button type="submit" class="btn btn-primary">Submit <i class="fa-solid fa-paper-plane"></i></button>
+                        <button type="submit" class="btn btn-primary"><span class="translate" data-en="Submit" data-sw="Tuma">Tuma</span> <i class="fa-solid fa-paper-plane"></i></button>
         
                         </form>
         
@@ -2510,7 +2525,7 @@
       </div>
       <!-- load more  -->
       <div class="load">
-        <button class="load-more-btn" id="loadmore">View More</button>
+        <button class="load-more-btn" id="loadmore"><span class="translate" data-en="View More" data-sw="Ona Zaidi">Ona Zaidi</span></button>
       </div>
 
     </section><!-- End questions Section -->
@@ -2532,13 +2547,13 @@
   <div>
     <button class="asqquestion Btn asq" >
         <i class="fa-regular fa-pen-to-square" style="color: #ffffff;"></i>
-        <span class="tooltip">Ask Anything</span>
+        <span class="tooltip translate"  data-en="Ask Anything" data-sw="Uliza Chochote">Uliza Chochote</span>
     </button>
   </div>
   
   <!--loader-->
   <div class="loadingdiv" id="loadingdiv">
-    <div class="loader">Kisukari.</div>
+    <div class="loader">Kisukari.com</div>
   </div>
 
   <a href="#" class="back-to-top d-flex align-items-center justify-content-center" style="margin-bottom: 40px;"><i class="bi bi-arrow-up-short"></i></a>
@@ -2553,6 +2568,7 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/loader.js"></script>
+  <script src="assets/js/language.js"></script>
 
 </body>
 
