@@ -580,7 +580,7 @@ input:checked + .slider:before {
       .aboutimage{
         height: auto;
         width: 100%;
-        min-width: 400px;
+        min-width: auto;
         overflow: hidden;
         margin-right: 0px;
         margin-bottom: 20px;
