@@ -18,3 +18,6 @@ notify.addEventListener("click", ()=>{
 closenotify.addEventListener("click", ()=>{
     notificationdiv.style.display='none'
 });
+
+
+  
