@@ -529,6 +529,26 @@ input:checked + .slider:before {
 }
 
 
+/*about kisukari*/
+.aboutimagedetails{
+  display: flex;
+  flex-direction: row;
+}
+.aboutimage{
+  height: auto;
+  width: 400px;
+  min-width: 400px;
+  overflow: hidden;
+  margin-right: 30px;
+
+}
+.aboutimage img{
+  height: auto;
+  width: 100%;
+  object-fit: cover;
+  
+}
+
 
 
 
@@ -551,6 +571,36 @@ input:checked + .slider:before {
         margin: 0px;
         max-height: 144px;
         overflow: hidden;
+      }
+      .aboutimagedetails{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+      .aboutimage{
+        height: auto;
+        width: 100%;
+        min-width: 400px;
+        overflow: hidden;
+        margin-right: 0px;
+        margin-bottom: 20px;
+      
+      }
+      .welcomenote{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-items: center;
+        margin-top: 90px;
+        height: 50px;
+      }
+      .searchdiv{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        height: 45px;
+        width: 100%;
       }
 }
 
