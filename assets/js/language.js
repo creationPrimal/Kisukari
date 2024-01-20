@@ -77,7 +77,7 @@ swahiliBtn.addEventListener('click', () => {
 
   // Function to get the stored language from local storage or default to English
   function getStoredLanguage() {
-    return localStorage.getItem('greetingselectedLanguage') || 'en';
+    return localStorage.getItem('greetingselectedLanguage') || 'sw';
   }
 
   // Call updateContent initially with the stored language or default to English
