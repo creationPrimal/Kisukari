@@ -816,8 +816,72 @@
   background-color: blue;
 }
 
+/* clinic buttons */
+.clinicbuttons{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin-top: 30px;
+  justify-content: space-between;
+}
+.clinicbuttons button{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
+  height: 200px;
+  max-height: 200px;
+  width: 20%;
+  border: none;
+  overflow: hidden;
+  border-radius: 8px;
+}
+.clinicicon{
+  height: 95px;
+  width: 70px;
+  margin-top: 7px;
+}
+.clinicicon p{
+  margin: 0px;
+}
+.cliniciconimage{
+  height: 70px;
+  width: 70px;
+  overflow: hidden;
+}
+.cliniciconimage img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
 
-
+.clinicbuttondetails{
+  padding: 5px;
+}
+.clinicbuttondetails p{
+  margin: 0px;
+  font-size: 14px;
+}
+.sukari{
+  background-color: rgba(255, 217, 0, 0.247);
+}
+.dawa{
+  background-color: rgba(0, 0, 255, 0.096);
+}
+.insulin{
+  background-color: #d9232c15;
+}
+.chakula{
+  background-color: rgba(0, 255, 0, 0.164);
+}
+.clinicdays{
+  display: flex;
+  flex-direction: column;
+  height: 250px;
+  margin-top: 20px;
+  border-radius: 10px;
+  background-color: rgba(128, 128, 128, 0.171);
+}
 
 
 
@@ -845,7 +909,7 @@
       justify-content: space-between;
       align-items: center;
       margin-top: 90px;
-      height: 50px;
+      height: auto;
     }
     .searchdiv{
       display: flex;
@@ -862,6 +926,35 @@
       border: none;
       background-color: rgba(128, 128, 128, 0.068);
     }
+    .clinicbuttons button{
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      height: 200px;
+      max-height: 200px;
+      width: 23%;
+      border: none;
+      overflow: hidden;
+      border-radius: 8px;
+    }
+    .clinicicon{
+      height: 85px;
+      width: 70px;
+      margin-top: 7px;
+    }
+    .cliniciconimage{
+      height: 60px;
+      width: 60px;
+      overflow: hidden;
+    }
+    .clinicbuttondetails p{
+      margin: 0px;
+      font-size: 14px;
+      overflow: hidden;
+      max-height: 45px;
+    }
+    
 }
 
 @media (max-width: 764px) {
@@ -887,6 +980,38 @@
     height: 45px;
     width: 100%;
     margin-top: 0px;
+  }
+  .clinicbuttons{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: center;
+    margin-top: 30px;
+    justify-content: space-between;
+  }
+  .clinicbuttons button{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    height: 200px;
+    max-height: 200px;
+    width: 48.5%;
+    margin-bottom: 10px;
+    border: none;
+    overflow: hidden;
+    border-radius: 8px;
+  }
+  .clinicicon{
+    height: 85px;
+    width: 70px;
+    margin-top: 7px;
+  }
+  
+  .cliniciconimage{
+    height: 60px;
+    width: 60px;
+    overflow: hidden;
   }
   .homelogo{
     font-size: 22px !important;
@@ -1066,6 +1191,49 @@
         margin-bottom: 60px;
         box-shadow: 0 4px 16px rgba(0, 0, 0, 0);
       }
+      .clinicbuttons button{
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: center;
+        height: 120px;
+        max-height: 120px;
+        width: 24%;
+        margin-bottom: 10px;
+        border: none;
+        overflow: hidden;
+        border-radius: 8px;
+      }
+      .clinicicon{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        height: 45px;
+        width: 70px;
+        margin-top: 7px;
+      }
+      
+      .cliniciconimage{
+        height: 27px;
+        width: 27px;
+        overflow: hidden;
+      }
+      .clinicbuttondetails p{
+        margin: 0px;
+        font-size: 8px;
+        overflow: hidden;
+        max-height: 26px;
+      }
+      .clinicbuttondetails{
+        padding: 1px;
+        margin-top: 4px;
+      }
+      .clinicicon p{
+        margin: 0px;
+        font-size: 12px;
+      }
+      
+      
 }
 @media (max-width: 450px) {
   .notificationsection{
@@ -1112,6 +1280,7 @@
         height: 20px;
         font-size: 10px;
     }
+   
 }
 
 @media (max-width: 900px) and (min-width: 764px) {
@@ -1469,9 +1638,23 @@
             width: 100%;
             object-fit: cover;
           }
+          .clinicbuttons button{
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: center;
+            height: 150px;
+            max-height: 150px;
+            width: 24%;
+            margin-bottom: 10px;
+            border: none;
+            overflow: hidden;
+            border-radius: 8px;
+          }
+        }
         
           @media (max-width:270px) and (min-width:0px) {
-            }
+          
             .commentsbuttons button{
               border: none;
               background-color: transparent;
