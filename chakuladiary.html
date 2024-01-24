@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title class="translate" data-en="Food" data-sw="Chakula">Chakula</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- icons -->
+  <link href="" rel="icon">
+  <link href="" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!--carousel cdn/icons cdn-->
+  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/library.css" rel="stylesheet">
+  <link href="assets/css/lesson.css" rel="stylesheet">
+  <link href="assets/css/diary.css" rel="stylesheet">
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+        <button class="return" onclick="back()"><i class="fa-solid fa-arrow-right fa-flip-horizontal"></i></button>
+      <h1 class="logo me-auto"><a href="index.html">Kisukari</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a href="index.html" class="translate" data-en="Home" data-sw="Nyumbani">Nyumbani</a></li>
+          <li><a href="library.html" class="translate" data-en="Library" data-sw="Maktaba">Maktaba</a></li>
+          <li><a href="q&a.html" class="translate" data-en="Q&A" data-sw="Maswali">Maswali</a></li>
+          <li><a href="chat.html" class="translate" data-en="Asq Us" data-sw="Tuulize">Tuulize</a></li>
+          <li class="dropdown"><a href="#"><span class="translate" data-en="More" data-sw="Zaidi">Zaidi</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="termsandconditions.html" class="translate" data-en="About Us" data-sw="Kutuhusu">Kutuhusu</a></li>
+              <li><a href="termsandconditions.html" class="translate" data-en="Privacy Policies" data-sw="Sera za Faragha">Sera za Faragha</a></li>
+              <li><a href="termsandconditions.html" class="translate" data-en="Terms and Conditions" data-sw="Sheria na Masharti">Sheria na Masharti</a></li>
+              <li><a href="contact.html" class="translate" data-en="Contact Us" data-sw="Wasiliana nasi">Wasiliana nasi</a></li>
+              <li class="dropdown" style="display: none;"><a href="#"><span class="translate" data-en="Language" data-sw="Lugha">Lugha</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><button class="sw defaultlang" id="swahiliBtn" onclick="updateContent('sw')">Swahili <div class="languageflag"><img src="assets/icons/tz-flag.png" alt=""></div></button></li>
+                  <li><button class="en" id="englishBtn" onclick="updateContent('en')">English <div class="languageflag"><img src="assets/icons/americas flag.png" alt=""></div></button></li>
+                </ul>
+              </li>
+
+              
+            </ul>
+          </li>
+          <li><a href="login.html" class="translate" data-en="Log In" data-sw="Ingia">Ingia</a></li>
+          <li><a href="profile.html" class="translate" data-en="Profile" data-sw="Wasifu">Wasifu</a></li>
+          <li><a href="signup.html" class="getstarted translate"  data-en="Register" data-sw="Jisajili">Jisajili</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main" class="mb-5">
+
+    <!-- ======= Breadcrumbs ======= -->
+    <section id="breadcrumbs" class="breadcrumbs">
+      <div class="container">
+
+        <div class="d-flex justify-content-between align-items-center">
+          <h2 class="translate" data-en="Food" data-sw="Chakula">Chakula</h2>
+            <!-- search form-->
+          <div class="search-form">
+            <form action="">
+              <input type="text" placeholder="Tarehe / Date">
+              <button type="submit"><i class="bi bi-search"></i></button>
+            </form>
+          </div>
+          <!-- End search formn-->
+          <ol>
+            <li><a href="index.html" class="translate" data-en="Home" data-sw="Nyumbani">Nyumbani</a></li>
+            <li class="translate" data-en="Fill In Your Info" data-sw="Jaza Taarifa">Jaza Taarifa</li>
+          </ol>
+        </div>
+
+      </div>
+    </section><!-- End Breadcrumbs -->
+
+    <!-- ======= questions Section ======= -->
+    <section id="blog" class="blog" >
+      <div class="container" data-aos="fade-up">
+
+        <div class="row" >
+
+          <div class="col-lg-8 entries" style="width: 100%;">
+
+            <div class="blog-comments " style="padding: 10px;">
+              
+              <!-- details  -->
+              
+              <!--list-->
+              <div class="fooditem">
+                <div class="foodlist">
+                    <div class="foodpart" style="display: flex; justify-content: space-between;"><em>Oct 12, 2023</em> 
+                        <span class="listdelete" style="background-color: transparent;" ><b>&#x2715;</b></span></div>
+                    <div class="foodpart"><span class="translate" data-en="Morning:" data-sw="Asubuhi:">Asubuhi:</span> Supu na kuku</div>
+                    <div class="foodpart"><span class="translate" data-en="Afternoon:" data-sw="Mchana:">Mchana:</span> Ugali nyama choma na ndizi </div>
+                    <div class="foodpart"><span class="translate" data-en="Evening:" data-sw="Jioni:">Jioni:</span> Chips Mayai</div>
+                    <div class="foodpart"><span class="translate" data-en="Water:" data-sw="Maji:">Maji:</span> 1 Litre</div>
+                </div>
+              </div>
+              <div class="fooditem">
+                <div class="foodlist">
+                    <div class="foodpart" style="display: flex; justify-content: space-between;"><em>Oct 12, 2023</em> 
+                        <span class="listdelete" style="background-color: transparent;" ><b>&#x2715;</b></span></div>
+                    <div class="foodpart"><span class="translate" data-en="Morning:" data-sw="Asubuhi:">Asubuhi:</span> Supu na kuku</div>
+                    <div class="foodpart"><span class="translate" data-en="Afternoon:" data-sw="Mchana:">Mchana:</span> Ugali nyama choma na ndizi</div>
+                    <div class="foodpart"><span class="translate" data-en="Evening:" data-sw="Jioni:">Jioni:</span> Chips Mayai</div>
+                    <div class="foodpart"><span class="translate" data-en="Water:" data-sw="Maji:">Maji:</span> 1 Litre</div>
+                </div>
+              </div>
+              <div class="fooditem">
+                <div class="foodlist">
+                    <div class="foodpart" style="display: flex; justify-content: space-between;"><em>Oct 12, 2023</em> 
+                        <span class="listdelete" style="background-color: transparent;" ><b>&#x2715;</b></span></div>
+                    <div class="foodpart"><span class="translate" data-en="Morning:" data-sw="Asubuhi:">Asubuhi:</span> Supu na kuku</div>
+                    <div class="foodpart"><span class="translate" data-en="Afternoon:" data-sw="Mchana:">Mchana:</span> Ugali nyama choma na ndizi</div>
+                    <div class="foodpart"><span class="translate" data-en="Evening:" data-sw="Jioni:">Jioni:</span> Chips Mayai</div>
+                    <div class="foodpart"><span class="translate" data-en="Water:" data-sw="Maji:">Maji:</span> 1 Litre</div>
+                </div>
+              </div>
+              <div class="fooditem">
+                <div class="foodlist">
+                    <div class="foodpart" style="display: flex; justify-content: space-between;"><em>Oct 12, 2023</em> 
+                        <span class="listdelete" style="background-color: transparent;" ><b>&#x2715;</b></span></div>
+                    <div class="foodpart"><span class="translate" data-en="Morning:" data-sw="Asubuhi:">Asubuhi:</span> Supu na kuku</div>
+                    <div class="foodpart"><span class="translate" data-en="Afternoon:" data-sw="Mchana:">Mchana:</span> Ugali nyama choma na ndizi</div>
+                    <div class="foodpart"><span class="translate" data-en="Evening:" data-sw="Jioni:">Jioni:</span> Chips Mayai</div>
+                    <div class="foodpart"><span class="translate" data-en="Water:" data-sw="Maji:">Maji:</span> 1 Litre</div>
+                </div>
+              </div>
+             
+
+            </div>
+          </div>
+
+          <div class="asqformdiv">
+            <div class="asqclosediv questiondivclose"></div>
+            <div class="reply-form clinicinfo">
+                <span class="closetag questionclose"><b>&#x2715;</b></span>
+                <h4 class="translate" data-en="Fill in your data" data-sw="Jaza Taarifa Zako">Jaza Taarifa Zako</h4>
+                <p class="translate mb-1" data-en="Please enter your food information correctly*" data-sw="Tafadhali ingiza taarifa za chakula kwa usahihi*">Tafadhali ingiza taarifa za chakula kwa usahihi*</p>
+                <form action="" oninput="total.value = +asubuhi.value + +mchana.value + +jioni.value ">
+                  
+                
+                <div class="row ">
+                    <div class="col-md-6 form-group sukarilevel mb-2">
+                    <label for="" class="translate" data-en="Morning:" data-sw="Asubuhi:">Asubuhi:</label>
+                    <input name="name" type="text" class="form-control" placeholder="*" id="asubuhi" required>
+                    </div>
+                    <div class="col-md-6 form-group sukarilevel mb-2">
+                    <label for="" class="translate" data-en="Image:" data-sw="Picha:">Picha:</label>
+                   <input type="file" class="form-control">
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-6 form-group sukarilevel mb-2">
+                    <label for="" class="translate" data-en="Afternoon:" data-sw="Mchana:">Mchana:</label>
+                    <input name="name" type="text" class="form-control" placeholder="*" id="asubuhi" required>
+                    </div>
+                    <div class="col-md-6 form-group sukarilevel mb-2">
+                    <label for="" class="translate" data-en="Image:" data-sw="Picha:">Picha:</label>
+                   <input type="file" class="form-control">
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-6 form-group sukarilevel mb-2">
+                    <label for="" class="translate" data-en="Evening:" data-sw="Jioni:">Jioni:</label>
+                    <input name="name" type="text" class="form-control" placeholder="*" id="asubuhi" required>
+                    </div>
+                    <div class="col-md-6 form-group sukarilevel mb-2">
+                    <label for="" class="translate" data-en="Image:" data-sw="Picha:">Picha:</label>
+                   <input type="file" class="form-control">
+                    </div>
+                </div>
+                <div class="row ">
+                    <div class="col-md-6 form-group sukarilevel mb-2">
+                    <label for="" class="translate" data-en="Other Types of Food:" data-sw="Aina nyingine ya Chakula:">Aina nyingine ya Chakula:</label>
+                    <input name="name" type="text" class="form-control" placeholder="*" id="asubuhi" >
+                    </div>
+                    <div class="col-md-6 form-group sukarilevel mb-2">
+                    <label for="" class="translate" data-en="Image:" data-sw="Picha:">Picha:</label>
+                   <input type="file" class="form-control">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col form-group mb-4">
+                    <label for="" class="translate" data-en="Water:" data-sw="Maji:">Maji:</label>
+                    <select name="" id=""  class="form-control" required>
+                        <option disabled selected class="translate" data-en="Choose Amount" data-sw="Chagua Kiasi">Chagua Kiasi</option>
+                        <option value="1/4 Lita" class="translate" data-en="1/4 Litres" data-sw="1/4 Lita">1/4 Lita</option>
+                        <option value="1/2 Lita" class="translate" data-en="1/2 Litres" data-sw="1/2 Lita">1/2 Lita</option>
+                        <option value="1 Lita" class="translate" data-en="1 Litre" data-sw="1 Lita">1 Lita</option>
+                        <option value="1.5 Lita" class="translate" data-en="1.5 Litres" data-sw="1.5 Lita">1.5 Lita</option>
+                        <option value="2 Lita" class="translate" data-en="2 Litres" data-sw="2 Lita">2 Lita</option>
+                        <option value="2.5 Lita" class="translate" data-en="2.5 Litres" data-sw="2.5 Lita">2.5 Lita</option>
+                        <option value="3 Lita" class="translate" data-en="3 Litres" data-sw="3 Lita">3 Lita</option>
+                        <option value="3.5 Lita" class="translate" data-en="3.5 Litres" data-sw="3.5 Lita">3.5 Lita</option>
+                        <option value="4 Lita" class="translate" data-en="4 Litres" data-sw="4 Lita">4 Lita</option>
+                        <option value="4.5 Lita" class="translate" data-en="4.5 Litres" data-sw="4.5 Lita">4.5 Lita</option>
+                        <option value="5 Lita" class="translate" data-en="5 Litres" data-sw="5 Lita">5 Lita</option>
+                        <option value="5.5 Lita" class="translate" data-en="5.5 Litres" data-sw="5.5 Lita">5.5 Lita</option>
+                        <option value="6 Lita" class="translate" data-en="6 Litres" data-sw="6 Lita">6 Lita</option>
+                    </select>
+                    </div>
+                  
+                </div>
+                <button type="submit" class="btn btn-primary"><span class="translate" data-en="Save " data-sw="Hifadhi ">Hifadhi </span> <i class="fa-solid fa-paper-plane"></i></button>
+
+                </form>
+
+            </div>
+          </div>
+          <div class="imagemodal" id="imageModal">
+            <img src="" alt="Modal Image" id="modalImage">
+          </div>
+        
+
+      </div>
+      
+
+    </section><!-- End questions Section -->
+
+
+  
+
+  </main><!-- End #main -->
+
+
+
+  <div>
+    <button class="asqquestion Btn asq" >
+        <i class="fa-regular fa-pen-to-square" style="color: #ffffff;"></i>
+        <span class="tooltip translate"  data-en="Fill In" data-sw="Jaza Taarifa">Jaza Taarifa</span>
+    </button>
+  </div>
+  
+  <!--loader-->
+  <div class="loadingdiv" id="loadingdiv">
+    <div class="loader">Kisukari.com</div>
+  </div>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center" style="margin-bottom: 40px;"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/loader.js"></script>
+  <script src="assets/js/language.js"></script>
+  <script src="assets/js/more.js"></script>
+
+</body>
+
+</html>

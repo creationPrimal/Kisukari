@@ -76,7 +76,7 @@
           <li><a href="profile.html" class="translate" data-en="Profile" data-sw="Wasifu">Wasifu</a></li>
           <li><a href="signup.html" class="getstarted translate" data-en="Register" data-sw="Jisajili">Jisajili</a></li>
         </ul>
-        <button class="notification notifybtn">
+        <button class="notification notifybtn closenotifybtn">
           <div class="notificationcounter">
             <b>43</b>
           </div>
@@ -226,65 +226,107 @@
   </form>
   
   <!-- clinic buttons -->
+  <div class="container">
+    <p class="buttonshead"><i class="fa-solid fa-pencil"></i> Tafadhari Ingiza Taarifa zako za leo</p>
+  </div>
   <div class="clinicbuttons container">
     <button class="sukari">
-      <div class="clinicicon">
+      <a href="sukaridiary.html"><div class="clinicicon">
         <p><b class="translate" data-en="Sugar" data-sw="Sukari">Sukari</b></p>
         <div class="cliniciconimage">
           <img src="assets/icons/glucometer.png" alt="">
         </div>
-      </div>
-      <div class="clinicbuttondetails">
-        <p><b>Asubuhi:</b> <em>12 mmol/l</em></p>
-        <p><b>Mchana:</b> <em>12 mmol/l</em></p>
-        <p><b>Jioni:</b> <em>12 mmol/l</em></p>
-      </div>
+      </div></a>
+      <a href="sukaridiary.html"><div class="clinicbuttondetails">
+        <p><b>Asubuhi:</b> 62 <em>mmol/l</em></p>
+        <p><b>Mchana:</b> 13 <em>mmol/l</em></p>
+        <p><b>Jioni:</b> 23 <em>mmol/l</em></p>
+      </div></a>
     </button>
     <button class="dawa">
-      <div class="clinicicon">
+      <a href="dawadiary.html"><div class="clinicicon">
         <p><b class="translate" data-en="Pills" data-sw="Dawa">Dawa</b></p>
         <div class="cliniciconimage">
           <img src="assets/icons/pill-clipart-black-and-white-1.png" alt="">
         </div>
-      </div>
-      <div class="clinicbuttondetails">
+      </div></a>
+      <a href="dawadiary.html"><div class="clinicbuttondetails">
         <p><b>Melfamine</b></p>
         <p>1 x 2</p>
-      </div>
+      </div></a>
     </button>
     <button class="insulin">
-      <div class="clinicicon">
+      <a href="insulindiary.html"><div class="clinicicon">
         <p><b class="translate" data-en="Insulin" data-sw="Insulini">Insulini</b></p>
         <div class="cliniciconimage">
           <img src="assets/icons/syringe.png" alt="">
         </div>
-      </div>
-      <div class="clinicbuttondetails">
-        <p><b>54</b> Uniti</p>
-        <p><b>Asubuhi:</b> <em>12 Uniti</em></p>
-        <p><b>Mchana:</b> <em>12 Uniti</em></p>
-        <p><b>Jioni:</b> <em>12 Uniti</em></p>
-      </div>
+      </div></a>
+      <a href="insulindiary.html"><div class="clinicbuttondetails">
+        <p><b>54</b> Unit</p>
+        <p><b>Asubuhi:</b> 12 <em>Unit</em></p>
+        <p><b>Mchana:</b> 12 <em>Unit</em></p>
+        <p><b>Jioni:</b> 12 <em>Unit</em></p>
+      </div></a>
     </button>
     <button class="chakula">
-      <div class="clinicicon">
+      <a href="chakuladiary.html"><div class="clinicicon">
         <p><b class="translate" data-en="Food" data-sw="Chakula">Chakula</b></p>
         <div class="cliniciconimage">
           <img src="assets/icons/food.png" alt="">
         </div>
-      </div>
-      <div class="clinicbuttondetails">
+      </div></a>
+      <a href="chakuladiary.html"><div class="clinicbuttondetails">
         <p>Mlo: <em>1</em></p>
-        <p><b>Mchana:</b> <em>Ugali Nyama Ugali Nyama Ugali Nyama</em></p>
-        <p><b>Maji:</b> <em>1 Litre</em></p>
-      </div>
+        <p><b>Mchana:</b> Ugali Nyama</p>
+        <p><b>Maji:</b> 1 <em>Litre</em></p>
+      </div></a>
     </button>
   </div>
 
   <!-- clinic days counter-->
   <div class="container">
     <div class="clinicdays">
-
+      <!--
+        <div class="counterclinic">
+          <div class="dayscounterresponsiv">
+            <div class="progress-container">
+              <div class="progress-bar">
+              </div>
+              <div class="progresscontainer">
+                <h4><span id="number">30</span> <br><b class="translate" data-en="Days" data-sw="Siku">Siku</b></h4>
+              </div>
+              <div class="walls">
+                <div class="walldivs">
+                  <div class="wall1 wall"></div>
+                  <div class="wall2 wall"></div>
+                  <div class="wall3 wall"></div>
+                  <div class="wall4 wall"></div>
+                  <div class="wall5 wall"></div>
+                  <div class="wall6 wall"></div>
+                  <div class="wall7 wall"></div>
+                  <div class="wall8 wall"></div>
+                  <div class="wall9 wall"></div>
+                  <div class="wall10 wall"></div>
+                  <div class="wall11 wall"></div>
+                  <div class="wall12 wall"></div>
+                  <div class="wall13 wall"></div>
+                  <div class="wall14 wall"></div>
+                  <div class="wall15 wall"></div>
+                  <div class="wall16 wall"></div>
+              </div>
+      
+              </div>
+            </div>
+          </div>
+          <div class="clinicdetails">
+            <p><span class="translate" data-en="Last Day Attending The Clinic: " data-sw="Tarehe ya Mwisho Kuhudhuria Kliniki: ">Tarehe ya Mwisho Kuhudhuria Kliniki: </span><span><b>12 June, 2023</b></span></p>
+            <p><span class="translate" data-en="Up Coming Date: " data-sw="Tarehe Inayofuata: ">Tarehe Inayofuata: </span><span><b>12 July, 2023</b></span></p>
+            <button class="jazacliniki">
+              <i class="fa-solid fa-pen-to-square"></i> <span class="translate" data-en="Fill Your Information" data-sw="Jaza Taarifa Zako">Jaza Taarifa Zako</span>
+            </button>
+          </div>
+        </div>-->
     </div>
   </div>
 
@@ -744,6 +786,7 @@
   <script src="assets/js/sliders.js"></script>
   <script src="assets/js/home.js"></script>
   <script src="assets/js/language.js"></script>
+  <script src="assets/js/counterclinic.js"></script>
   <script>
   
   </script>
