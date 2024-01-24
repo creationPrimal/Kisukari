@@ -1,0 +1,235 @@
+
+
+
+.diaryitem{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgba(230, 187, 187, 0);
+    height: 40px;
+    margin-bottom: 3px;
+}
+.fooditem{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: flex-start;
+    width: 100%;
+    background-color: rgba(187, 187, 187, 0.171);
+    height: auto;
+    padding: 10px;
+    border-radius: 7px;
+    margin-bottom: 10px;
+}
+.diaryitem:nth-child(even){
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    background-color: rgba(199, 198, 255, 0.315);
+    height: 40px;
+    margin-bottom: 3px;
+}
+.diaryitemlist{
+    display: flex;
+    flex-direction: column;
+}
+.diaryitem:nth-child(1){
+    color: rgb(0, 0, 150);
+}
+.sugardiarylist{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+.dawadiarylist{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.insulinidiarylist{
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.foodlist{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.sugarpart{
+    width: 19.5%;
+    font-size: 14px;
+    font-weight: bold;
+}
+.dawapart{
+    width: 40%;
+    font-size: 14px;
+    font-weight: bold;
+}
+.insulinipart{
+    width: 22%;
+    font-size: 14px;
+    font-weight: bold;
+}
+.foodpart{
+    width: 100%;
+    background-color: rgba(128, 128, 128, 0);
+    font-size: 15px;
+    margin-bottom: 3px;
+    font-weight: light;
+}
+.insulinipart:nth-child(5){
+    width: 80px;
+    font-size: 14px;
+    font-weight: bold;
+}
+.dawapart:nth-child(3), .dawapart:nth-child(2), .dawapart:nth-child(4){
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 80px;
+    max-width: 80px;
+    font-size: 13px;
+    font-weight: bold;
+}
+.dawapart:nth-child(1){
+    overflow: hidden;
+    white-space: nowrap;
+}
+.dawapart img{
+    height: 30px;
+    width: auto;
+}
+.listdelete{
+    font-size: 10px;
+    color: rgb(116, 115, 115);
+    padding: 2px;
+    background-color: white;
+    cursor: pointer;
+}
+.totalunits{
+    border: none;
+    font-weight: bold;
+}
+.sukarilevel select{
+    height: 42px;
+}
+.insulinidiarylist em{
+    font-size: 10px;
+    color: grey;
+}
+.dawadiarylist em{
+    font-size: 10px;
+    color: grey;
+}
+.foodpart em{
+    font-size: 10px;
+    color: grey;
+}
+.foodpart span{
+    font-size: 14px;
+    font-weight: bold;
+    color: rgb(0, 0, 0);
+}
+ 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width: 764px) {
+    .sugarpart{
+        width: 20%;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .dawapart{
+        width: 40%;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .insulinipart{
+        width: 25%;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .insulinipart:nth-child(5), .insulinipart:nth-child(4), .insulinipart:nth-child(3), .insulinipart:nth-child(2){
+        width: 60px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+    .dawapart:nth-child(3), .dawapart:nth-child(2), .dawapart:nth-child(4){
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        width: 70px;
+        max-width: 70px;
+        font-size: 12px;
+        font-weight: bold;
+    }
+}
+@media (max-width: 450px) {
+    
+    .sugarpart{
+        width: 24%;
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .diarylinebar{
+        width: 10px;
+        background-color: brown;
+        margin-right: 5px;
+    }
+    .insulinipart{
+        width: 25%;
+        font-size: 11px;
+        font-weight: bold;
+    }
+}
+@media (max-width: 350px) {
+    .sugarpart{
+        width: 24%;
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .dawapart{
+        width: 30%;
+        font-size: 10px;
+        font-weight: bold;
+    }
+    .sugarpart:nth-child(3){
+        display: none;
+    }
+    .insulinipart:nth-child(5){
+        display: none;
+        width: 25%;
+        font-size: 11px;
+        font-weight: bold;
+    }
+}
+
+
