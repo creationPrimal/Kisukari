@@ -13,7 +13,9 @@ const notificationdiv = document.querySelector('.notificationdiv');
 const closenotify = document.querySelector('.closenotify');
 
 notify.addEventListener("click", ()=>{
-    notificationdiv.style.display='flex'
+    if( notificationdiv.style.display ==='flex'){
+        notificationdiv.style.display="none";}
+        else {notificationdiv.style.display = 'flex';}
 });
 closenotify.addEventListener("click", ()=>{
     notificationdiv.style.display='none'
