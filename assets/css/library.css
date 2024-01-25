@@ -1063,7 +1063,7 @@
     width: 100%;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 10px 3px 10px 10px;
   }
   .progress-container {
@@ -1406,6 +1406,14 @@
       
 }
 @media (max-width: 450px) {
+  .countertop{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 3px 10px 10px;
+  }
   .notificationsection{
     display: flex;
     flex-direction: column;
