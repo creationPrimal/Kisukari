@@ -48,4 +48,57 @@
         });
 
 
+        function predictDate() {
+          // Get the user-input date
+          const inputDate = document.getElementById('inputDate').value;
+
+          // Convert the input date to a JavaScript Date object
+          const currentDate = new Date(inputDate);
+
+          // Calculate the date 30 days ahead
+          const predictedDate = new Date(currentDate);
+          predictedDate.setDate(currentDate.getDate() + 30);
+
+          // Format the predicted date to YYYY-MM-DD
+          const formattedPredictedDate = predictedDate.toISOString().split('T')[0];
+
+          // Display the predicted date in the input field
+          document.getElementById('predictedDate').value = formattedPredictedDate;
+
+          // Allow the user to edit the predicted date
+          document.getElementById('editedDate').value = formattedPredictedDate;
+          document.getElementById('editedDate').removeAttribute('disabled');
+      }
+
+
+ // Function to calculate the remaining days between two dates
+ function calculateRemainingDays(datePair) {
+  const startDateText = datePair.querySelector('.start-date').innerText;
+  const endDateText = datePair.querySelector('.end-date').innerText;
+
+  const startDate = new Date(startDateText);
+  const endDate = new Date(endDateText);
+
+  // Calculate the difference in days
+  const timeDifference = endDate.getTime() - startDate.getTime();
+  const daysDifference = Math.ceil(timeDifference / (1000 * 3600 * 24));
+
+ 
+
+  // Display the remaining days in the counter element
+  datePair.querySelector('.days-counter').innerText = `${daysDifference}`;
+  
+}
+
+// Example: Calculate remaining days for each date pair
+document.querySelectorAll('.date-pair').forEach(function(datePair) {
+  calculateRemainingDays(datePair);
+  
+});
+
+
+
+
+
+
 
