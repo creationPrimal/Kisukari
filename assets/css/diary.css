@@ -15,7 +15,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     width: 100%;
-    background-color: rgba(187, 187, 187, 0.171);
+    background-color: rgba(255, 217, 0, 0.247);
     height: auto;
     padding: 10px;
     border-radius: 7px;
@@ -25,7 +25,7 @@
     display: flex;
     flex-direction: row;
     width: 100%;
-    background-color: rgba(199, 198, 255, 0.315);
+    background-color: rgba(255, 217, 0, 0.247);
     height: 40px;
     margin-bottom: 3px;
 }
@@ -67,6 +67,9 @@
 .sugarpart{
     width: 19.5%;
     font-size: 14px;
+    font-weight: light;
+}
+.sugarpart:nth-child(1), .sugarpart:nth-child(5), .sugarpart:nth-child(3){
     font-weight: bold;
 }
 .dawapart{
@@ -75,8 +78,14 @@
     font-weight: bold;
 }
 .insulinipart{
-    width: 22%;
+    width: 28%;
+    overflow: hidden;
+    padding-left: 2px;
+    white-space: nowrap;
     font-size: 14px;
+    font-weight: light;
+}
+.insulinipart .number{
     font-weight: bold;
 }
 .foodpart{
@@ -86,7 +95,7 @@
     margin-bottom: 3px;
     font-weight: light;
 }
-.insulinipart:nth-child(5){
+.insulinipart:nth-child(4){
     width: 80px;
     font-size: 14px;
     font-weight: bold;
@@ -105,10 +114,7 @@
     overflow: hidden;
     white-space: nowrap;
 }
-.dawapart img{
-    height: 30px;
-    width: auto;
-}
+
 .listdelete{
     font-size: 10px;
     color: rgb(116, 115, 115);
@@ -140,6 +146,17 @@
     font-weight: bold;
     color: rgb(0, 0, 0);
 }
+.dawaimage{
+    width: 35px;
+    max-width: 35px;
+    height: 35px;
+    overflow: hidden;
+}
+.dawaimage img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
  
 
 
@@ -164,7 +181,7 @@
     .sugarpart{
         width: 20%;
         font-size: 12px;
-        font-weight: bold;
+        font-weight: light;
     }
     .dawapart{
         width: 40%;
@@ -172,14 +189,16 @@
         font-weight: bold;
     }
     .insulinipart{
-        width: 25%;
+        width: 28%;
         font-size: 12px;
-        font-weight: bold;
+        overflow: hidden;
+        font-weight: light;
     }
-    .insulinipart:nth-child(5), .insulinipart:nth-child(4), .insulinipart:nth-child(3), .insulinipart:nth-child(2){
+    .insulinipart:nth-child(4){
         width: 60px;
+        min-width: 60px;
         font-size: 12px;
-        font-weight: bold;
+        font-weight: light;
     }
     .dawapart:nth-child(3), .dawapart:nth-child(2), .dawapart:nth-child(4){
         display: flex;
@@ -197,7 +216,7 @@
     .sugarpart{
         width: 24%;
         font-size: 10px;
-        font-weight: bold;
+        font-weight: light;
     }
     .diarylinebar{
         width: 10px;
@@ -205,16 +224,19 @@
         margin-right: 5px;
     }
     .insulinipart{
-        width: 25%;
+        width: 28%;
+        overflow: hidden;
+        margin: 2px;
+        white-space: nowrap;
         font-size: 11px;
-        font-weight: bold;
+        font-weight: light;
     }
 }
 @media (max-width: 350px) {
     .sugarpart{
         width: 24%;
         font-size: 10px;
-        font-weight: bold;
+        font-weight: light;
     }
     .dawapart{
         width: 30%;
@@ -224,12 +246,7 @@
     .sugarpart:nth-child(3){
         display: none;
     }
-    .insulinipart:nth-child(5){
-        display: none;
-        width: 25%;
-        font-size: 11px;
-        font-weight: bold;
-    }
+    
 }
 
 

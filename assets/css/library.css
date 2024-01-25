@@ -2,6 +2,7 @@
 
 .library{
     padding-bottom: 30px;
+    padding-top: 20px;
 }
 .container h4{
     font-family:'Roboto', sans-serif;
@@ -24,7 +25,7 @@
     border-radius: 10px;
     overflow: hidden;
     cursor: pointer;
-    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 0px 7px rgba(0, 0, 0, 0);
 }
 .topiclockscreen{
   display: flex;
@@ -890,19 +891,37 @@
   display: flex;
   flex-direction: column;
   height: auto;
+  overflow: hidden;
   margin-top: 20px;
   border-radius: 10px;
-  background-color: rgb(233, 231, 252);
+  background-color: rgba(233, 231, 252, 0.705);
 }
 .counterclinic{
   display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 0px;
+}
+.countertop{
+  display: flex;
   flex-direction: row;
   align-items: center;
-  padding: 10px;
+  justify-content: flex-start;
+  width: 100%;
+  padding: 10px 10px 10px 60px;
 }
-.progresscontainer h4{
+.dayscounterresponsiv{
   text-align: center;
-  font-size: 20px;
+  padding: 0px;
+  font-family:'Roboto', sans-serif;
+}
+.dayscounterresponsiv h2{
+  font-size: 60px;
+  font-weight: 700;
+  font-family:'Roboto', sans-serif;
+}
+.dayscounterresponsiv p{
   margin: 0px;
 }
 .progresscontainer span{
@@ -923,6 +942,7 @@
   justify-content: flex-start;
   align-items: center;
   margin: 3px;
+  padding: 5px 12px 5px 12px;
   background-color: rgba(255, 217, 0, 0.219);
   border-radius: 6px;
   width: 200px;
@@ -940,6 +960,14 @@
 }
 .clinicinfo select{
   border-color: #d127274f;
+}
+
+/*progress bar*/
+.progressbar{
+  align-self: flex-start;
+  height: 3px;
+  width: 0;
+  background: linear-gradient(to right, #ecad00, #ff0000); 
 }
 
 
@@ -1020,6 +1048,24 @@
   .sukarilevel{
     width: 50%;
   }
+  .dayscounterresponsiv p{
+    margin: 0px;
+    font-size: 13px;
+  }
+  .dayscounterresponsiv h2{
+    font-size: 30px;
+    margin: 0px;
+    font-weight: 700;
+    font-family:'Roboto', sans-serif;
+  }
+  .countertop{
+    display: flex;
+    width: 100%;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 3px 10px 10px;
+  }
   .progress-container {
     position: relative;
     display: flex;
@@ -1041,7 +1087,7 @@
   }
   .clinicdetails p{
     margin: 3px;
-    font-size: 14px;
+    font-size: 13px;
   }
   .progresscontainer b{
     text-align: center;
@@ -1148,7 +1194,7 @@
         border-radius: 10px;
         overflow: hidden;
         cursor: pointer;
-        box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 0px 7px rgba(0, 0, 0, 0);
     }
     .titlediv{
         display: flex;
@@ -1214,7 +1260,7 @@
         border-radius: 10px;
         overflow: hidden;
         cursor: pointer;
-        box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 0px 7px rgba(0, 0, 0, 0);
     }
     .titlediv{
         display: flex;
@@ -1382,7 +1428,7 @@
         border-radius: 10px;
         overflow: hidden;
         cursor: pointer;
-        box-shadow: 0px 0px 7px rgba(0, 0, 0, 0.3);
+        box-shadow: 0px 0px 7px rgba(0, 0, 0, 0);
     }
     .titlediv{
         display: flex;
@@ -1391,8 +1437,8 @@
         width: 150px;
     }
     .topic p{
-        font-size: 14px;
-        line-height: 18px;
+        font-size: 13px;
+        line-height: 16px;
     }
     .splide__arrow--prev{
         margin-left: 0px;

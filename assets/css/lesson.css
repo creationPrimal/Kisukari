@@ -21,6 +21,25 @@
     width: 100%;
     object-fit: cover;
  }
+ .lessonautherimage{
+  height: 35px;
+  width: 35px;
+  min-width: 35px;
+  border-radius: 50%;
+  overflow: hidden;
+  background-color: grey;
+}
+.lessonautherimage img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.lessonautherimage i{
+  position: absolute;
+  margin-top: 20px;
+  margin-left: 25px;
+  font-size: 15px;
+ }
  .authorprofileimage{
   height: 200px;
   width: 200px;
@@ -607,6 +626,15 @@ input:checked + .slider:before {
 
 
  @media (max-width: 764px) {
+  .lessonautherimage{
+    height: 35px;
+    width: 35px;
+    min-width: 35px;
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 10px;
+    background-color: grey;
+  }
   .lockscreen i{
     font-size: 15px;
     align-self: flex-end;
