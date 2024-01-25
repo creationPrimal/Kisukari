@@ -44,10 +44,10 @@ const firstsplide = new Splide( '#first-splide', {
       },
       415: {
         perPage: 2,
-        padding: { left: 0, right: 50 },
+        padding: { left: 0, right: 70 },
         
         },
-        385: {
+        390: {
             perPage: 2,
             padding: { left: 0, right: 20 },
         },
@@ -116,10 +116,10 @@ const secondsplide = new Splide( '#second-splide', {
       },
       415: {
         perPage: 2,
-        padding: { left: 0, right: 50 },
+        padding: { left: 0, right: 70 },
         
         },
-        385: {
+        390: {
             perPage: 2,
             padding: { left: 0, right: 20 },
         },
@@ -188,10 +188,10 @@ const thirdsplide = new Splide( '#third-splide', {
       },
       415: {
         perPage: 2,
-        padding: { left: 0, right: 50 },
+        padding: { left: 0, right: 70 },
         
         },
-        385: {
+        390: {
             perPage: 2,
             padding: { left: 0, right: 20 },
         },
@@ -260,10 +260,10 @@ const fourthsplide = new Splide( '#fourth-splide', {
       },
       415: {
         perPage: 2,
-        padding: { left: 0, right: 50 },
+        padding: { left: 0, right: 70 },
         
         },
-        385: {
+        390: {
             perPage: 2,
             padding: { left: 0, right: 20 },
         },
