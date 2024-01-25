@@ -640,6 +640,7 @@
 }
 .fa-bell{
   font-size: 20px;
+  color: black;
 }
 .notificationcounter{
   position: absolute;
@@ -1296,6 +1297,7 @@
     .mobilenav button i{
         font-size: 20px;
         margin-top: 5px;
+        color:#d12727 !important;
         filter: opacity(60%);
     }
     .profileimagenav{
