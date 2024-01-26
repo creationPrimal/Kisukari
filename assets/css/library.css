@@ -83,6 +83,10 @@
     width: 100%;
     object-fit: cover;
 }
+.topicimage img:hover{
+  transform: scale(1.2);
+  transition: 300ms;
+}
 
 .slide .splide__pagination__page{
     background-color: orangered;
@@ -551,6 +555,10 @@
   width: 100%;
   object-fit: cover;
 }
+.librarytopicimage img:hover{
+  transform: scale(1.1);
+  transition: 300ms;
+}
 .lib {
   display: none;
   flex-direction: column;
@@ -908,7 +916,7 @@
   display: flex;
   flex-direction: row;
   align-items: center;
-  justify-content: flex-start;
+  justify-content: space-between;
   width: 100%;
   padding: 10px 10px 10px 60px;
 }
@@ -971,6 +979,52 @@
   background: linear-gradient(to right, #ecad00, #ff0000); 
 }
 
+.indexremindericon{
+  height: 30px;
+  width: 30px;
+  min-width: 30px;
+  margin-right: 7px;
+  background-color: rgba(0, 0, 0, 0);
+}
+.indexremindericon:hover{
+  height: 30px;
+  width: 30px;
+  min-width: 30px;
+  margin-right: 7px;
+  padding: 3px;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: 200ms;
+  background-color: rgba(255, 208, 0, 0.658);
+}
+
+.indexremindericon img{
+  height: 100%;
+  width: 100%;
+  object-fit: cover;
+}
+.indexremindericons{
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  width: 100%;
+  gap: 10px;
+}
+.iconlinks{
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  width: 18%;
+  background-color: rgba(255, 217, 0, 0);
+}
+.iconlinks p{
+  font-size: 12px;
+  text-align: center;
+  margin: 0px 0px 5px 5px;
+}
+
 
 
 
@@ -989,7 +1043,22 @@
 
 
 @media (max-width: 991px) {
-  
+  .countertop{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 10px 10px 10px 20px;
+  }
+  .iconlinks{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 24%;
+    background-color: rgba(255, 217, 0, 0);
+  }
     .welcomenote{
       display: flex;
       flex-direction: row;
@@ -1046,6 +1115,14 @@
 }
 
 @media (max-width: 764px) {
+  .iconlinks{
+    display: none;
+    flex-direction: column;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+    width: 24%;
+    background-color: rgba(255, 217, 0, 0);
+  }
   .sukarilevel{
     width: 50%;
   }
@@ -1066,6 +1143,12 @@
     align-items: center;
     justify-content: flex-start;
     padding: 10px 3px 10px 10px;
+  }
+  .dayscounterresponsiv{
+    text-align: center;
+    padding: 0px;
+    margin-right: 40px;
+    font-family:'Roboto', sans-serif;
   }
   .progress-container {
     position: relative;
@@ -1206,6 +1289,12 @@
   
 }
 @media (max-width: 575px) {
+  .dayscounterresponsiv{
+    text-align: center;
+    padding: 0px;
+    margin-right: 40px;
+    font-family:'Roboto', sans-serif;
+  }
   .clinicdetails p{
     margin: 3px;
     font-size: 12px;
@@ -1415,6 +1504,12 @@
     align-items: center;
     justify-content: space-between;
     padding: 10px 3px 10px 10px;
+  }
+  .dayscounterresponsiv{
+    text-align: center;
+    padding: 0px;
+    margin-right: 0px;
+    font-family:'Roboto', sans-serif;
   }
   .notificationsection{
     display: flex;

@@ -96,8 +96,8 @@
     font-weight: light;
 }
 .clinicpart{
-    width: 33%;
-    font-size: 15px;
+    width: 48%;
+    font-size: 14px;
     overflow: hidden;
     margin-left: 3px;
     margin-bottom: 3px;
@@ -169,6 +169,58 @@
     display: none;
     font-size: 12px;
 }
+.reminderbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 60px;
+    font-size: 13px;
+    line-height: 16px;
+    padding: 5px;
+    width: 200px;
+    border: 1px solid rgba(0, 0, 0, 0.144);
+    border-radius: 3px;
+}
+.remindericon{
+    height: 50px;
+    width: 50px;
+    min-width: 50px;
+    margin-right: 7px;
+    background-color: rgba(128, 128, 128, 0);
+}
+.reminderbox p{
+    margin: 0px;
+}
+.remindericon img{
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+}
+.reminderdiv .splide__pagination{
+    bottom: 0px;
+    color: rgb(0, 0, 0);
+}
+.reminderdiv .splide__slide{
+    padding-bottom: 20px;
+}
+.reminderdiv .splide__pagination__page{
+    height: 2px;
+    border-radius: 0px;
+    background-color: rgba(0, 0, 255, 0.205);
+}
+.reminderdiv .splide__pagination .is-active{
+    height: 2px;
+    border-radius: 0px;
+    background-color: rgb(0, 0, 255);
+}
+.asqformdiv label{
+    font-size: 14px;
+}
+.reminderdiv a{
+    color: black;
+}
+
  
 
 
@@ -190,6 +242,9 @@
 
 
 @media (max-width: 764px) {
+    .reminderhead{
+        font-size: 14px;
+    }
     .sugarpart{
         width: 20%;
         font-size: 12px;
@@ -223,18 +278,18 @@
         font-weight: bold;
     }
     .clinicpart{
-        width: 33%;
+        width: 48%;
         background-color: rgba(128, 128, 128, 0);
-        font-size: 14px;
+        font-size: 12px;
         margin-bottom: 3px;
         font-weight: light;
     }
 }
 @media (max-width: 450px) {
     .clinicpart{
-        width: 33%;
+        width: 48%;
         background-color: rgba(128, 128, 128, 0);
-        font-size: 13px;
+        font-size: 12px;
         margin-bottom: 3px;
         font-weight: light;
     }
@@ -275,7 +330,7 @@
         display: none;
     }
     .clinicpart{
-        width: 33%;
+        width: 48%;
         font-size: 10px;
         overflow: hidden;
         margin-left: 3px;
@@ -285,4 +340,29 @@
     
 }
 
-
+@media (max-width: 428px) {
+.reminderbox{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    height: 45px;
+    font-size: 11px;
+    line-height: 13px;
+    padding: 3px;
+    width: 170px;
+    overflow: hidden;
+    border: 1px solid rgba(0, 0, 0, 0.144);
+    border-radius: 3px;
+}
+.reminderbox p{
+    margin: 0px;
+}
+.remindericon{
+    height: 35px;
+    width: 35px;
+    min-width: 35px;
+    margin-right: 7px;
+    background-color: rgba(128, 128, 128, 0);
+}
+}
