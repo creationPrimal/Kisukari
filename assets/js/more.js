@@ -71,31 +71,7 @@
       }
 
 
- // Function to calculate the remaining days between two dates
- function calculateRemainingDays(datePair) {
-  const startDateText = datePair.querySelector('.start-date').innerText;
-  const endDateText = datePair.querySelector('.end-date').innerText;
-
-  const startDate = new Date(startDateText);
-  const endDate = new Date(endDateText);
-
-  // Calculate the difference in days
-  const timeDifference = endDate.getTime() - startDate.getTime();
-  const daysDifference = Math.ceil(timeDifference / (1000 * 3600 * 24));
-
  
-
-  // Display the remaining days in the counter element
-  datePair.querySelector('.days-counter').innerText = `${daysDifference}`;
-  
-}
-
-// Example: Calculate remaining days for each date pair
-document.querySelectorAll('.date-pair').forEach(function(datePair) {
-  calculateRemainingDays(datePair);
-  
-});
-
 
 
 
