@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title class="translate" data-en="Kisukari - Oil level tests" data-sw="Kisukari - Vipimo vya kiwango cha mafuta">Kisukari - Vipimo vya kiwango cha mafuta</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="" rel="icon">
+  <link href="" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <link href="https://cdn.jsdelivr.net/npm/@splidejs/splide@4.1.4/dist/css/splide.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <!-- Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  <link href="assets/css/library.css" rel="stylesheet">
+  <link href="assets/css/lesson.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center " class="headernav">
+    <div class="container d-flex align-items-center" >
+        <button class="return" onclick="back()"><i class="fa-solid fa-arrow-right fa-flip-horizontal"></i></button>
+        <button class="share" onclick="copyAndShare()" ><i class="bi bi-share-fill"></i></button>
+      <h1 class="logo me-auto"><a href="index.html">Kisukari</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav id="navbar" class="navbar" >
+        <ul>
+          <li><a href="index.html" class="translate" data-en="Home" data-sw="Nyumbani">Nyumbani</a></li>
+          <li><a href="library.html" class="translate" data-en="Library" data-sw="Maktaba">Maktaba</a></li>
+          <li><a href="q&a.html" class="translate" data-en="Q&A" data-sw="Maswali">Maswali</a></li>
+          <li><a href="chat.html" class="translate" data-en="Asq Us" data-sw="Tuulize">Tuulize</a></li>
+          <li class="dropdown"><a href="#"><span class="translate" data-en="More" data-sw="Zaidi">Zaidi</span> <i class="bi bi-chevron-down"></i></a>
+            <ul>
+              <li><a href="termsandconditions.html" class="translate" data-en="About Us" data-sw="Kutuhusu">Kutuhusu</a></li>
+              <li><a href="termsandconditions.html" class="translate" data-en="Privacy Policies" data-sw="Sera za Faragha">Sera za Faragha</a></li>
+              <li><a href="termsandconditions.html" class="translate" data-en="Terms and Conditions" data-sw="Sheria na Masharti">Sheria na Masharti</a></li>
+              <li><a href="contact.html" class="translate" data-en="Contact Us" data-sw="Wasiliana nasi">Wasiliana nasi</a></li>
+              <li class="dropdown" style="display: none;"><a href="#"><span class="translate" data-en="Language" data-sw="Lugha">Lugha</span> <i class="bi bi-chevron-down"></i></a>
+                <ul>
+                  <li><button class="sw defaultlang" id="swahiliBtn" onclick="updateContent('sw')">Swahili <div class="languageflag"><img src="assets/icons/tz-flag.png" alt=""></div></button></li>
+                  <li><button class="en" id="englishBtn" onclick="updateContent('en')">English <div class="languageflag"><img src="assets/icons/americas flag.png" alt=""></div></button></li>
+                </ul>
+              </li>
+
+              
+            </ul>
+          </li>
+          <li><a href="login.html" class="translate" data-en="Log In" data-sw="Ingia">Ingia</a></li>
+          <li><a href="profile.html" class="translate" data-en="Profile" data-sw="Wasifu">Wasifu</a></li>
+          <li><a href="signup.html" class="getstarted translate"  data-en="Register" data-sw="Jisajili">Jisajili</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+
+
+    <!-- ======= topic contentSection ======= -->
+    <section id="blog" class="blog" style="margin-top: 85px;">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row" >
+
+          <div class="col-lg-8 entries" style="width: 100%;">
+
+            <article class="entry entry-single lessontopics">
+
+                 
+                <!--end authers details-->
+                <h2 class="entry-title">
+                    <a href="#startreading" class="translate" data-en="Oil level tests" data-sw="Vipimo vya kiwango cha mafuta">Vipimo vya kiwango cha mafuta</a>
+                  </h2>
+              <div class="lesson-img">
+                <img src="assets/img/images/Physical Symptoms of Anxiety.jpg" alt="" class="img-fluid">
+              </div>
+
+              <div class="entry-content lessoncontent" id="startreading">
+                <p>
+                    Diabetes is a healthcare condition that has continued to affect so many people,  <br>
+                    both young and old. Understanding more about Diabetes will help people live a healthy
+                     lifestyle by avoiding all the possible things that might cause it. In this assignment, <br>
+                      I will assess why Diabetes is a significant health issue to individuals and the world. 
+                    
+                          cause of high blood sugar levels. People who have Diabetes have bodies that cannot
+                           make enough insulin, or their bodies cannot use the insulin they have effectively (Healthline, 2021).  <br>
+                           Insulin is the hormone that moves sugars from the blood to the body cells. There are several types of Diabetes, <br>
+                            including type 1 diabetes, type 2 diabetes, gestational diabetes, prediabetes, and Diabetes insipidus (Healthine, <br>
+                             2021). All these types affect our bodies differently, and they all have different effects,
+                              hence different coping strategies.
+                    
+                    Need an essay assistance?
+                    Our professional writers are here to help you.
+                    PLACE AN ORDER
+                    The rationale for Choosing Diabetes
+                    
+                    Diabetes is among the most severe health issues in the world. This is the reason why I chose to discuss it to
+                     create awareness about it. The bad thing with Diabetes is that one can get it and not know that they have it. <br>
+                      By the time they realize that they have Diabetes, the condition is worse, and the person is highly affected. <br> 
+                      According to Genesis Medical Associates (2015), one out of 
+                   
+                </p>
+
+              </div>
+
+             
+
+            </article><!-- End topic head -->
+
+
+          </div><!-- End blog entries list -->
+
+        </div>
+
+      </div>
+    </section><!-- End Blog Single Section -->
+
+  </main><!-- End #main -->
+
+  <!--loader-->
+  <div class="loadingdiv" id="loadingdiv">
+    <div class="loader">Kisukari.com</div>
+  </div>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  <script src="assets/js/loader.js"></script>
+  <script src="assets/js/language.js"></script>
+
+</body>
+
+</html>

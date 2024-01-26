@@ -262,11 +262,11 @@
           <img src="assets/icons/syringe.png" alt="">
         </div>
       </div></a>
-      <a href="insulindiary.html"><div class="clinicbuttondetails">
-        <p><b>54</b> Unit</p>
-        <p><b>Asubuhi:</b> 12 <em>Unit</em></p>
-        <p><b>Mchana:</b> 12 <em>Unit</em></p>
-        <p><b>Jioni:</b> 12 <em>Unit</em></p>
+      <a href="insulindiary.html"><div class="clinicbuttondetails number-container">
+        <p><b class="result"></b> Units</p>
+        <p><b>Asubuhi:</b> <span class="number">12</span> <em>Units</em></p>
+        <p><b>Mchana:</b> <span class="number">10</span> <em>Units</em></p>
+        <p><b>Jioni:</b> <span class="number">12</span> <em>Units</em></p>
       </div></a>
     </button>
     <button class="chakula">
@@ -291,16 +291,57 @@
         <div class="counterclinic">
           <div class="countertop">
             <div class="dayscounterresponsiv">
-                <h2 id="number">10</h2>
+                <h2 class="countnumber"><span class=" countdown"></span></h2>
                 <p class="translate" data-en="Days" data-sw="Siku">Siku</p>
                 <p class="translate" data-en="Remaining" data-sw="Zimebaki">Zimebaki </p>
             </div>
             <div class="clinicdetails">
-              <p><span class="translate" data-en="Last Day Attending The Clinic: " data-sw="Tarehe ya Mwisho Kuhudhuria Kliniki: ">Tarehe ya Mwisho Kuhudhuria Kliniki: </span><span><b>12 June, 2023</b></span></p>
-              <p><span class="translate" data-en="Up Coming Date: " data-sw="Tarehe Inayofuata: ">Tarehe Inayofuata: </span><span><b>12 July, 2023</b></span></p>
+              <p><span class="translate" data-en="Last Day Attending The Clinic: " data-sw="Tarehe ya Mwisho Kuhudhuria Kliniki: ">Tarehe ya Mwisho Kuhudhuria Kliniki: </span><span><b>26 Jan, 2024</b></span></p>
+              <p><span class="translate" data-en="Up Coming Date: " data-sw="Tarehe Inayofuata: ">Tarehe Inayofuata: </span><span><b id="futureDate">15 Feb, 2024</b></span></p>
               <a href="clinicdays.html"><button class="jazacliniki">
                 <i class="fa-solid fa-pen-to-square"></i> <span class="translate" data-en="Log Your data" data-sw="Jaza Taarifa Zako">Jaza Taarifa Zako</span>
               </button></a>
+            </div>
+            <div class="iconlinks">
+              <p><strong class="translate" data-en="Important:" data-sw="Muhimu:">Muhimu:</strong> <span class="translate" data-en="Click to know more." data-sw="Bonyeza Ujue zaidi.">Bonyeza Ujue zaidi.</span></p>
+              <div class="indexremindericons">
+                <a href="vipimosukarihint.html"><div class="indexremindericon">
+                  <img src="assets/icons/glucometer.png copy.png" alt="">
+                </div></a>
+                <a href="moyohint.html"><div class="indexremindericon">
+                  <img src="assets/icons/Vector-Heartbeat-Transparent-Image.png" alt="">
+                </div></a>
+                <a href="figohint.html"><div class="indexremindericon">
+                  <img src="assets/icons/kidney.png" alt="">
+                </div></a>
+                <a href="inihint.html"><div class="indexremindericon">
+                  <img src="assets/icons/liver.png" alt="">
+                </div></a>
+                <a href="mafutahint.html"><div class="indexremindericon">
+                  <img src="assets/icons/fat.png" alt="">
+                </div></a>
+                <a href="machohint.html"><div class="indexremindericon">
+                  <img src="assets/icons/eye.png" alt="">
+                </div></a>
+                <a href="menohint.html"><div class="indexremindericon">
+                  <img src="assets/icons/teeth.png" alt="">
+                </div></a>
+                <a href="miguuhint.html"><div class="indexremindericon">
+                  <img src="assets/icons/wound.png" alt="">
+                </div></a>
+                <a href="mishipahint.html"><div class="indexremindericon">
+                  <img src="assets/icons/nerves.png" alt="">
+                </div></a>
+                <a href="ngozihint.html"><div class="indexremindericon">
+                  <img src="assets/icons/skin.png" alt="">
+                </div></a>
+                <a href="changamotohint.html"><div class="indexremindericon">
+                  <img src="assets/icons/test.png" alt="">
+                </div></a>
+                <a href="akilihint.html"><div class="indexremindericon">
+                  <img src="assets/icons/brain.png" alt="">
+                </div></a>
+              </div>
             </div>
           </div>
           <div class="progressbar" id="myProgressBar"></div>
@@ -767,7 +808,10 @@
   <script src="assets/js/language.js"></script>
   <script src="assets/js/counterclinic.js"></script>
   <script>
-  
+    
+  </script>
+  <script>
+ 
   </script>
 
 </body>
