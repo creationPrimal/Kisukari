@@ -92,11 +92,10 @@ h6 {
   padding: 0;
   line-height: 1;
   font-weight: 700;
-  text-transform: uppercase;
 }
 
 #header .logo a {
-  color: #556270;
+  color: #d9232d !important;
 }
 
 #header .logo img {
