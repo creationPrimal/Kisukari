@@ -940,6 +940,7 @@
   font-family:'Roboto', sans-serif;
 }
 .dayscounterresponsiv p{
+  line-height: 20px;
   margin: 0px;
 }
 .progresscontainer span{
@@ -1180,7 +1181,8 @@
   }
   .dayscounterresponsiv p{
     margin: 0px;
-    font-size: 13px;
+    line-height: 13px;
+    font-size: 12px;
   }
   .dayscounterresponsiv h2{
     font-size: 30px;
@@ -1431,7 +1433,7 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-        width: 50px;
+        width: 65px;
         border: none;
         background-color: transparent;
     }
@@ -1561,7 +1563,13 @@
     text-align: center;
     padding: 0px;
     margin-right: 0px;
+    background-color: rgba(0, 0, 255, 0);
     font-family:'Roboto', sans-serif;
+  }
+  .dayscounterresponsiv p{
+    margin: 0px;
+    line-height: 13px;
+    font-size: 10px;
   }
   .notificationsection{
     display: flex;
