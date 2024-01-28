@@ -55,7 +55,7 @@
           <li><a href="index.html" class="translate" data-en="Home" data-sw="Nyumbani">Nyumbani</a></li>
           <li><a href="library.html" class="translate" data-en="Library" data-sw="Maktaba">Maktaba</a></li>
           <li><a href="q&a.html" class="translate" data-en="Q&A" data-sw="Maswali">Maswali</a></li>
-          <li><a href="chat.html" class="translate" data-en="Asq Us" data-sw="Tuulize">Tuulize</a></li>
+          <li><a href="chat.html" class="translate" data-en="Let's talk" data-sw="Ongea nasi">Ongea nasi</a></li>
           <li class="dropdown"><a href="#"><span class="translate" data-en="More" data-sw="Zaidi">Zaidi</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="termsandconditions.html" class="translate" data-en="About Us" data-sw="Kutuhusu">Kutuhusu</a></li>
@@ -106,14 +106,14 @@
         <div class="row mt-0 justify-content-center" >
           <div class="col-lg-8 mt-1 mt-lg-0">
 
-            <form action="" method="" role="form" class="php-email-form"  >
+            <form action="" method="" role="form" class="php-email-form"  id="myForm" onsubmit="return validateForm()" novalidate>
                 <div class="form-group mt-3">
                     <label for="profileimage" class="translate" data-en="Profile Image" data-sw="Picha ya wasifu">Picha ya wasifu</label>
                     <input type="file" class="form-control" name="profileimage" id="" required>
                   </div>
               <div class="form-group mt-3">
                 <label for="number" class="translate" data-en="Phone Number" data-sw="Namba ya Simu">Namba ya Simu</label>
-                <input type="number" class="form-control" name="number" id="" placeholder="" >
+                <input type="number" class="form-control" name="number" id="" placeholder="" required>
               </div>
               <div class="row">
                 <div class="col-md-6 form-group">
@@ -125,62 +125,10 @@
                 <input type="date" name="" class="form-control" id="" placeholder="" >
                 </div>
                 <div class="col-md-6 form-group mt-3 md-0">
-                  <label for="unakisukari" class="translate" data-en="Do You Have Diabetes?" data-sw="Je Unakisukari?">Je Unakisukari?</label>
-                  <select class="form-control" style="padding: 9px 0px 9px 5px;" required>
-                    <option disabled selected class="translate" data-en="Select Your Answer" data-sw="Chagua Jibu">Chagua Jibu</option>
-                    <option value="Ndio" class="translate" data-en="Yes" data-sw="Ndio">Ndio</option>
-                    <option value="Hapana" class="translate" data-en="No" data-sw="Hapana">Hapana</option>
-                  </select>
+                  <label for="unakisukari" class="translate" data-en="Do You Have any Other Disease?" data-sw="Je Una Ugonjwa Mwingine?">Je Una Ugonjwa mwingine? (Utaje)</label>
+                  <input type="text" name="" class="form-control" id="" placeholder="">
                 </div>
-                <div class="col-md-6 form-group mt-3 md-0">
-                  <label for="ugunduzi" class="translate" data-en="Date Diabetic Diagnosed" data-sw="Tarehe Uliyogundulika Kuwa na Kisukari">Tarehe Uliyogundulika Kuwa na Kisukari</label>
-                  <input type="date" name="ugunduzi" class="form-control" id="" placeholder="">
-                </div>
-                <div class="col-md-6 form-group mt-3 md-0">
-                  <label for="" class="translate" data-en="Type of Diabetes" data-sw="Aina gani ya Kisukari">Aina gani ya Kisukari</label>
-                  <select class="form-control" style="padding: 9px 0px 9px 5px;">
-                    <option disabled selected class="translate" data-en="Select Type" data-sw="Chagua Aina">Chagua Aina</option>
-                    <option value="Aina ya Kwanza" class="translate" data-en="Type One" data-sw="Aina ya Kwanza">Aina ya Kwanza</option>
-                    <option value="Aina ya Pili" class="translate" data-en="Type Two" data-sw="Aina ya Pili">Aina ya Pili</option>
-                    <option value="Kisukari cha Mimba" class="translate" data-en="Gestational Diabetes" data-sw="Kisukari cha Mimba">Kisukari cha Mimba</option>
-                    <option value="Aina nyingine" class="translate" data-en="Other Type" data-sw="Aina nyingine">Aina nyingine</option>
-                  </select>
-                </div>
-                <div class="col-md-6 form-group mt-3 md-0">
-                  <label for="" class="translate" data-en="Type of Medicine You are Using" data-sw="Unatumia Dawa gani za Kisukari?">Unatumia Dawa gani za Kisukari?</label>
-                  <select class="form-control" style="padding: 9px 0px 9px 5px;">
-                    <option disabled selected class="translate" data-en="Select Type" data-sw="Chagua Aina">Chagua Aina</option>
-                    <option value="Sindano za Insulin" class="translate" data-en="Insulin injections" data-sw="Sindano za Insulin">Sindano za Insulin</option>
-                    <option value="Vidonge" class="translate" data-en="Pills" data-sw="Vidonge">Vidonge</option>
-                    <option value="Sindano na Vidonge" class="translate" data-en="Injections and Pills" data-sw="Sindano na Vidonge">Sindano na Vidonge</option>
-                    <option value="Situmii Dawa" class="translate" data-en="I dont Use Any" data-sw="Situmii Dawa">Situmii Dawa</option>
-                  </select>
-                </div>
-                <div class="col-md-6 form-group mt-3 md-0">
-                  <label for="unakisukari" class="translate" data-en="Do You Have any Other Disease?" data-sw="Je Una Ugonjwa Mwingine?" >Je Una Ugonjwa Mwingine?</label>
-                  <select class="form-control" style="padding: 9px 0px 9px 5px;" required>
-                    <option disabled selected class="translate" data-en="Select Your Answer" data-sw="Chagua Jibu">Chagua Jibu</option>
-                    <option value="Ndio" class="translate" data-en="Yes" data-sw="Ndio">Ndio</option>
-                    <option value="Hapana" class="translate" data-en="No" data-sw="Hapana">Hapana</option>
-                  </select>
-                </div>
-                <div class="col-md-6 form-group mt-3 md-0">
-                  <label for="ugunduzi" class="translate" data-en="If Yes, Mention it." data-sw="Kama Ndio, Utaje.">Kama Ndio, Utaje.</label>
-                  <input type="text" name="ugunduzi" class="form-control" id="" placeholder="">
-                </div>
-                <div class="col-md-6 form-group mt-3 md-0">
-                  <label for="unakisukari" class="translate" data-en="Do you have Diabetes clinic:" data-sw="Je Unakliniki ya Kisukari?">Je! Unakliniki ya Kisukari?</label>
-                  <select class="form-control" style="padding: 9px 0px 9px 5px;" required>
-                    <option disabled selected class="translate" data-en="Select Your Answer" data-sw="Chagua Jibu">Chagua Jibu</option>
-                    <option value="Ndio" class="translate" data-en="Yes" data-sw="Ndio">Ndio</option>
-                    <option value="Hapana" class="translate" data-en="No" data-sw="Hapana">Hapana</option>
-                  </select>
-                </div>
-                <div class="col-md-6 form-group mt-3 md-0">
-                  <label for="ugunduzi" class="translate" data-en="If Yes, Mention it." data-sw="Kama Ndio, Itaje.">Kama Ndio, Itaje.</label>
-                  <input type="text" name="ugunduzi" class="form-control" id="" placeholder="">
-                </div>
-              </div>
+                
               <div class="form-group mt-3">
                 <label for="adress" class="translate" data-en="Address" data-sw="Anuani">Anuani</label>
                 <input type="text" class="form-control" name="adress" id="" placeholder="P.o.Box ** " required>
@@ -216,6 +164,7 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/language.js"></script>
+  <script src="assets/js/extra.js"></script>
 
 </body>
 

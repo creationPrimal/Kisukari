@@ -52,7 +52,7 @@
           <li><a href="index.html" class="translate" data-en="Home" data-sw="Nyumbani">Nyumbani</a></li>
           <li><a href="library.html" class="translate" data-en="Library" data-sw="Maktaba">Maktaba</a></li>
           <li><a href="q&a.html" class="translate" data-en="Q&A" data-sw="Maswali">Maswali</a></li>
-          <li><a href="chat.html" class="translate" data-en="Asq Us" data-sw="Tuulize">Tuulize</a></li>
+          <li><a href="chat.html" class="translate" data-en="Let's talk" data-sw="Ongea nasi">Ongea nasi</a></li>
           <li class="dropdown"><a href="#"><span class="translate" data-en="More" data-sw="Zaidi">Zaidi</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="termsandconditions.html" class="translate" data-en="About Us" data-sw="Kutuhusu">Kutuhusu</a></li>
@@ -90,7 +90,7 @@
             <!-- search form-->
           <div class="search-form">
             <form action="">
-              <input type="text" placeholder="Tarehe / Date">
+              <input type="text" placeholder="Tarehe">
               <button type="submit"><i class="bi bi-search"></i></button>
             </form>
           </div>
@@ -258,7 +258,7 @@
                 <span class="closetag questionclose"><b>&#x2715;</b></span>
                 <h4 class="translate" data-en="Fill in your data" data-sw="Jaza Taarifa Zako">Jaza Taarifa Zako</h4>
                 <p class="translate" data-en="Please measure and enter your sugar level correctly*" data-sw="Tafadhali pima na ingiza kiwango cha sukari kwa usahihi*">Tafadhali pima na ingiza kiwango cha sukari kwa usahihi*</p>
-                <form action="">
+                <form action="" id="myForm" onsubmit="return validateForm()" novalidate>
                   
                 <div class="row">
                     <div class="col-md-6 form-group sukarilevel">
@@ -290,7 +290,7 @@
                 <div class="row mb-3">
                     <div class="col-md-6 form-group mb-0 sukarilevel">
                     <label for="" class="translate" data-en="Sugar Test:" data-sw="Kipimo cha Sukari:">Kipimo cha Sukari:</label>
-                    <input name="name" type="number" class="form-control" placeholder="*" required>
+                    <input name="name" type="number" id="numberInput" class="form-control" placeholder="*" required>
                     </div>
                     <div class="col-md-6 form-group mb-2 sukarilevel">
                         <label for=""></label>
@@ -348,6 +348,7 @@
   <script src="assets/js/main.js"></script>
   <script src="assets/js/loader.js"></script>
   <script src="assets/js/language.js"></script>
+  <script src="assets/js/extra.js"></script>
 
 </body>
 

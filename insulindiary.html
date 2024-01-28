@@ -52,7 +52,7 @@
           <li><a href="index.html" class="translate" data-en="Home" data-sw="Nyumbani">Nyumbani</a></li>
           <li><a href="library.html" class="translate" data-en="Library" data-sw="Maktaba">Maktaba</a></li>
           <li><a href="q&a.html" class="translate" data-en="Q&A" data-sw="Maswali">Maswali</a></li>
-          <li><a href="chat.html" class="translate" data-en="Asq Us" data-sw="Tuulize">Tuulize</a></li>
+          <li><a href="chat.html" class="translate" data-en="Let's talk" data-sw="Ongea nasi">Ongea nasi</a></li>
           <li class="dropdown"><a href="#"><span class="translate" data-en="More" data-sw="Zaidi">Zaidi</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="termsandconditions.html" class="translate" data-en="About Us" data-sw="Kutuhusu">Kutuhusu</a></li>
@@ -90,7 +90,7 @@
             <!-- search form-->
           <div class="search-form">
             <form action="">
-              <input type="text" placeholder="Tarehe / Date">
+              <input type="text" placeholder="Tarehe">
               <button type="submit"><i class="bi bi-search"></i></button>
             </form>
           </div>
@@ -237,7 +237,7 @@
                 <span class="closetag questionclose"><b>&#x2715;</b></span>
                 <h4 class="translate" data-en="Fill in your data" data-sw="Jaza Taarifa Zako">Jaza Taarifa Zako</h4>
                 <p class="translate mb-1" data-en="Please enter your medication information correctly*" data-sw="Tafadhali ingiza taarifa za dawa unazotumia za insulini kwa usahihi*">Tafadhali ingiza taarifa za dawa unazotumia za insulini kwa usahihi*</p>
-                <form action="" oninput="total.value = +asubuhi.value + +mchana.value + +jioni.value ">
+                <form action="" oninput="total.value = +asubuhi.value + +mchana.value + +jioni.value " id="myForm" onsubmit="return validateForm()" novalidate>
                   
                 
                 <div class="row ">
@@ -345,6 +345,7 @@
   <script src="assets/js/loader.js"></script>
   <script src="assets/js/language.js"></script>
   <script src="assets/js/more.js"></script>
+  <script src="assets/js/extra.js"></script>
 
 </body>
 

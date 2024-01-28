@@ -55,7 +55,7 @@
           <li><a href="index.html" class="translate" data-en="Home" data-sw="Nyumbani">Nyumbani</a></li>
           <li><a href="library.html" class="translate" data-en="Library" data-sw="Maktaba">Maktaba</a></li>
           <li><a href="q&a.html" class="translate" data-en="Q&A" data-sw="Maswali">Maswali</a></li>
-          <li><a href="chat.html" class="translate" data-en="Asq Us" data-sw="Tuulize">Tuulize</a></li>
+          <li><a href="chat.html" class="translate" data-en="Let's talk" data-sw="Ongea nasi">Ongea nasi</a></li>
           <li class="dropdown"><a href="#"><span class="translate" data-en="More" data-sw="Zaidi">Zaidi</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="termsandconditions.html" class="translate" data-en="About Us" data-sw="Kutuhusu">Kutuhusu</a></li>
@@ -131,7 +131,7 @@
 
           <div class="col-lg-8 mt-5 mt-lg-0">
 
-            <form action="" method="" role="form" class="php-email-form">
+            <form action="" method="" role="form" class="php-email-form" id="myForm" onsubmit="return validateForm()" novalidate>
               <div class="row">
                 <div class="col-md-6 form-group">
                   <label for="" class="translate" data-en="Your Full Name:" data-sw="Majina Yote:">Majina Yote:</label>
@@ -174,7 +174,7 @@
 
           <div class="col-lg-3 col-md-6">
             <div class="footer-info">
-              <h3>Kisukari</h3>
+              <h3>Kisukari.com</h3>
               <p>
                 Azikiwe Street, Posta <br>
                 Dar es Salaam, Tanzania<br><br>
@@ -196,7 +196,7 @@
               <li><i class="bx bx-chevron-right"></i> <a href="#" class="translate" data-en="Home" data-sw="Nyumbani">Nyumbani</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="termsandconditions.html" class="translate" data-en="About Us" data-sw="Kutuhusu">Kutuhusu</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="termsandconditions.html" class="translate" data-en="Privacy Policies" data-sw="Sera za Faragha">Sera za Faragha</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="termsandconditions.html" class="translate" data-en="Terms and Conditions" data-sw="Sheria na Masharti">Terms and Conditions</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="termsandconditions.html" class="translate" data-en="Terms and Conditions" data-sw="Sheria na Masharti">Sheria na Masharti</a></li>
             </ul>
           </div>
 
@@ -204,7 +204,7 @@
             <h4 class="translate" data-en="More" data-sw="Zaidi">Zaidi</h4>
             <ul>
               <li><i class="bx bx-chevron-right"></i> <a href="q&a.html"  class="translate" data-en="Questions & Ans" data-sw="Maswali">Maswali</a></li>
-              <li><i class="bx bx-chevron-right"></i> <a href="chat.html" class="translate" data-en="Ask Us" data-sw="Tuulize">Ask Us</a></li>
+              <li><i class="bx bx-chevron-right"></i> <a href="chat.html" class="translate" data-en="Let's talk" data-sw="Ongea nasi">Ongea nasi</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="signup.html" class="translate" data-en="Register" data-sw="Jisajili">Jisajili</a></li>
               <li><i class="bx bx-chevron-right"></i> <a href="login.html" class="translate" data-en="Log In" data-sw="Ingia">Ingia</a></li>
             </ul>
@@ -212,9 +212,9 @@
 
           <div class="col-lg-4 col-md-6 footer-newsletter">
             <h4 class="translate" data-en="Our Newsletter" data-sw="Jarida letu">Jarida letu</h4>
-            <p>Please input your Email so that you may receive useful newsletter and updates on health</p>
-            <form action="" method="post">
-              <input type="email" name="email" placeholder="example@gmail.com" style="outline: none;"><input type="submit" value="Subscribe">
+            <p class="translate" data-en="Please input your Email so that you may receive useful newsletter and updates" data-sw="Tafadhali weka Barua pepe yako ili uweze kupokea jarida muhimu">Tafadhali weka Barua pepe yako ili uweze kupokea jarida muhimu</p>
+            <form action="" method="" id="myForm" onsubmit="return validateForm()" novalidate>
+              <input type="email" name="email" placeholder="mfano@gmail.com" style="outline: none;" required><input type="submit" value="Jiandikishe">
             </form>
 
           </div>
@@ -225,7 +225,7 @@
 
     <div class="container">
       <div class="copyright">
-        &copy; Copyright <strong><span>Kisukari</span></strong>. All Rights Reserved
+        &copy; Hatimiliki <strong><span>Kisukari</span></strong>. Haki zote zimehifadhiwa
       </div>
     </div>
   </footer><!-- End Footer -->
@@ -243,6 +243,7 @@
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
   <script src="assets/js/language.js"></script>
+  <script src="assets/js/extra.js"></script>
 
 </body>
 
