@@ -9,7 +9,7 @@ const reminderssplide = new Splide( '#reminders-splide', {
     type: 'loop',
     pagination: true,
     autoplay: true,
-    arrows: false,
+    arrows: true,
     breakpoints: {
       1199: {
         perPage: 4,
