@@ -497,13 +497,21 @@
 }
 .librarytopic{
   display: none;
+  position: relative;
   flex-direction: column;
   justify-content: end;
   height: auto;
   width: 24%;
+  border-radius: 10px;
   min-width: 250px;
   overflow: hidden;
   cursor: pointer;
+}
+.librarytopictitle{
+  position: absolute;
+  margin: 5px;
+  bottom: 0;
+  left: 0;
 }
 .homelibrarytopic{
   display: flex;
@@ -518,11 +526,11 @@
 
 .librarytopictitle p{
   margin: 5px 5px 5px 0px;
-  white-space: nowrap;
-  line-height: 26px;
+  white-space: wrap;
+  line-height: 19px;
   font-size: 16px;
   overflow: ellipsis;
-  color: rgb(54, 54, 54);
+  color: rgb(0, 0, 0);
 }
 .librarytopicimage{
   position: relative;
@@ -1075,6 +1083,31 @@
 .wenyekisukari .form-group{
   width: 48.5%;
 }
+.viewall{
+  display: flex;
+  flex-direction: row;
+  margin-bottom: 20px;
+  justify-content: space-between;
+  align-items: center;
+}
+.viewall button{
+  border: none;
+  background-color: transparent;
+}
+.viewall i{
+  color: #d9232d;
+}
+.viewall h4{
+  margin: 0px;
+}
+
+
+
+
+
+
+
+
 
 
 
@@ -1165,6 +1198,16 @@
 }
 
 @media (max-width: 764px) {
+  .viewall{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .viewall h4{
+    margin: 0px !important;
+  }
   .wenyekisukari .form-group{
     width: 100%;
   }
@@ -1551,6 +1594,20 @@
       
 }
 @media (max-width: 450px) {
+  .viewall h4{
+    font-size: 18px;
+    margin: 0px;
+  }
+  .viewall button{
+    font-size: 12px;
+  }
+  .viewall{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 10px;
+    justify-content: space-between;
+    align-items: center;
+  }
   .countertop{
     display: flex;
     width: 100%;
@@ -1654,11 +1711,11 @@
   }
   .librarytopictitle p{
     margin: 5px 5px 5px 0px;
-    white-space: nowrap;
-    line-height: 26px;
+    white-space: wrap;
+    line-height: 22px;
     font-size: 16px;
     overflow: ellipsis;
-    color: rgb(54, 54, 54);
+    color: rgb(0, 0, 0);
   }
   .librarytopicimage{
     height: 300px;
@@ -1701,11 +1758,11 @@
   }
   .librarytopictitle p{
     margin: 5px 5px 5px 0px;
-    white-space: nowrap;
-    line-height: 26px;
-    font-size: 16px;
+    white-space: wrap;
+    line-height: 18px;
+    font-size: 14px;
     overflow: ellipsis;
-    color: rgb(54, 54, 54);
+    color: rgb(0, 0, 0);
   }
   .librarytopicimage{
     height: 240px;
@@ -1746,11 +1803,11 @@
   }
   .librarytopictitle p{
     margin: 5px 5px 5px 0px;
-    white-space: nowrap;
-    line-height: 26px;
-    font-size: 16px;
+    white-space: wrap;
+    line-height: 18px;
+    font-size: 14px;
     overflow: ellipsis;
-    color: rgb(54, 54, 54);
+    color: rgb(0, 0, 0);
   }
   .librarytopicimage{
     height: 300px;
@@ -1793,11 +1850,11 @@
     }
     .librarytopictitle p{
       margin: 5px 5px 5px 0px;
-      white-space: nowrap;
-      line-height: 26px;
-      font-size: 16px;
+      white-space: wrap;
+      line-height: 18px;
+      font-size: 14px;
       overflow: ellipsis;
-      color: rgb(54, 54, 54);
+      color: rgb(0, 0, 0);
     }
     .librarytopicimage{
       height: 250px;
@@ -1848,11 +1905,11 @@
       }
       .librarytopictitle p{
         margin: 5px 5px 5px 0px;
-        white-space: nowrap;
-        line-height: 26px;
+        white-space: wrap;
+        line-height: 15px;
         font-size: 12px;
         overflow: ellipsis;
-        color: rgb(54, 54, 54);
+        color: rgb(0, 0, 0);
       }
       .librarytopicimage{
         height: 220px;
@@ -1894,11 +1951,11 @@
         }
         .librarytopictitle p{
           margin: 5px 5px 5px 0px;
-          white-space: nowrap;
-          line-height: 26px;
+          white-space: wrap;
+          line-height: 15px;
           font-size: 12px;
           overflow: ellipsis;
-          color: rgb(54, 54, 54);
+          color: rgb(0, 0, 0);
         }
         .librarytopicimage{
           height: 200px;
@@ -1953,11 +2010,11 @@
           }
           .librarytopictitle p{
             margin: 5px 5px 5px 0px;
-            white-space: nowrap;
-            line-height: 26px;
+            white-space: wrap;
+            line-height: 15px;
             font-size: 12px;
             overflow: ellipsis;
-            color: rgb(54, 54, 54);
+            color: rgb(0, 0, 0);
           }
           .librarytopicimage{
             height: 300px;
