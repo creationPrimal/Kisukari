@@ -388,7 +388,7 @@
     display: flex;
     position: absolute;
     width: auto;
-    overflow-y: scroll !important;
+    overflow-y: scroll !important ;
     flex-direction: column;
     margin-top: 30px;
     margin-left: 10px;
@@ -1110,7 +1110,33 @@
 .number2{
   display: none;
 }
-
+.fileinput{
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  background-color: rgba(0, 0, 255, 0);
+  border: 1px solid #d9232c50;
+  border-radius: 5px;
+}
+.fileinput p{
+  justify-self: center;
+  align-self: center;
+  position: absolute;
+  margin: 0px 10px 0px 10px;
+  white-space: nowrap;
+  left: 0;
+  right: 0;
+  font-size: 13px;
+  overflow: hidden;
+  font-weight: bold;
+}
+input[type="file"]{
+  background-color: transparent;
+  opacity: 0;
+  overflow: hidden;
+}
 
 
 
@@ -1486,7 +1512,8 @@
       flex-direction: column;
       align-items: center;
       justify-content: center;
-        width: 65px;
+        width: 68px;
+        min-width: 68px;
         border: none;
         background-color: transparent;
     }

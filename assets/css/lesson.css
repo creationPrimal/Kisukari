@@ -164,6 +164,7 @@
     margin-right: 10px;
     margin-bottom: 2px;
     height: 25px;
+    min-height: 25px;
     width: 25px;
     color: white;
     border-radius: 50%;
@@ -177,6 +178,7 @@
   margin-right: 10px;
   margin-bottom: 2px;
   height: 25px;
+  min-height: 25px;
   width: 25px;
   color: #d9232d;
   border-radius: 50%;
@@ -190,6 +192,7 @@
     margin-right: 10px;
     margin-bottom: 2px;
     height: 25px;
+    min-height: 25px;
     width: 25px;
     color: white;
     border-radius: 50%;
@@ -690,6 +693,7 @@ input:checked + .slider:before {
         margin-right: 10px;
         margin-bottom: 2px;
         height: 25px;
+        min-height: 25px;
         width: 25px;
         color: white;
         border-radius: 50%;
