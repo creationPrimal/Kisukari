@@ -48,6 +48,31 @@ updateContent(getStoredLanguage());
 
 
 
+//changing file input contents
+function updateLabel(input) {
+  const div = input.parentNode;
+  const paragraph = div.querySelector('.labelinput');
+
+  if (input.files.length > 0) {
+    // If a file is chosen, display its name
+    paragraph.textContent = `Picha: ${input.files[0].name}`;
+  } else {
+    // If no file is chosen, display the default text
+    paragraph.textContent = `Chagua Picha:`;
+  }
+}
+
+// Get all file inputs with class 'labelinput' using querySelectorAll
+const fileInputs = document.querySelectorAll('.file-input-container input[type="file"]');
+
+// Loop through each file input and attach the onchange event
+fileInputs.forEach(input => {
+  input.addEventListener('change', () => {
+    updateLabel(input);
+  });
+});
+
+
 
 
 
