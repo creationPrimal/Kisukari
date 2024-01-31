@@ -169,44 +169,56 @@
                 <p class="translate mb-1" data-en="Please enter your food information correctly*" data-sw="Tafadhali ingiza taarifa za chakula kwa usahihi*">Tafadhali ingiza taarifa za chakula kwa usahihi*</p>
                 <form action="" oninput="total.value = +asubuhi.value + +mchana.value + +jioni.value " id="myForm" onsubmit="return validateForm()" novalidate>                 
                 
-                <div class="row ">
+                <div class="row file-input-container">
                     <div class="col-md-6 form-group sukarilevel mb-2">
                     <label for="" class="translate" data-en="Morning:" data-sw="Asubuhi:">Asubuhi:</label>
                     <input name="name" type="text" class="form-control" placeholder="*" id="asubuhi" required>
                     </div>
                     <div class="col-md-6 form-group sukarilevel mb-2">
                     <label for="" class="translate" data-en="Image:" data-sw="Picha:">Picha:</label>
-                   <input type="file" class="form-control">
+                    <div class="fileinput">
+                      <p class="labelinput">Chagua picha</p>
+                       <input name="" type="file" class="form-control" onchange="updateLabel(this)">
+                    </div>
                     </div>
                 </div>
-                <div class="row ">
+                <div class="row file-input-container">
                     <div class="col-md-6 form-group sukarilevel mb-2">
                     <label for="" class="translate" data-en="Afternoon:" data-sw="Mchana:">Mchana:</label>
                     <input name="name" type="text" class="form-control" placeholder="*" id="asubuhi" required>
                     </div>
                     <div class="col-md-6 form-group sukarilevel mb-2">
                     <label for="" class="translate" data-en="Image:" data-sw="Picha:">Picha:</label>
-                   <input type="file" class="form-control">
+                    <div class="fileinput">
+                      <p class="labelinput">Chagua picha</p>
+                       <input name="" type="file" class="form-control" onchange="updateLabel(this)">
+                    </div>
                     </div>
                 </div>
-                <div class="row ">
+                <div class="row file-input-container">
                     <div class="col-md-6 form-group sukarilevel mb-2">
                     <label for="" class="translate" data-en="Evening:" data-sw="Jioni:">Jioni:</label>
                     <input name="name" type="text" class="form-control" placeholder="*" id="asubuhi" required>
                     </div>
                     <div class="col-md-6 form-group sukarilevel mb-2">
                     <label for="" class="translate" data-en="Image:" data-sw="Picha:">Picha:</label>
-                   <input type="file" class="form-control">
+                    <div class="fileinput">
+                      <p class="labelinput">Chagua picha</p>
+                       <input name="" type="file" class="form-control" onchange="updateLabel(this)">
+                    </div>
                     </div>
                 </div>
-                <div class="row ">
+                <div class="row file-input-container">
                     <div class="col-md-6 form-group sukarilevel mb-2">
                     <label for="" class="translate" data-en="Other Types of Food:" data-sw="Aina nyingine ya Chakula:">Aina nyingine ya Chakula:</label>
                     <input name="name" type="text" class="form-control" placeholder="*" id="asubuhi" >
                     </div>
                     <div class="col-md-6 form-group sukarilevel mb-2">
                     <label for="" class="translate" data-en="Image:" data-sw="Picha:">Picha:</label>
-                   <input type="file" class="form-control">
+                    <div class="fileinput">
+                      <p class="labelinput">Chagua picha</p>
+                       <input name="" type="file" class="form-control" onchange="updateLabel(this)">
+                    </div>
                     </div>
                 </div>
                 <div class="row">

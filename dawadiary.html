@@ -318,7 +318,11 @@
                       </div>
                     <div class="col-md-6 form-group">
                     <label for="" class="translate" data-en="Image:" data-sw="Picha:">Picha:</label>
-                    <input name="" type="file" class="form-control" >
+                    
+                    <div class="fileinput file-input-container">
+                      <p class="labelinput">Chagua picha</p>
+                       <input name="" type="file" class="form-control" onchange="updateLabel(this)">
+                    </div>
                     </div>
 
                 </div>
@@ -391,7 +395,7 @@
   <script src="assets/js/more.js"></script>
   <script src="assets/js/extra.js"></script>
   <script>
-   
+    
   </script>
 
 </body>

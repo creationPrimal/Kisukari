@@ -108,7 +108,10 @@
             <form action="" method="" role="form" class="php-email-form"  id="myForm" onsubmit="return validateForm()" novalidate>
                 <div class="form-group mt-3">
                     <label for="profileimage" class="translate" data-en="Profile Image" data-sw="Picha ya wasifu">Picha ya wasifu</label>
-                    <input type="file" class="form-control" name="profileimage" id="" required>
+                    <div class="fileinput file-input-container">
+                      <p class="labelinput">Chagua picha</p>
+                       <input name="" type="file" class="form-control" onchange="updateLabel(this)" required>
+                    </div>
                   </div>
               <div class="form-group mt-3">
                 <label for="number" class="translate" data-en="Phone Number" data-sw="Namba ya Simu">Namba ya Simu</label>
