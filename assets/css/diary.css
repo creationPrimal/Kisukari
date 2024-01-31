@@ -77,12 +77,17 @@
     font-size: 14px;
     font-weight: bold;
 }
-.insulinipart{
-    width: 28%;
+.insulinlistdiv{
     overflow: hidden;
-    padding-left: 2px;
-    white-space: nowrap;
+    height: auto !important;
+}
+.insulinipart{
+    width: 80%;
+    overflow: hidden;
+    padding: 2px;
+    white-space: wrap;
     font-size: 14px;
+    line-height: 30px;
     font-weight: light;
 }
 .insulinipart .number{
@@ -103,9 +108,12 @@
     margin-bottom: 3px;
     font-weight: light;
 }
-.insulinipart:nth-child(4){
+.insulinipart:nth-child(2){
     width: 80px;
     font-size: 14px;
+    font-weight: bold;
+}
+.insulinipart span{
     font-weight: bold;
 }
 .dawapart:nth-child(3), .dawapart:nth-child(2), .dawapart:nth-child(4){
@@ -255,16 +263,22 @@
         font-size: 12px;
         font-weight: bold;
     }
+    .insulinlistdiv{
+        overflow: hidden;
+        height: auto !important;
+    }
     .insulinipart{
-        width: 28%;
+        width: 80%;
         font-size: 12px;
+        line-height: 18px;
+        white-space: wrap;
         overflow: hidden;
         font-weight: light;
     }
-    .insulinipart:nth-child(4){
+    .insulinipart:nth-child(2){
         width: 60px;
         min-width: 60px;
-        font-size: 12px;
+        font-size: 11px;
         font-weight: light;
     }
     .dawapart:nth-child(3), .dawapart:nth-child(2), .dawapart:nth-child(4){
@@ -306,13 +320,22 @@
         background-color: brown;
         margin-right: 5px;
     }
+    .insulinlistdiv{
+        overflow: hidden;
+        height: auto !important;
+    }
     .insulinipart{
-        width: 28%;
+        width: 80%;
         overflow: hidden;
         margin: 2px;
-        white-space: nowrap;
-        font-size: 11px;
+        padding: 2px;
+        white-space: wrap;
+        font-size: 10px;
         font-weight: light;
+    }
+    .insulinidiarylist em{
+        font-size: 9px;
+        color: grey;
     }
 }
 @media (max-width: 350px) {

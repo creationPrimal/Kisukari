@@ -1100,6 +1100,15 @@
 .viewall h4{
   margin: 0px;
 }
+.minimal input, .minimal select{
+  font-size: 12px;
+  height: 30px !important;
+}
+
+/*number2 elements on insulin dawa in home page*/
+.number2{
+  display: none;
+}
 
 
 
@@ -1589,6 +1598,9 @@
       }
       .clinicbuttondetails em{
         font-size: 7px;
+      }
+      .minimal label{
+        font-size: 11px !important;
       }
       
       

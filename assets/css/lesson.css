@@ -567,7 +567,15 @@ input:checked + .slider:before {
   object-fit: cover;
   
 }
-
+.reference summary{
+  color: black;
+  margin-top: 70px;
+  font-weight: bold;
+}
+.reference p{
+  color: black;
+  font-size: 12px;
+}
 
 
 
