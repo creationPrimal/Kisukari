@@ -1,40 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <title>Multiple Owl Carousels</title>
-    <style>
-.container {
-  padding: 20px;
-  background-color: #ff0000;
-}
-
-.text:empty {
-  display: none; /* Hide the empty paragraphs */
-}
-    </style>
-
-
-  </head>
-  <body>
-    <div class="container">
-      <p class="text">Some text here</p>
-      <p class="text"></p>
-    </div>
-
-
-
-
-
-
-    <script>
-    document.addEventListener('DOMContentLoaded', function() {
-  const emptyParagraphs = document.querySelectorAll('.text:empty');
-  emptyParagraphs.forEach(paragraph => {
-    paragraph.parentElement.style.backgroundColor = 'transparent';
-    // Adjust other styling as needed
-  });
-});
-    </script>
-  </body>
-</html>
+<form>
+  <div class="row">
+      <div class="col-md-6 form-group sukarilevel">
+          <label for="" class="translate" data-en="Amount of pills:" data-sw="Idadi ya Vidonge:">Idadi ya Vidonge:</label>
+          <input name="name" type="number" id="numberInput" class="form-control" placeholder="*" required>
+      </div>
+      <div class="col-md-6 form-group sukarilevel">
+          <label for="" class="translate" data-en="How many times per day:" data-sw="Mara ngapi kwa siku:">Mara ngapi kwa siku:</label>
+          <select name="frequency" class="form-control" required>
+              <option disabled selected class="translate" data-en="Choose" data-sw="Chagua">Chagua</option>
+              <option value="x1" class="translate" data-en="x1" data-sw="x1">x1</option>
+              <option value="x2" class="translate" data-en="x2" data-sw="x2">x2</option>
+              <option value="x3" class="translate" data-en="x3" data-sw="x3">x3</option>
+              <option value="x4" class="translate" data-en="x4" data-sw="x4">x4</option>
+              <option value="x5" class="translate" data-en="x5" data-sw="x5">x5</option>
+              <option value="x6" class="translate" data-en="x6" data-sw="x6">x6</option>
+          </select>
+      </div>
+  </div>
+  <button type="submit" class="btn btn-primary"><span class="translate" data-en="Save " data-sw="Hifadhi ">Hifadhi </span> <i class="fa-solid fa-paper-plane"></i></button>
+</form>

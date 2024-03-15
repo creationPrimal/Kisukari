@@ -5,19 +5,16 @@
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
-  <title class="translate" data-en="Profile" data-sw="Wasifu">Wasifu</title>
+  <title >Kisukari</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
-  <!-- Favicons -->
+  <!-- icons -->
   <link href="" rel="icon">
   <link href="" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/animate.css/animate.min.css" rel="stylesheet">
@@ -36,25 +33,25 @@
   <!-- Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   <link href="assets/css/library.css" rel="stylesheet">
-  <link href="assets/css/lesson.css" rel="stylesheet">
-
+  <link href="assets/css/calculators.css" rel="stylesheet">
 </head>
 
-<body>
+<body style="background-color: rgb(240, 240, 240);">
 
   <!-- ======= Header ======= -->
-  <header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container d-flex align-items-center">
-      <a href="profile.html"><button class="return"><i class="fa-solid fa-arrow-right fa-flip-horizontal"></i></button></a>
-      <h1 class="logo me-auto translate"  data-en="Settings" data-sw="Marekebisho">Marekebisho</h1>
+  <header id="header" class="fixed-top d-flex align-items-center" style="background-color: rgb(240, 240, 240);">
+    <div class="container d-flex align-items-center calc-nav">
+        <button class="return" onclick="back()"><i class="fa-solid fa-arrow-right fa-flip-horizontal"></i></button>
+      <h1 class="logo me-auto"><a href="index.html">Kisukari.com</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
 
-      <nav id="navbar" class="navbar">
+      <nav id="navbar" class="navbar " >
         <ul>
           <li><a href="index.html" class="translate" data-en="Home" data-sw="Nyumbani">Nyumbani</a></li>
           <li><a href="q&a.html" class="translate" data-en="Q&A" data-sw="Maswali">Maswali</a></li>
           <li><a href="chat.html" class="translate" data-en="Let's talk" data-sw="Ongea nasi">Ongea nasi</a></li>
+          <li><a href="calculators.html" class="active translate" data-en="Calculator" data-sw="Jipime">Jipime</a></li>
           <li class="dropdown"><a href="#"><span class="translate" data-en="More" data-sw="Zaidi">Zaidi</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="termsandconditions.html" class="translate" data-en="About Us" data-sw="Kutuhusu">Kutuhusu</a></li>
@@ -72,88 +69,100 @@
             </ul>
           </li>
           <li><a href="login.html" class="translate" data-en="Log In" data-sw="Ingia">Ingia</a></li>
-          <li><a href="profile.html" class="active translate" data-en="Profile" data-sw="Wasifu">Wasifu</a></li>
-          <li><a href="signup.html" class="getstarted translate"  data-en="Register" data-sw="Jisajili">Jisajili</a></li>
+          <li><a href="profile.html" class="translate" data-en="Profile" data-sw="Wasifu">Wasifu</a></li>
         </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
+        <i class="bi bi-list mobile-nav-toggle" style="background-color: rgb(240, 240, 240);"></i>
       </nav><!-- .navbar -->
 
     </div>
   </header><!-- End Header -->
 
-  <main id="main">
+  <main id="main" class="mb-5">
 
     <!-- ======= Breadcrumbs ======= -->
-    <section id="breadcrumbs" class="breadcrumbs">
+    <section id="breadcrumbs" class="breadcrumbs" style="background-color: rgb(240, 240, 240);">
       <div class="container">
 
         <div class="d-flex justify-content-between align-items-center">
-          <h2 class="translate" data-en="Account Settings" data-sw="Marekebisho ya Akaunti">Marekebisho ya Akaunti</h2>
+          <h2 >Kisukari</h2>
+           
           <ol>
-            <li><a href="profile.html" class="translate" data-en="Account" data-sw="Akaunti">Akaunti</a></li>
-            <li class="translate" data-en="Settings" data-sw="Marekebisho">Marekebisho</li>
+            <li><a href="index.html" class="translate" data-en="Home" data-sw="Nyumbani">Nyumbani</a></li>
+            <li class="translate" data-en="Calculators" data-sw="Vipimo">Vipimo</li>
           </ol>
         </div>
 
       </div>
     </section><!-- End Breadcrumbs -->
 
-    <!-- ======= Contact Section ======= -->
-    <section id="contact" class="contact" style="padding-top: 10px;">
+    <!-- ======= questions Section ======= -->
+    <section id="blog" class="blog" >
       <div class="container" >
 
-        <div class="row mt-0 justify-content-center" >
-          <div class="col-lg-8 mt-1 mt-lg-0">
-
-            <form action="" method="" role="form" class="php-email-form"  id="myForm" onsubmit="return validateForm()" novalidate>
-                <div class="form-group mt-3">
-                    <label for="profileimage" class="translate" data-en="Profile Image" data-sw="Picha ya wasifu">Picha ya wasifu</label>
-                    <div class="fileinput file-input-container">
-                      <p class="labelinput">Chagua au Piga Picha</p>
-                       <input name="" type="file" class="form-control" onchange="updateLabel(this)" required>
-                    </div>
-                  </div>
-              <div class="form-group mt-3">
-                <label for="number" class="translate" data-en="Phone Number" data-sw="Namba ya Simu">Namba ya Simu</label>
-                <input type="number" class="form-control" name="number" id="" placeholder="" required>
-              </div>
-              <div class="row">
-                <div class="col-md-6 form-group">
-                    <label for="age" class="translate" data-en="Date of Birth" data-sw="Tarehe Ya Kuzaliwa">Tarehe ya Kuzaliwa</label>
-                  <input type="date" name="name" class="form-control" id="" placeholder="" >
-                </div>
-                <div class="col-md-6 form-group">
-                  <label for="" class="translate" data-en="Location" data-sw="Makazi">Makazi</label>
-                <input type="date" name="" class="form-control" id="" placeholder="" >
-                </div>
-                <div class="col-md-6 form-group mt-3 md-0">
-                  <label for="unakisukari" class="translate" data-en="Do You Have any Other Disease?" data-sw="Je Una Ugonjwa Mwingine?">Je Una Ugonjwa mwingine? (Utaje)</label>
-                  <input type="text" name="" class="form-control" id="" placeholder="">
-                </div>
-                
-              <div class="form-group mt-3">
-                <label for="adress" class="translate" data-en="Address" data-sw="Anuani">Anuani</label>
-                <input type="text" class="form-control" name="adress" id="" placeholder="P.o.Box ** " required>
-              </div>
-
-              
-              
-              <div class="text-center"><button type="submit"><span class="translate" data-en="Save" data-sw="Tunza">Tunza</span></button></div>
-              
-            </form>
-
-          </div>
-
+        <div class="calculators-head">
+            <div class="head-bar"></div>
+            <h3>Vipimo Vya Kisukari</h3>
+        </div>
+        <div class="calc-details">
+            <p></p>
         </div>
 
+        <div class="calculatordiv">
+            <div class="calculator">
+                <a href="calc_diabetesrisk.html"><div class="calc-icon">
+                    <img src="assets/icons/diabetes.icon.jpg" alt="">
+                </div></a>
+                <a href="calc_diabetesrisk.html"><p><b>Hatari ya Kisukari.</b></p></a>
+            </div>
+            <div class="calculator">
+              <a href="calc_hba1c.html"><div class="calc-icon">
+                    <img src="assets/icons/hemaglobin icon.jpg" alt="">
+                </div></a>
+                <a href="calc_hba1c.html"><p><b>Kipimo cha A1c - Hemoglobini A1c.</b></p></a>
+            </div>
+            <div class="calculator">
+              <a href="calc_hba1c.html#glucoseconverter"><div class="calc-icon">
+                    <img src="assets/icons/glucose measure icon.jpg" alt="">
+                </div></a>
+                <a href="calc_hba1c.html#glucoseconverter"><p><b>Kubadili Glukosi</b></p></a>
+            </div>
+            <div class="calculator">
+                <a href="calc_insulindosage.html"><div class="calc-icon">
+                    <img src="assets/icons/insulin icon.jpg" alt="">
+                </div></a>
+                <a href="calc_insulindosage.html"><p><b>Kipimo cha Insulini.</b></p></a>
+            </div>
+            
+        </div>
+
+    
       </div>
-    </section><!-- End Contact Section -->
+       
+
+    </section><!-- End questions Section -->
+
+
+    <!-- Mobile navigations -->
+    <div class="mobilenav">
+        <a href="index.html"><button ><i class="fa-solid fa-book-bookmark"></i><p class="translate" data-en="Articles" data-sw="Makala">Makala</p></button></a>
+        <a href="q&a.html"><button><i class="fa-solid fa-person-circle-question"></i><p class="translate" data-en="Q&A" data-sw="Maswali">Maswali</p></button></a>
+        <a href="chat.html"><button><i class="fa-solid fa-comments"></i><p class="translate" data-en="Let's talk" data-sw="Ongea nasi">Ongea nasi</p></button></a>
+        <a href="calculators.html"><button class="mobilenavselected"><i class="fa-solid fa-calculator"></i><p class="translate" data-en="Calculators" data-sw="Jipime">Jipime</p></button></a>
+      </div>
+
 
   </main><!-- End #main -->
 
-  
 
-  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+ 
+  
+  <!--loader-->
+  <div class="loadingdiv" id="loadingdiv">
+    <div class="loader">Kisukari.com</div>
+  </div>
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center" style="margin-bottom: 40px;"><i class="bi bi-arrow-up-short"></i></a>
 
   <!-- Vendor JS Files -->
   <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
@@ -161,12 +170,14 @@
   <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
   <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
   <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-  <script src="assets/vendor/php-email-form/validate.js"></script>
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+  <script src="assets/js/loader.js"></script>
   <script src="assets/js/language.js"></script>
-  <script src="assets/js/extra.js"></script>
+  <script>
+    
+  </script>
 
 </body>
 

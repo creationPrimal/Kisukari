@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Customize File Input</title>
+
+  <style>
+    /* Style for the custom file input container */
+    .custom-file-input-container {
+      position: relative;
+      overflow: hidden;
+      display: inline-block;
+    }
+
+    /* Style for the actual file input */
+    .custom-file-input {
+      position: absolute;
+      font-size: 100px; /* Set a large font size to hide the default button */
+      opacity: 0;
+      right: 0;
+      top: 0;
+    }
+
+    /* Style for the label or custom text */
+    .custom-file-label {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px;
+      cursor: pointer;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Custom File Input Container -->
+  <div class="custom-file-input-container">
+    <!-- Custom text or label -->
+    <span class="custom-file-label">Chagua</span>
+    
+    <!-- Actual file input -->
+    <input type="file" id="customFileInput" class="custom-file-input" />
+  </div>
+
+  <!-- Add more custom file input containers as needed -->
+
+</body>
+</html>

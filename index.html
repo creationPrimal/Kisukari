@@ -44,7 +44,7 @@
   <!-- ======= Header ======= -->
   <header id="header" class="fixed-top d-flex align-items-center mobilehomeheader" >
     <div class="container d-flex align-items-center">
-
+      <a href="profile.html"><button class="profilebuttontop"><div class="navprofile"><img src="assets/img/images/Portrait of a smiling beautiful woman standing alone on a yellow background.jpg" alt=""></div></button></a>
       <h1 class="logo me-auto homelogo"><a href="index.html">Kisukari.com</a></h1>
       <!-- Uncomment below if you prefer to use an image logo -->
       <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
@@ -54,6 +54,7 @@
           <li><a href="index.html" class="active translate" data-en="Home" data-sw="Nyumbani">Nyumbani</a></li>
           <li><a href="q&a.html" class="translate" data-en="Q&A" data-sw="Maswali">Maswali</a></li>
           <li><a href="chat.html" class="translate" data-en="Let's talk" data-sw="Ongea nasi">Ongea nasi</a></li>
+          <li><a href="calculators.html" class="translate" data-en="Calculator" data-sw="Jipime">Jipime</a></li>
           <li class="dropdown"><a href="#"><span class="translate" data-en="More" data-sw="Zaidi">Zaidi</span> <i class="bi bi-chevron-down"></i></a>
             <ul>
               <li><a href="termsandconditions.html" class="translate" data-en="About Us" data-sw="Kutuhusu">Kutuhusu</a></li>
@@ -285,134 +286,87 @@
   </div>
 
   <!-- clinic days counter-->
-  <div class="container">
-    <div class="clinicdays">
-      
-        <div class="counterclinic">
-          <div class="countertop">
-            <div class="dayscounterresponsiv">
-                <h2 class="countnumber"><span class=" countdown">-</span></h2>
-                <p><strong>Siku <br>Zilizobaki <br>kuhudhuria kliniki</strong></p>
+  <div class="newcounter container">
+    <div class="newcountermaindiv">
+      <div class="leftsidecounter">
+        <div class="outer">
+          <div class="inner">
+            <div id="countnumber">
+                <h4 class="countnumber"><span class=" countdown">-</span></h4>
+                <p><strong>Siku <br>Zilizobaki</strong></p>
                 
             </div>
-            <div class="clinicdetails">
-              <p><span class="translate" data-en="Last Day Attending The Clinic: " data-sw="Tarehe ya Mwisho Kuhudhuria Kliniki: ">Tarehe ya Mwisho Kuhudhuria Kliniki: </span><span><b>26 Jan, 2024</b></span></p>
-              <p><span class="translate" data-en="Up Coming Date: " data-sw="Tarehe Inayofuata: ">Tarehe Inayofuata: </span><span><b id="futureDate">20 Feb, 2024</b></span></p>
-              <a href="clinicdays.html"><button class="jazacliniki">
-                <i class="fa-solid fa-pen-to-square"></i> <span class="translate" data-en="Log Your data" data-sw="Jaza Taarifa Zako">Jaza Taarifa Zako</span>
-              </button></a>
-            </div>
-            <div class="iconlinks">
-              <p><strong class="translate" data-en="Important:" data-sw="Muhimu:">Muhimu:</strong> <span class="translate" data-en="Click to know more." data-sw="Bonyeza Ujue zaidi.">Bonyeza kujifunza zaidi.</span></p>
-              <div class="indexremindericons">
-                <a href="vipimosukarihint.html"><div class="indexremindericon">
-                  <img src="assets/icons/glucometer.png copy.png" alt="">
-                </div></a>
-                <a href="moyohint.html"><div class="indexremindericon">
-                  <img src="assets/icons/Vector-Heartbeat-Transparent-Image.png" alt="">
-                </div></a>
-                <a href="figohint.html"><div class="indexremindericon">
-                  <img src="assets/icons/kidney.png" alt="">
-                </div></a>
-                <a href="inihint.html"><div class="indexremindericon">
-                  <img src="assets/icons/liver.png" alt="">
-                </div></a>
-                <a href="mafutahint.html"><div class="indexremindericon">
-                  <img src="assets/icons/fat.png" alt="">
-                </div></a>
-                <a href="machohint.html"><div class="indexremindericon">
-                  <img src="assets/icons/eye.png" alt="">
-                </div></a>
-                <a href="menohint.html"><div class="indexremindericon">
-                  <img src="assets/icons/teeth.png" alt="">
-                </div></a>
-                <a href="miguuhint.html"><div class="indexremindericon">
-                  <img src="assets/icons/wound.png" alt="">
-                </div></a>
-                <a href="mishipahint.html"><div class="indexremindericon">
-                  <img src="assets/icons/nerves.png" alt="">
-                </div></a>
-                <a href="ngozihint.html"><div class="indexremindericon">
-                  <img src="assets/icons/skin.png" alt="">
-                </div></a>
-                <a href="changamotohint.html"><div class="indexremindericon">
-                  <img src="assets/icons/test.png" alt="">
-                </div></a>
-                <a href="akilihint.html"><div class="indexremindericon">
-                  <img src="assets/icons/brain.png" alt="">
-                </div></a>
-              </div>
-            </div>
           </div>
-          <div class="progressbar" id="myProgressBar"></div>
         </div>
-        
+        <svg xmlns="http://www.w3.org/2000/svg" version="1.1"
+        >
+          <defs>
+            <linearGradient id="GradientColor" x1="0%" y1="0%" x2="100%" y2="100%">
+              <stop offset="0%"  style="stop-color:#FF0000;stop-opacity:1" />
+              <stop offset="100%" style="stop-color:#FFA500;stop-opacity:1" />
+            </linearGradient>
+          </defs>
+          <circle id="myProgressBar" cx="80" cy="80" r="70" stroke-linecap="round" />
+      </svg>
+      </div>
+      <div class="rightsidecounter">
+        <div class="counter-date">
+          <div class="last-datebar"></div>
+          <p><span class="translate" data-en="Last Day Attending The Clinic: " data-sw="Tarehe ya Mwisho Kuhudhuria Kliniki: ">Tarehe ya Mwisho Kuhudhuria Kliniki: </span><span><b>20 feb, 2024</b></span></p>
+        </div>
+        <div class="counter-date">
+          <div class="future-datebar"></div>
+          <p><span class="translate" data-en="Up Coming Date: " data-sw="Tarehe Inayofuata: ">Tarehe Inayofuata: </span><span><b id="futureDate">20 march, 2024</b></span></p>
+        </div>
+        <a href="clinicdays.html"><button class="jazacliniki">
+          <i class="fa-solid fa-pen-to-square"></i> <span class="translate" data-en="Log Your data" data-sw="Jaza Taarifa Zako">Jaza Taarifa Zako</span>
+        </button></a>
+      </div>
+      <div class="iconlinks">
+        <p><strong class="translate" data-en="Important:" data-sw="Muhimu:">Muhimu:</strong> <span class="translate" data-en="Click to know more." data-sw="Bonyeza Ujue zaidi.">Bonyeza kujifunza zaidi.</span></p>
+        <div class="indexremindericons">
+          <a href="vipimosukarihint.html"><div class="indexremindericon">
+            <img src="assets/icons/glucometer.png copy.png" alt="">
+          </div></a>
+          <a href="moyohint.html"><div class="indexremindericon">
+            <img src="assets/icons/Vector-Heartbeat-Transparent-Image.png" alt="">
+          </div></a>
+          <a href="figohint.html"><div class="indexremindericon">
+            <img src="assets/icons/kidney.png" alt="">
+          </div></a>
+          <a href="inihint.html"><div class="indexremindericon">
+            <img src="assets/icons/liver.png" alt="">
+          </div></a>
+          <a href="mafutahint.html"><div class="indexremindericon">
+            <img src="assets/icons/fat.png" alt="">
+          </div></a>
+          <a href="machohint.html"><div class="indexremindericon">
+            <img src="assets/icons/eye.png" alt="">
+          </div></a>
+          <a href="menohint.html"><div class="indexremindericon">
+            <img src="assets/icons/teeth.png" alt="">
+          </div></a>
+          <a href="miguuhint.html"><div class="indexremindericon">
+            <img src="assets/icons/wound.png" alt="">
+          </div></a>
+          <a href="mishipahint.html"><div class="indexremindericon">
+            <img src="assets/icons/nerves.png" alt="">
+          </div></a>
+          <a href="ngozihint.html"><div class="indexremindericon">
+            <img src="assets/icons/skin.png" alt="">
+          </div></a>
+          <a href="changamotohint.html"><div class="indexremindericon">
+            <img src="assets/icons/test.png" alt="">
+          </div></a>
+          <a href="akilihint.html"><div class="indexremindericon">
+            <img src="assets/icons/brain.png" alt="">
+          </div></a>
+        </div>
+      </div>
     </div>
   </div>
 
 
-  <!--
-  <section id="hero" >
-    <div id="heroCarousel" data-bs-interval="5000" class="carousel slide carousel-fade" data-bs-ride="carousel" style="margin-bottom: 0px;">
-
-      <ol class="carousel-indicators" id="hero-carousel-indicators"></ol>
-
-      <div class="carousel-inner" role="listbox">
-
-        
-        <div class="carousel-item active" >
-          <div class="carousel-container">
-            <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">Welcome to <span>Kisukari</span></h2>
-              <p class="animate__animated animate__fadeInUp">Your first dietary step toward a more balanced blood sugar level: ditching (most of) the packaged foods and focusing on high-quality whole foods such as vegetables, fruits,</p>
-              <a href="#main" class="btn-get-started animate__animated animate__fadeInUp scrollto">Get Started</a>
-            </div>
-          </div>
-          <div class="heroimage">
-            <img src="assets/img/images/Does Sugar Go Bad.jpg" alt="">
-          </div>
-        </div>
-
-        
-        <div class="carousel-item" style="background-image: url()">
-          <div class="carousel-container">
-            <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">Do You Have Healthy Blood Sugar</h2>
-              <p class="animate__animated animate__fadeInUp">Many processed foods are high in sugar, refined grains and carbs, and artificial ingredients and flavorings while being low in blood-sugar-stabilizing fiber and protein.</p>
-              <a href="#main" class="btn-get-started animate__animated animate__fadeInUp scrollto">Get Started</a>
-            </div>
-          </div>
-          <div class="heroimage">
-            <img src="assets/img/images/Nitrile powder-free examination gloves!.jpg" alt="">
-          </div>
-        </div>
-
-        
-        <div class="carousel-item" style="background-image: url()">
-          <div class="carousel-container">
-            <div class="container">
-              <h2 class="animate__animated animate__fadeInDown">Maintain a healthy blood sugar level</h2>
-              <p class="animate__animated animate__fadeInUp">The amount of protein you need in your diet depends on a number of factors, but the general protein recommendation for healthy adults is 0.8 to 1.0 gram per kilogram of body weight</p>
-              <a href="#main" class="btn-get-started animate__animated animate__fadeInUp scrollto">Get Started</a>
-            </div>
-          </div>
-          <div class="heroimage">
-            <img src="assets/img/images/Infusion Therapy.jpg" alt="">
-          </div>
-        </div>
-
-      </div>
-
-      <a class="carousel-control-prev" href="#heroCarousel" role="button" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon bi bi-chevron-left" aria-hidden="true"></span>
-      </a>
-
-      <a class="carousel-control-next" href="#heroCarousel" role="button" data-bs-slide="next">
-        <span class="carousel-control-next-icon bi bi-chevron-right" aria-hidden="true"></span>
-      </a>
-
-    </div>
-  </section> -->
 
   <main id="main">
 
@@ -1871,7 +1825,7 @@
       <a href="index.html"><button class="mobilenavselected"><i class="fa-solid fa-book-bookmark"></i><p class="translate" data-en="Articles" data-sw="Makala">Makala</p></button></a>
       <a href="q&a.html"><button><i class="fa-solid fa-person-circle-question"></i><p class="translate" data-en="Q&A" data-sw="Maswali">Maswali</p></button></a>
       <a href="chat.html"><button><i class="fa-solid fa-comments"></i><p class="translate" data-en="Let's talk" data-sw="Ongea nasi">Ongea nasi</p></button></a>
-      <a href="profile.html"><button><div class="profileimagenav"><div class="profimage"><img src="assets/img/images/Portrait of a smiling beautiful woman standing alone on a yellow background.jpg" alt=""></div></div><p class="translate" data-en="Profile" data-sw="Wasifu">Wasifu</p></button></a>
+      <a href="calculators.html"><button><i class="fa-solid fa-calculator"></i><p class="translate" data-en="Calculators" data-sw="Jipime">Jipime</p></button></a>
     </div>
 
 
