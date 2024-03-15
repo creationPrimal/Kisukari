@@ -1,19 +1,13 @@
  // Function to update the progress bar based on a certain number
 function updateProgressBar(value) {
   const progressBar = document.getElementById('myProgressBar');
-  const percentage = ((30 - value) / 30) * 100; // Assuming the value ranges from 1 to 30
-  progressBar.style.width = `${percentage}%`;
+  const percentage = ((value) / 30) * 450; // Assuming the value ranges from 1 to 30
+  progressBar.style.strokeDashoffset = `${percentage}`;
 
   const counterclinic = document.querySelector('.counterclinic');
 const counterValue = parseInt(counterclinic.textContent);
 
-if (counterValue > 20) {
-    counterclinic.style.backgroundColor = 'rgb(146, 255, 146)';
-} else if (10 <= counterValue && counterValue <= 20) {
-    counterclinic.style.backgroundColor = 'rgb(253, 255, 146)';
-} else if (0 <= counterValue && counterValue < 10) {
-  counterclinic.style.backgroundColor = 'rgb(255, 146, 146)';
-}
+ 
 }
 
 // Function to update the countdown
