@@ -905,7 +905,6 @@
   height: 200px;
   max-height: 200px;
   width: 20%;
-  border: none;
   overflow: hidden;
   border-radius: 8px;
 }
@@ -929,7 +928,7 @@
 }
 
 .clinicbuttondetails{
-  padding: 5px;
+  padding: 3px;
 }
 .clinicbuttondetails p{
   margin: 0px;
@@ -939,19 +938,19 @@
 }
 .sukari{
   background-color: rgba(219, 219, 219, 0.247);
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.068);
+  border: 1px solid rgba(65, 65, 65, 0.082);
 }
 .dawa{
   background-color: rgba(219, 219, 219, 0.247);
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.068);
+  border: 1px solid rgba(65, 65, 65, 0.082);
 }
 .insulin{
   background-color: rgba(219, 219, 219, 0.247);
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.068);
+  border: 1px solid rgba(65, 65, 65, 0.082);
 }
 .chakula{
   background-color: rgba(219, 219, 219, 0.247);
-  box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.068);
+  border: 1px solid rgba(65, 65, 65, 0.082);
 }
 
 .newcounter{
@@ -1082,6 +1081,13 @@
   box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
               -6px -6px 10px -1px rgba(255,255,255,0.7);
 
+}
+.jazacliniki button{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  color: black;
 }
 .jazacliniki i{
   color: #d12727;
@@ -1597,7 +1603,6 @@ input[type="file"]{
       height: 200px;
       max-height: 200px;
       width: 23%;
-      border: none;
       overflow: hidden;
       border-radius: 8px;
     }
@@ -1774,7 +1779,6 @@ input[type="file"]{
     max-height: 200px;
     width: 48.5%;
     margin-bottom: 10px;
-    border: none;
     overflow: hidden;
     border-radius: 8px;
   }
@@ -1993,6 +1997,8 @@ input[type="file"]{
     }
     .mobilenav button p{
         font-size: 10px;
+        color: black;
+        white-space: nowrap;
         justify-self: center;
         margin: 0px 0px 0px 0px;
     }
@@ -2061,7 +2067,6 @@ input[type="file"]{
         max-height: 110px;
         width: 24.3%;
         margin-bottom: 10px;
-        border: none;
         overflow: hidden;
         border-radius: 6px;
       }
@@ -2081,7 +2086,7 @@ input[type="file"]{
       }
       .clinicbuttondetails p{
         margin: 0px;
-        font-size: 7.3px;
+        font-size: 7px;
         overflow: hidden;
         max-height: 26px;
       }
@@ -2115,6 +2120,9 @@ input[type="file"]{
     background-color: white;
     box-shadow: 6px 6px 10px -1px rgba(43, 43, 43, 0.055),
     -6px -6px 10px -1px rgba(255, 255, 255, 0.459);
+  }
+  .calculator p{
+    font-size: 13px;
   }
   .viewall h4{
     font-size: 18px;
@@ -2508,7 +2516,7 @@ input[type="file"]{
         }
 
 
-        @media (max-width:340px) and (min-width:0px) {
+        @media (max-width:370px) and (min-width:0px) {
           .calculator{
             display: flex;
             flex-direction: column;
@@ -2590,7 +2598,6 @@ input[type="file"]{
             max-height: 150px;
             width: 24%;
             margin-bottom: 10px;
-            border: none;
             overflow: hidden;
             border-radius: 8px;
           }

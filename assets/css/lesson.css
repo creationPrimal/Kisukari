@@ -17,9 +17,11 @@
   font-size: 30px;
  }
  .autherimage img{
+  position: absolute;
     height: 100%;
     width: 100%;
     object-fit: cover;
+    z-index: 2;
  }
  .lessonautherimage{
   height: 35px;
@@ -147,7 +149,7 @@
   left: 0;
   right: 0;
   bottom: 0;
-  backdrop-filter: blur(3px);
+  backdrop-filter: blur(0px);
   z-index: 1;
  }
  .lockscreen i{
@@ -164,8 +166,8 @@
     margin-right: 10px;
     margin-bottom: 2px;
     height: 25px;
-    min-height: 25px;
     width: 25px;
+    max-width: 25px !important;
     color: white;
     border-radius: 50%;
     background-color: #d9232d;
@@ -180,6 +182,7 @@
   height: 25px;
   min-height: 25px;
   width: 25px;
+  max-width: 25px;
   color: #d9232d;
   border-radius: 50%;
   background-color: #d9232c00;
@@ -192,8 +195,8 @@
     margin-right: 10px;
     margin-bottom: 2px;
     height: 25px;
-    min-height: 25px;
     width: 25px;
+    max-width: 25px;
     color: white;
     border-radius: 50%;
     background-color: #d9232d;
@@ -221,6 +224,39 @@
     display: flex;
     flex-direction: column;
     width: 100%;
+}
+.sendertext form{
+  display: flex;
+  justify-content: flex-end;
+}
+.chatdelete{
+  background-color: transparent;
+  margin: 0px 3px 3px 0px;
+  border: none;
+ background-color: rgba(255, 255, 0, 0);
+}
+
+#chat-container {
+  height: 75vh; /* Adjust height as needed */
+  overflow-y: scroll;
+}
+
+#chat-messages {
+  display: flex;
+  flex-direction: column-reverse; /* Reverse the order of messages */
+  margin-right: 2px;
+}
+#chat-container::-webkit-scrollbar {
+  width: 1px; /* Set the width of the scrollbar */
+}
+
+#chat-container::-webkit-scrollbar-thumb {
+  background-color: #d9232d; /* Color of the scrollbar thumb */
+  border-radius: 4px; /* Rounded corners for the thumb */
+}
+
+#chat-container::-webkit-scrollbar-track {
+  background-color: #ffffff; /* Color of the scrollbar track */
 }
 .text:empty {
     display: none; /* Hide the empty paragraphs */
@@ -378,6 +414,9 @@
   display: none;
 }
 .asqinput button{
+  display: flex;
+  justify-content: center;
+  align-items: center;
     height: 50px;
     width: 50px;
     font-size: 25px;
@@ -558,8 +597,8 @@ input:checked + .slider:before {
 }
 .aboutimage{
   height: auto;
-  width: 400px;
-  min-width: 400px;
+  max-width: 400px;
+  min-width: 0px;
   overflow: hidden;
   margin-right: 30px;
 
@@ -610,7 +649,7 @@ input:checked + .slider:before {
       .aboutimage{
         height: auto;
         width: 100%;
-        min-width: auto;
+        min-width: 100%;
         overflow: hidden;
         margin-right: 0px;
         margin-bottom: 20px;
@@ -693,8 +732,8 @@ input:checked + .slider:before {
         margin-right: 10px;
         margin-bottom: 2px;
         height: 25px;
-        min-height: 25px;
         width: 25px;
+        max-width: 25px !important;
         color: white;
         border-radius: 50%;
         background-color: rgba(128, 128, 128, 0.568);
@@ -724,7 +763,7 @@ input:checked + .slider:before {
       .lesson-img {
         width: 100%;
         height: 300px;
-        margin: 0px 0px 20px 0px;
+        margin: 5px 0px 20px 0px;
         overflow: hidden;
       }
       .blog .blog-author p {
@@ -764,8 +803,12 @@ input:checked + .slider:before {
         box-shadow: 0 2px 26px rgba(0, 0, 0, 0.212);
     }
     .asqinput button{
+        display: flex;
+        justify-content: center;
+        align-items: center;
         height: 40px;
         width: 40px;
+        max-width: 40px;
         font-size: 25px;
         margin-right: 0px;
         border: none;
@@ -812,6 +855,9 @@ input:checked + .slider:before {
  }
 
  @media (max-width: 575px) {
+  .chat-header{
+    display: none !important;
+  }
     .autherimage{
         height: 90px;
         width: 90px;
@@ -844,7 +890,7 @@ input:checked + .slider:before {
      .lesson-img {
         width: 100%;
         height: 280px;
-        margin: 0px 0px 20px 0px;
+        margin: 5px 0px 20px 0px;
         overflow: hidden;
       }
      .blog .blog-author {
@@ -924,7 +970,7 @@ input:checked + .slider:before {
       .lesson-img {
         width: 100%;
         height: 250px;
-        margin: 0px 0px 20px 0px;
+        margin: 5px 0px 20px 0px;
         overflow: hidden;
       }
       
