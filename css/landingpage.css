@@ -76,7 +76,22 @@ a{
     align-items: center;
     height: 100%;
 }
+.nav-phone-number{
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: none;
+    text-align: center;
+}
+.nav-phone-number p{
+    font-size: 13px !important;
+}
+.nav-phone-number h1{
+    font-size: 20px;
+    font-weight: 700;
+    color: var(--red);
 
+}
 .navclose{
     display: none;
     justify-content: center;
@@ -89,9 +104,44 @@ a{
     margin-left: 10px;
     margin-top: 10px;
 }
+.headernav .rightnav p{
+    margin: 0px;
+    padding: 0px;
+    font-size: 18px;
+    font-weight: 500;
+    margin-right: 40px;
+    color: var(--black);
+}
 
 
 @media screen and (max-width: 764px){
+
+    .nav-phone-number{
+        align-items: end;
+        padding-right: 0px !important;
+    }
+    .headernav .rightnav p{
+        margin: 0px;
+        padding: 0px;
+        font-size: 12px;
+        font-weight: 500;
+        margin-right: 0px;
+        color: var(--black);
+    }
+    .nav-phone-number h1{
+        font-size: 18px;
+        font-weight: 700;
+        color: var(--red);
+    
+    }
+    .headernav .rightnav{
+        padding-right: 0px;
+    }
+    .headernav .leftnav{
+        padding-left: 0px;
+    }
+    
+    /*
     .headernav .rightnav{
         display: none;
         position: fixed;
@@ -162,19 +212,14 @@ a{
         width: auto;
         object-fit: cover;
     }
+
+    */
 }
 
 
 
 
-.headernav .rightnav p{
-    margin: 0px;
-    padding: 0px;
-    font-size: 18px;
-    font-weight: 500;
-    margin-right: 40px;
-    color: var(--black);
-}
+
 .headernav .rightnav .active{
     color: var(--red);
 }
@@ -270,7 +315,7 @@ a{
     border-radius: 6px;
     font-weight: bold;
     outline: none;
-    padding-left: 10px;
+    padding-left: 0px;
 }
 .hero .quick-tour-btn{
     margin-top: 35px;
@@ -969,7 +1014,9 @@ a{
     }
 }
 
-
+.jamii-span{
+    color: var(--red);
+}
 
 
 /*animation*/
